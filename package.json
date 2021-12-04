@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My simple personal page",
+  "main": "index.js",
+  "scripts": {
+    "monitor": "npx tailwindcss -i ./index.css -o ./tailwind.css -w",
+    "build": "npx tailwindcss -i ./index.css -o ./tailwind.css",
+    "build-and-commit": "node -e \"const mssg = process.argv[1]; require('child_process').execSync('npm run build && git add . && git commit -m \\\"' + mssg + '\\\"', { stdio:[0, 1, 2] })\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FreezedIce",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}

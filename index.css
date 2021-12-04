@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+   @apply select-none;
+}
+
+a {
+   @apply underline font-bold text-rose-200 hover:text-rose-100;
+   /* @apply underline text-link hover:text-link */
+}
+
+.bracket {
+   @apply text-xl font-bold font-serif text-gray-300;
+}
+
+.code {
+   @apply font-light font-mono;
+}
