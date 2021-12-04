@@ -6,9 +6,13 @@ body {
    @apply select-none;
 }
 
-a {
+.link {
    @apply underline font-bold text-rose-200 hover:text-rose-100;
    /* @apply underline text-link hover:text-link */
+}
+
+.hidden-link {
+   @apply underline hover:text-rose-100;
 }
 
 .bracket {
