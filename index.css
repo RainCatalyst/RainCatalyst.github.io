@@ -16,7 +16,7 @@ body {
 }
 
 .bracket {
-   @apply text-xl font-bold font-serif text-gray-300;
+   @apply sm:text-xl text-lg font-bold font-serif text-gray-300;
 }
 
 .code {

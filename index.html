@@ -22,16 +22,15 @@
     <!-- Scripts -->
     <script type="module" src="index.js"></script>
 </head>
-<body class="bg-body text-white text-2xl font-merriweather overflow-hidden">
-    <video autoplay loop muted id="reel" class="absolute w-auto min-w-full min-h-full max-w-none">
-        <source
-            src="media/reel.mp4"
-            type="video/mp4" />
+<body class="relative relative flex items-center justify-center bg-body text-white sm:text-2xl text-xl font-merriweather h-screen w-screen overflow-hidden">
+    <video autoplay loop muted id="reel" class="absolute w-auto h-auto min-w-full min-h-full max-w-none">
+        <source src="media/reel.mp4" type="video/mp4" />
         Your browser does not support the video tag.
     </video>
-    <div class="relative flex justify-center items-center h-screen v-screen bg-black bg-opacity-40">
+    
+    <div class="absolute flex justify-center items-center h-screen w-screen bg-black bg-opacity-40">
         <div class="flex flex-col items-left justify-start h-1/3 w-3/5">
-            <p class="text-4xl font-bold">Hi, I'm FreezedIce.</p>
+            <p class="sm:text-4xl text-2xl font-bold">Hi, I'm FreezedIce.</p>
             <p class="font-light">Here is what I do —</p>
             <p class="code">&hairsp;
                 <span class="bracket">&gt;</span>&hairsp;
@@ -56,7 +55,7 @@
             </p>
         </div>
         <div class="absolute flex flex-row items-center space-x-4 justify-center bottom-0 right-0 p-4">
-            <a target="_blank" rel="noopener noreferrer" id="link" class="hidden-link code text-xl" href=""></a>
+            <a target="_blank" rel="noopener noreferrer" id="link" class="hidden-link code sm:text-xl text-lg" href=""></a>
             <p id="comments" class="code text-xl"></p>
         </div>
     </div>
