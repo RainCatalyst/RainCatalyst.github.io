@@ -9,12 +9,14 @@ window.onload = function(e){
     comments = document.querySelector("#comments");
     video = document.querySelector("#reel");
     setInterval(updateCaptions, 20);
-    document.getElementById("reel").classList.remove('min-w-full');
-    setTimeout(fixScaling, 1);
+    video.classList.remove('min-w-full');
+    video.classList.remove('min-h-full');
+    setTimeout(fixScaling, 2);
 }
 
 function fixScaling() {
-    document.getElementById("reel").classList.add('min-w-full');
+    video.classList.add('min-w-full');
+    video.classList.add('min-h-full');
 }
 
 function updateCaptions() {
