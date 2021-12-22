@@ -8,7 +8,13 @@ window.onload = function(e){
     link = document.querySelector("#link");
     comments = document.querySelector("#comments");
     video = document.querySelector("#reel");
-    setInterval(updateCaptions, 10);
+    setInterval(updateCaptions, 20);
+    document.getElementById("reel").classList.remove('min-w-full');
+    setTimeout(fixScaling, 1);
+}
+
+function fixScaling() {
+    document.getElementById("reel").classList.add('min-w-full');
 }
 
 function updateCaptions() {

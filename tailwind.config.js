@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'body': '#000000',
+        'body': '#FFFFFF',
         rose: colors.rose,
       },
       fontFamily: {

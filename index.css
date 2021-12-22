@@ -22,3 +22,11 @@ body {
 .code {
    @apply font-light font-mono;
 }
+
+.h-inherit {
+  height: 100%;
+}
+
+.w-inherit {
+   width: 100%;
+}
