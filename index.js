@@ -23,7 +23,6 @@ function updateCaptions() {
     }
 
     if (last_idx != idx) {
-        console.log(idx);
         last_idx = idx;
         link.href = timestamps[idx].link;
         link.innerHTML = timestamps[idx].title;
