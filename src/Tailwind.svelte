@@ -47,7 +47,7 @@ body {
 }
 
 .sidebar {
-    @apply h-14 px-8 md:px-16 grow-0 top-0 select-none sticky z-10 shadow-sm bg-white;
+    @apply h-14 px-8 sm:px-16 grow-0 top-0 select-none sticky z-10 shadow-sm bg-white;
 }
 
 @media

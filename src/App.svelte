@@ -21,7 +21,7 @@
 <main class="text-primary">
 	<div class="flex flex-col">
 		<Navbar back={$location != '/'}/>
-		<div class="px-4 md:px-16 pt-8 pb-8 bg-gray-50 grow min-h-screen">
+		<div class="px-8 sm:px-16 pt-8 pb-8 bg-gray-50 grow min-h-screen">
 			<Router {routes}/>
 		</div>
 	</div>

@@ -19,9 +19,9 @@
 <div class="card-animated" on:click={select} on:mouseenter={onHover} on:mouseleave={onDehover}>
     <!-- <img src={currentImage} alt="" class="w-full h-32 sm:h-48 object-cover"> -->
     {#if hovered }
-        <video src={hoverImage} class="w-full h-32 sm:h-48 object-cover" autoplay muted loop ></video>
+        <video src={hoverImage} class="w-full aspect-video object-cover" autoplay muted loop ></video>
     {:else}
-        <img src={image} alt="" class="w-full h-32 sm:h-48 object-cover">
+        <img src={image} alt="" class="w-full aspect-video object-cover">
     {/if}
     <div class="m-4">
         <span class="font-bold">{title}</span>
