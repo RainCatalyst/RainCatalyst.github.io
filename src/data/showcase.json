@@ -1,0 +1,21 @@
+{
+    "projects": [
+        {
+            "card":
+            {
+                "title": "Constellations",
+                "description": "A minimalist puzzle game about connecting stars",
+                "image": "img/constellations/logo.png",
+                "hoverImage": "img/constellations/gameplay.mp4"
+            },
+            "description":
+            {
+                "title": "Constellations",
+                "description": "Constellations is a minimalist puzzle game about connecting stars. <br>The game is released on Steam and itch.io and is coming to mobile devices soon.",
+                "contribution": "...",
+                "video": "img/constellations/gameplay.mp4",
+                "images": ["img/test2.png", "img/test3.png"]
+            }
+        }
+    ]
+}
