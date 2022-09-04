@@ -4,17 +4,34 @@
             "card":
             {
                 "title": "Constellations",
-                "description": "A minimalist puzzle game about connecting stars",
+                "description": "Minimalist puzzle game about connecting stars",
                 "image": "img/constellations/logo.png",
                 "hoverImage": "img/constellations/gameplay.mp4"
             },
             "description":
             {
                 "title": "Constellations",
-                "description": "Constellations is a minimalist puzzle game about connecting stars. <br>The game is released on Steam and itch.io and is coming to mobile devices soon.",
-                "contribution": "...",
+                "description": "Constellations is a minimalist puzzle game about connecting stars.<br>The game features silky smooth and chill visuals along with 2 hours of carefully designed levels along 10 constellation-themed worlds.<br><br>Constellations is released on <a href='https://store.steampowered.com/app/1819520/Constellations_Puzzles_in_the_Sky/' class='link'>Steam</a> and <a href='https://icedropgames.itch.io/constellationsitch' class='link'>itch.io</a> and is coming to mobile devices soon.",
+                "contribution": "This was a personal year-long project by me and my friend Raindrinker. I was responsible for all the code, tech art and designed a lot of levels and worlds for the game.",
                 "video": "img/constellations/gameplay.mp4",
                 "images": ["img/test2.png", "img/test3.png"]
+            }
+        },
+        {
+            "card": {
+                "title": "Retro Rift",
+                "description": "Fast-paced platformer with time travel mechanics.",
+                "image": "img/retrorift/logo.png",
+                "hoverImage": "img/retrorift/gameplay.mp4"
+            },
+            "description": {
+                "title": "Retro Rift",
+                "description": "Retro rift is a fast-paced platformer with time travel mechanics.<br>The game has received the 9th place (out of nearly 1800 entires) at Brackeys Jam 2020.2.<br>The gameplay is centred around a simple premise:<br><br>Get to the level exit. Then get to the level exit again, now avoiding the clones of your character moving back in time.<br><br>This idea, combined with a slick and precise movement, makes the player consider their every step (or jump) to find different paths through the level.",
+                "video": "img/retrorift/gameplay.mp4",
+                "images": [
+                    "img/test2.png",
+                    "img/test3.png"
+                ]
             }
         }
     ]

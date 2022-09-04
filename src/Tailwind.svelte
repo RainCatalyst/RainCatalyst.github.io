@@ -17,6 +17,9 @@ body {
 /* a {
   @apply underline tracking-wider font-bold text-sm;
 } */
+.link {
+  @apply underline tracking-wider font-bold text-sm;
+}
 
 .title {
   @apply bg-white font-bold text-2xl border-primary border-l-[3px] shadow-sm px-3 py-1;
