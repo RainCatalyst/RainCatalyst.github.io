@@ -20,13 +20,14 @@
         {
             "card": {
                 "title": "Retro Rift",
-                "description": "Fast-paced platformer with time travel mechanics.",
+                "description": "Fast-paced platformer with time travel mechanics",
                 "image": "img/retrorift/logo.png",
                 "hoverImage": "img/retrorift/gameplay.mp4"
             },
             "description": {
                 "title": "Retro Rift",
-                "description": "Retro rift is a fast-paced platformer with time travel mechanics.<br>The game has received the 9th place (out of nearly 1800 entires) at Brackeys Jam 2020.2.<br>The gameplay is centred around a simple premise:<br><br>Get to the level exit. Then get to the level exit again, now avoiding the clones of your character moving back in time.<br><br>This idea, combined with a slick and precise movement, makes the player consider their every step (or jump) to find different paths through the level.",
+                "description": "Retro rift is a fast-paced platformer with time travel mechanics.<br>The gameplay is centred around a simple premise:<br><i>Get to the level exit. Then get to the level exit again, now avoiding the clones of your character moving back in time.</i><br>This idea, combined with a slick and precise movement, makes the player consider their every step (or jump) to find different paths through the level.<br><br>The game has received the 9th place (out of nearly 1800 entires) at <a href='https://itch.io/jam/brackeys-4/rate/719663' class='link'>Brackeys Jam 2020.2</a>.",
+                "contribution": "This was a week-long project I made in collaboration with my friend. I was behind game’s movement code and designed most of the levels.",
                 "video": "img/retrorift/gameplay.mp4",
                 "images": [
                     "img/test2.png",
