@@ -34,6 +34,24 @@
                     "img/retrorift/3.png"
                 ]
             }
+        },
+        {
+            "card": {
+                "title": "Sneks",
+                "description": "Classic snakes meets Rush Hour",
+                "image": "img/sneks/logo.png",
+                "hoverImage": "img/sneks/gameplay.mp4"
+            },
+            "description": {
+                "title": "Sneks",
+                "description": "Sneks is a cute puzzle inspired by the classic snake game.<br><br>Sneks was made over the month-long <a href='https://itch.io/jam/godot-wild-jam-45/rate/1536621' class='link'>Godot Wild Jam #45</a>. I was responsible for the game’s internal logic and smooth line rendering for snakes, as well as helped design some levels and mechanics.",
+                "video": "img/sneks/gameplay.mp4",
+                "images": [
+                    "img/sneks/1.png",
+                    "img/sneks/2.png",
+                    "img/sneks/3.png"
+                ]
+            }
         }
     ]
 }
