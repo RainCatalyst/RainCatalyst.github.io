@@ -26,7 +26,7 @@ body {
 }
 
 .text-block {
-  @apply bg-white border-primary border-l-[3px] shadow-sm px-3 py-3;
+  @apply bg-white border-primary shadow-sm px-3 py-3 text-center;
 }
 
 .card {
