@@ -3,6 +3,12 @@
     import { fly } from 'svelte/transition';
 
     import { cards } from '../data/projects.js'
+
+    import { onMount } from 'svelte';
+    
+    onMount(() => {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    });
 </script>
 
 <div class="flex flex-col items-center" in:fly={{ y: 15, duration: 250 }}>

@@ -72,18 +72,35 @@
         },
         {
             "card": {
-                "title": "Flip'n Seas",
-                "description": "Tile flipping nautical puzzle",
-                "image": "img/flipseas/logo.png",
-                "hoverImage": "img/flipseas/gameplay.mp4"
+                "title": "Tree Golf",
+                "description": "Relaxing golf game",
+                "image": "img/treegolf/logo.png",
+                "hoverImage": "img/treegolf/gameplay.mp4"
             },
             "description": {
-                "title": "Flip'n Seas",
-                "description": "Flip’n Seas is a tactile puzzle about flipping tiles to lead your ship to a treasure.<br><br>This is a personal project, I was responsible for all aspects of the game, except for the tile art.<br>You find out more on the <a href='https://itch.io/jam/godot-wild-jam-45/rate/1536621' class='link'>game's page</a>.",
-                "video": "img/flipseas/gameplay.mp4",
+                "title": "Tree Golf",
+                "description": "...",
+                "video": "img/treegolf/gameplay.mp4",
                 "images": [
-                    "img/flipseas/1.png",
-                    "img/flipseas/2.png"
+                    "img/treegolf/1.png",
+                    "img/treegolf/2.png"
+                ]
+            }
+        },
+        {
+            "card": {
+                "title": "Other Games",
+                "description": "Games from gamejams and personal projects",
+                "image": "img/other/logo.png",
+                "hoverImage": "img/other/logo.png"
+            },
+            "description": {
+                "title": "Other Games",
+                "description": "...",
+                "video": "-",
+                "images": [
+                    "-",
+                    "-"
                 ]
             }
         }

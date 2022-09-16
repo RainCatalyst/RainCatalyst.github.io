@@ -6,6 +6,12 @@
     import { descriptions } from '../data/projects.js'
 
     project = descriptions[params.index];
+
+    import { onMount } from 'svelte';
+    
+    onMount(() => {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    });
 </script>
 
 <div class="flex justify-center" in:fly={{ y: 15, duration: 250 }}>
@@ -19,6 +25,18 @@
                 {@html project.description}
             </div>
         </div>
+        <!-- <h4 class="font-bold text-2xl">Projects</h4>
+        <div class="text-block self-stretch">
+            <div class="mx-3">
+                blablablabalbldekglklsdgf
+            </div>
+        </div>
+        <h4 class="font-bold text-2xl">Projects</h4>
+        <div class="text-block self-stretch">
+            <div class="mx-3">
+                blablablabalbldekglklsdgf
+            </div>
+        </div> -->
         <!-- Images and videos -->
         <div class="flex flex-row gap-4 self-stretch items-stretch">
             {#each project.images as src}

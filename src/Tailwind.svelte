@@ -30,11 +30,11 @@ body {
 }
 
 .card {
-    @apply bg-white rounded shadow-sm overflow-hidden;
+  @apply bg-white shadow-lg overflow-hidden;
 }
 
 .card-animated {
-    @apply card cursor-pointer -translate-y-0 hover:-translate-y-1 hover:shadow-lg transition-all;
+    @apply card cursor-pointer -translate-y-0 hover:-translate-y-1 hover:shadow-xl transition-all;
 }
 
 .btn {

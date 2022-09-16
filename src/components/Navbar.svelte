@@ -29,7 +29,7 @@
                     </span> -->
                     <h4 class="font-bold text-lg ml-2">FreezedIce</h4>
                     <h4 class="text-md px-2">/</h4>
-                    <h4 class="font-light text-md">Riot Portfolio</h4>
+                    <h4 class="font-light text-md">Game Portolfio</h4>
                 </div>
             </div>
         {/if}
