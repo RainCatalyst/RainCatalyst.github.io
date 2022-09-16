@@ -15,7 +15,7 @@
             <video src={project.video} class="w-full object-contain" autoplay muted loop></video>
         </div>
         <div class="text-block self-stretch">
-            <div class="mr-4 ml-1">
+            <div class="mx-3">
                 {@html project.description}
             </div>
         </div>
