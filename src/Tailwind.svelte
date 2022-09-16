@@ -41,6 +41,10 @@ body {
     @apply rounded-full text-sm font-bold cursor-pointer tracking-wider relative;
 }
 
+.static-underline {
+    @apply absolute -bottom-0 left-0 h-[1.5px] bg-primary w-full;
+}
+
 .animated-underline {
     @apply absolute -bottom-0 left-0 w-0 h-[1.5px] bg-primary transition-all group-hover:w-full;
 }
@@ -50,7 +54,7 @@ body {
 }
 
 .sidebar {
-    @apply h-14 px-8 sm:px-16 grow-0 top-0 select-none sticky z-10 shadow-sm bg-white;
+    @apply h-16 px-8 sm:px-16 grow-0 top-0 select-none sticky z-10 shadow-sm bg-white;
 }
 
 @media

@@ -7,6 +7,7 @@
 
 <div class="flex flex-col items-center" in:fly={{ y: 15, duration: 250 }}>
     <!-- <h4 class="font-bold text-2xl">Projects</h4> -->
+    <!-- <h4 class="text-xl mb-4">Game Programming and Design Portfolio</h4> -->
     <div class="mt-2 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {#each cards as card, i}
             <ProjectCard {...card} index={i}/>

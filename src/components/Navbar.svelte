@@ -18,14 +18,20 @@
                 <span class="animated-underline-low"></span>
             </span>
         {:else}
-            <div class="w-8 h-8">
-                <img class="h-full" src="img/logo.png" alt="">
+            <div class="flex flex-col justify-center items-center">
+                <div class="flex flex-row items-center">
+                    <div class="w-8 h-8">
+                        <img class="h-full" src="img/logo.png" alt="">
+                    </div>
+                    <!-- <span class="btn group ml-2">
+                        <h4 class="font-bold text-lg">FreezedIce</h4>
+                        <span class="animated-underline-low"></span>
+                    </span> -->
+                    <h4 class="font-bold text-lg ml-2">FreezedIce</h4>
+                    <h4 class="text-md px-2">/</h4>
+                    <h4 class="font-light text-md">Riot Portfolio</h4>
+                </div>
             </div>
-            <!-- <span class="btn group ml-2">
-                <h4 class="font-bold text-lg">FreezedIce</h4>
-                <span class="animated-underline-low"></span>
-            </span> -->
-            <h4 class="font-bold text-lg ml-2">FreezedIce</h4>
         {/if}
     </div>
     <!-- <div class="flex justify-end items-center gap-4">
