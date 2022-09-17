@@ -26,7 +26,7 @@ body {
 }
 
 .text-block {
-  @apply bg-white border-primary shadow-sm px-3 py-3 text-center;
+  @apply bg-white border-primary shadow-lg px-3 py-3 text-center;
 }
 
 .card {
@@ -55,6 +55,18 @@ body {
 
 .sidebar {
     @apply h-16 px-8 sm:px-16 grow-0 top-0 select-none sticky z-10 shadow-sm bg-white;
+}
+
+.accordion {
+		@apply flex flex-col items-center gap-5 self-stretch;
+}
+
+.accordion-item {
+		@apply flex flex-col items-center text-block;
+}
+
+.metadata-description {
+    @apply font-light text-xs text-white text-center -translate-y-[1.25px];
 }
 
 @media
