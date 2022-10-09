@@ -1,23 +1,22 @@
 {
     "projects": [
         {
-            "card": {
+            "card":
+            {
                 "title": "Constellations",
                 "description": "Minimalist puzzle game about connecting stars",
                 "image": "img/constellations/logo.png",
                 "hoverImage": "img/constellations/gameplay.mp4"
             },
-            "description": {
+            "description":
+            {
                 "title": "Constellations",
                 "description": "Constellations is a minimalist puzzle game about connecting stars.<br><br>This was a personal year-long project with my friend. I was responsible for all the code and tech art, as well as some level design for the game.<br><br>Constellations is released on <a href='https://store.steampowered.com/app/1819520/Constellations_Puzzles_in_the_Sky/' class='link'>Steam</a> and <a href='https://icedropgames.itch.io/constellationsitch' class='link'>itch.io</a> and is coming to mobile devices soon.",
                 "video": "img/constellations/gameplay.mp4",
-                "images": [
-                    "img/constellations/1.png",
-                    "img/constellations/2.png",
-                    "img/constellations/3.png"
-                ]
+                "images": ["img/constellations/1.png", "img/constellations/2.png", "img/constellations/3.png"]
             },
-            "meta": {
+            "meta":
+            {
                 "teamSize": 2,
                 "engine": "Godot",
                 "timeSpan": "1 year"

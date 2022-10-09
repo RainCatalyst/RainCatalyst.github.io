@@ -58,7 +58,7 @@ body {
 }
 
 .accordion {
-		@apply flex flex-col items-center gap-5 self-stretch;
+		@apply flex flex-col items-center self-stretch;
 }
 
 .accordion-item {
@@ -67,6 +67,14 @@ body {
 
 .metadata-description {
     @apply font-light text-xs text-white text-center -translate-y-[1.25px];
+}
+
+.collapse-header {
+    @apply font-bold text-lg flex flex-col items-center underline;
+}
+
+.collapse-header-2 {
+    @apply font-light text-lg flex flex-col items-center bg-primary text-white px-2 mb-3;
 }
 
 @media

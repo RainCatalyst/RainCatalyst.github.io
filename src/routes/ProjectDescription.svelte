@@ -23,9 +23,9 @@
 </script>
 
 <div class="flex justify-center" in:fly={{ y: 15, duration: 250 }}>
-    <div class="flex flex-col justify-start items-center gap-5 w-full lg:w-1/2">
+    <div class="flex flex-col justify-start items-center w-full lg:w-1/2">
         <h4 class="font-bold text-2xl">{project.title}</h4>
-        <div class="card self-stretch aspect-video">
+        <div class="card self-stretch aspect-video mt-4">
             <video src={project.video} class="w-full object-contain" autoplay muted loop></video>
         </div>
         <div class="bg-primary self-stretch h-8 flex items-center shadow-md px-4 -mt-5">
@@ -38,7 +38,7 @@
         </div>
         <div class="text-block self-stretch">
             <div class="mx-3">
-                <h4 class="font-bold text-lg mb-3 underline">About</h4>
+                <h4 class="collapse-header mb-3">About</h4>
                 {@html project.description}
             </div>
         </div>
@@ -58,7 +58,7 @@
         </div> -->
         <Accordion>
             <AccordionItem key="a">
-                <div slot="header" class="font-bold text-lg flex flex-col items-center underline">
+                <div slot="header" class="collapse-header">
                     Programming
                     <!-- <img src="img/icons/arrow-down.svg" alt="Open" class="mt-2"> -->
                 </div>
@@ -69,7 +69,7 @@
                 </div>
             </AccordionItem>
             <AccordionItem key="b">
-                <div slot="header" class="font-bold text-lg flex flex-col items-center underline">
+                <div slot="header" class="collapse-header">
                     Design
                     <!-- <img src="img/icons/arrow-down.svg" alt="Open" class="mt-2"> -->
                 </div>
