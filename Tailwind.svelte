@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  background-image: url("../img/background.png");
+  background-image: url("../img/background3.png");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -25,16 +25,16 @@ main {
   @apply max-w-[54rem] px-12 mx-auto pt-3 flex flex-col items-stretch gap-3;
 }
 
+/* .highlight-text {
+  @apply font-bold text-xl bg-black text-white px-1;
+} */
+
 .highlight-text {
   @apply font-bold text-xl;
 }
 
 .highlight-text-big {
   @apply font-bold text-xl;
-}
-
-.link {
-  @apply text-sm tracking-wider font-bold hover:underline;
 }
 
 .text-box {
@@ -46,7 +46,7 @@ main {
 }
 
 .header {
-  background-image: url("../img/background.png");
+  background-image: url("../img/background3.png");
   background-attachment: fixed;
   background-size: 100% auto;
   @apply top-0 sticky z-10;
