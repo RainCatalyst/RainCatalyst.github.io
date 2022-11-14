@@ -16,7 +16,7 @@
     <div class="content pb-8">
         <Transition>
             <Route path="/">
-                <Empty/>
+                <Main/>
             </Route>
             <Route path="/portfolio">
                 <Empty/>

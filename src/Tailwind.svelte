@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  background-image: url("../img/background.png");
+  /* background-image: url("../img/background.png"); */
   background-attachment: fixed;
   background-size: cover;
 }
@@ -58,6 +58,10 @@ main {
 
 .button {
   @apply font-bold tracking-wider cursor-pointer px-1 hover:bg-black hover:text-white;
+}
+
+.black-outline {
+  @apply outline outline-1 outline-black;
 }
 
 @media

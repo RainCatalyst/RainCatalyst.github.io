@@ -9,9 +9,9 @@
     </div>
     
     <div class="pt-4 self-stretch grid grid-cols-2 gap-8">
-        <VerticalCard name="Procedural Background" link="img/shaders/background.mp4"/>
-        <VerticalCard name="Swirly Blackhole" link="img/shaders/blackhole.mp4"/>
-        <VerticalCard name="World Completion" link="img/shaders/worldcomplete.mp4"/>
-        <VerticalCard name="Bubble Line" link="img/shaders/bubbleline.mp4"/>
+        <VerticalCard name="Procedural Background" link="aag4C4sQ-DQ"/>
+        <VerticalCard name="Swirly Blackhole" link="Hg3VU2-0nPU"/>
+        <VerticalCard name="World Completion" link="H1MdlJ9X_LI"/>
+        <VerticalCard name="Bubble Line" link="5Bmkd89Hrts"/>
     </div>
 </div>

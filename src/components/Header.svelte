@@ -17,7 +17,8 @@
             </div>
         </div>
     </div>
-    <div class="bg-black mx-auto h-[1px] mt-3 transition-all {y < 50 ? 'w-[48rem]' : 'w-full'}"></div>
+    <!-- <div class="bg-black mx-auto h-[1px] mt-3 transition-all {y < 50 ? 'w-[48rem]' : 'w-full'}"></div> -->
+    <div class="bg-black mx-auto h-[1px] mt-3 w-full"></div>
 </div>
 
 <svelte:window bind:scrollY={y} />
