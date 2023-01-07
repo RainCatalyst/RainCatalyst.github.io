@@ -29,6 +29,7 @@
     "gh-pages": "^4.0.0",
     "postcss-load-config": "^4.0.1",
     "sirv-cli": "^2.0.0",
+    "svelte-scrollto": "^0.2.0",
     "svelte-youtube-embed": "^0.1.8"
   }
 }

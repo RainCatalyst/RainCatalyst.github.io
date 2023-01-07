@@ -30,30 +30,26 @@ main {
 }
 
 .highlight-text-big {
-  @apply font-bold text-xl;
+  @apply font-bold text-2xl;
 }
 
 .link {
-  @apply text-sm tracking-wider font-bold hover:underline;
+  @apply tracking-wider font-bold hover:underline underline-offset-4;
 }
 
 .contact-link {
-  @apply tracking-wider font-bold hover:underline;
+  @apply tracking-wide font-bold hover:underline underline-offset-4;
 }
 
 .text-box {
-  @apply text-justify text-lg tracking-wide;
-}
-
-.card {
-  @apply aspect-video;
+  @apply text-justify text-lg;
 }
 
 .header {
   background-image: url("../img/background.png");
   background-attachment: fixed;
   background-size: 100% auto;
-  @apply top-0 sticky z-10;
+  @apply top-0 sticky z-10 shadow-md pb-4;
 }
 
 .header-sticky {
@@ -61,11 +57,11 @@ main {
 }
 
 .button {
-  @apply font-bold tracking-wider cursor-pointer px-1 hover:bg-black hover:text-white;
+  @apply font-bold tracking-wider cursor-pointer px-1 hover:underline underline-offset-4;
 }
 
-.black-outline {
-  @apply outline outline-1 outline-black;
+.card {
+  @apply shadow-lg rounded-md overflow-hidden;
 }
 
 @media

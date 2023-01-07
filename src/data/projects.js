@@ -6,7 +6,7 @@ var projects =
             "description": "Minimalist puzzle game about connecting stars",
             "image": "img/constellations/logo.png",
             "hoverImage": "img/constellations/gameplay.mp4",
-            "link": "#/constellations"
+            "link": "https://store.steampowered.com/app/1819520/Constellations_Puzzles_in_the_Sky/"
         },
         "description": {
             "title": "Constellations",
@@ -30,7 +30,7 @@ var projects =
             "description": "Fast-paced platformer with time travel mechanics",
             "image": "img/retrorift/logo.png",
             "hoverImage": "img/retrorift/gameplay.mp4",
-            "link": "#/constellations"
+            "link": "https://freezedice.itch.io/retrorift"
         },
         "description": {
             "title": "Retro Rift",
@@ -55,7 +55,7 @@ var projects =
             "description": "Classic snakes meets Rush Hour",
             "image": "img/sneks/logo.png",
             "hoverImage": "img/sneks/gameplay.mp4",
-            "link": "#/constellations"
+            "link": "https://freezedice.itch.io/sneks"
         },
         "description": {
             "title": "Sneks",
