@@ -1,5 +1,6 @@
 <script>
     let y;
+    // import {tinro-ignore} from 'tinro'; 
 </script>
 
 <div class="header">
@@ -12,8 +13,8 @@
                 </div>
             </a>
             <div class="flex items-center gap-4">
-                <a class="button" href="/portfolio">Portfolio</a>
-                <a class="button" href="/contact">Contact</a>
+                <a class="button" href="#/portfolio" tinro-ignore>Portfolio</a>
+                <a class="button" href="#contact" tinro-ignore>Contact</a>
             </div>
         </div>
     </div>

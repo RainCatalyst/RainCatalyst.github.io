@@ -18,7 +18,7 @@ body {
 }
 
 main {
-  @apply h-screen;
+  @apply h-full;
 }
 
 .content {
@@ -35,6 +35,10 @@ main {
 
 .link {
   @apply text-sm tracking-wider font-bold hover:underline;
+}
+
+.contact-link {
+  @apply tracking-wider font-bold hover:underline;
 }
 
 .text-box {

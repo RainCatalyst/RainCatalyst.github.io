@@ -1,5 +1,7 @@
 <script>
     import HorizontalCard from "../components/HorizontalCard.svelte";
+    import ContactCard from "../components/ContactCard.svelte";
+    import {cards, metas} from "../data/projects"
 </script>
 
 <div class="pt-6 flex flex-col items-start">
@@ -23,12 +25,22 @@
     <!-- <div class="bg-black mx-auto h-[1px] w-[48rem] my-8"></div> -->
     <h1 class="highlight-text-big mt-8">Projects</h1>
     <div class="self-stretch flex flex-col items-stretch mt-4 gap-8">
-        <HorizontalCard name="Constellations" img="img/constellations/logo.png" href="#/constellations">
+        {#each {length: 3} as _, i}
+            <HorizontalCard name={cards[i].title} img={cards[i].image} href={cards[i].link}>
+                <span slot="description">{cards[i].description}</span>
+            </HorizontalCard>
+        {/each}
+        <a href="#/projects" class="link self-center">More projects ></a>
+        <!-- <HorizontalCard name="Constellations" img="img/constellations/logo.png" href="#/constellations">
             <span slot="description">Minimalist puzzle game about connecting stars. Vivamus ut sollicitudin mi.</span>
-        </HorizontalCard>
-        <HorizontalCard name="Flip'n Seas" img="img/flipseas/logo.png" href="#/constellations">
-            <span slot="description">Minimalist puzzle game about connecting stars. Vivamus ut sollicitudin mi.</span>
-        </HorizontalCard>
+        </HorizontalCard> -->
         <!-- <div class="bg-black mx-auto h-[1px] my-2 w-[24rem]"></div> -->
+    </div>
+    <h1 class="highlight-text-big mt-8" id="contact">Contact</h1>
+    <div class="self-stretch flex flex-row items-stretch justify-between mt-4">
+        <ContactCard name="LinkedIn" href="https://www.linkedin.com/in/arseny-dremin-b74135207/" icon="/img/other/linkedin.svg"/>
+        <ContactCard name="Twitter" href="https://twitter.com/freezed_ice" icon="/img/other/twitter.svg"/>
+        <ContactCard name="itch.io" href="https://freezedice.itch.io/" icon="/img/other/itchio.svg"/>
+        <ContactCard name="Mail" href="mailto:freezedice.business@proton.me" icon="/img/other/mail.svg"/>
     </div>
 </div>

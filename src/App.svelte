@@ -21,9 +21,6 @@
             <Route path="/portfolio">
                 <Empty/>
             </Route>
-            <Route path="/contact">
-                <Empty/>
-            </Route>
             <Route path="/shaders">
                 <Shaders/>
             </Route>
