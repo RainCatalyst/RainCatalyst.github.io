@@ -49,7 +49,7 @@ main {
   background-image: url("../img/background.png");
   background-attachment: fixed;
   background-size: 100% auto;
-  @apply top-0 sticky z-10 shadow-md pb-4;
+  @apply top-0 sticky z-10;
 }
 
 .header-sticky {
@@ -61,7 +61,7 @@ main {
 }
 
 .card {
-  @apply shadow-lg rounded-md overflow-hidden;
+  @apply outline outline-1 outline-black overflow-hidden;
 }
 
 @media

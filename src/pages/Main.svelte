@@ -19,7 +19,7 @@
     <h1 id="portfolio" class="highlight-text-big">Work Experience</h1>
     <div class="self-stretch flex flex-col items-stretch mt-4 gap-8">
         <HorizontalCard name="Italic Pig" img="img/italicpig/logo.jpg" href="https://www.italicpig.com/">
-            <span slot="description">Unity Developer<br>1 year</span>
+            <span slot="description">Gameplay Programmer<br>1 year</span>
         </HorizontalCard>
     </div>
     <!-- <div class="bg-black mx-auto h-[1px] w-[48rem] my-8"></div> -->

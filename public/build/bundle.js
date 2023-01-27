@@ -978,7 +978,7 @@ var app = (function () {
     	};
 
     	let scrolling_timeout;
-    	let div4;
+    	let div5;
     	let div3;
     	let div2;
     	let a0;
@@ -991,13 +991,15 @@ var app = (function () {
     	let a1;
     	let t5;
     	let a2;
+    	let t7;
+    	let div4;
     	let mounted;
     	let dispose;
     	add_render_callback(/*onwindowscroll*/ ctx[1]);
 
     	const block = {
     		c: function create() {
-    			div4 = element("div");
+    			div5 = element("div");
     			div3 = element("div");
     			div2 = element("div");
     			a0 = element("a");
@@ -1014,6 +1016,8 @@ var app = (function () {
     			t5 = space();
     			a2 = element("a");
     			a2.textContent = "Contact";
+    			t7 = space();
+    			div4 = element("div");
     			attr_dev(h40, "class", "font-bold text-2xl");
     			add_location(h40, file$8, 13, 20, 426);
     			attr_dev(h41, "class", "font-light");
@@ -1033,15 +1037,17 @@ var app = (function () {
     			add_location(div2, file$8, 10, 8, 248);
     			attr_dev(div3, "class", "content");
     			add_location(div3, file$8, 9, 4, 217);
-    			attr_dev(div4, "class", "header");
-    			add_location(div4, file$8, 8, 0, 191);
+    			attr_dev(div4, "class", "bg-black mx-auto h-[1px] mt-3 w-full");
+    			add_location(div4, file$8, 24, 4, 1056);
+    			attr_dev(div5, "class", "header");
+    			add_location(div5, file$8, 8, 0, 191);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div4, anchor);
-    			append_dev(div4, div3);
+    			insert_dev(target, div5, anchor);
+    			append_dev(div5, div3);
     			append_dev(div3, div2);
     			append_dev(div2, a0);
     			append_dev(a0, div0);
@@ -1053,6 +1059,8 @@ var app = (function () {
     			append_dev(div1, a1);
     			append_dev(div1, t5);
     			append_dev(div1, a2);
+    			append_dev(div5, t7);
+    			append_dev(div5, div4);
 
     			if (!mounted) {
     				dispose = [
@@ -1081,7 +1089,7 @@ var app = (function () {
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div4);
+    			if (detaching) detach_dev(div5);
     			mounted = false;
     			run_all(dispose);
     		}
@@ -1682,10 +1690,10 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			span = element("span");
-    			t0 = text("Unity Developer");
+    			t0 = text("Gameplay Programmer");
     			br = element("br");
     			t1 = text("1 year");
-    			add_location(br, file$5, 21, 52, 1231);
+    			add_location(br, file$5, 21, 56, 1235);
     			attr_dev(span, "slot", "description");
     			add_location(span, file$5, 21, 12, 1191);
     		},
@@ -1723,7 +1731,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "slot", "description");
-    			add_location(span, file$5, 29, 16, 1636);
+    			add_location(span, file$5, 29, 16, 1640);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -1962,18 +1970,18 @@ var app = (function () {
     			attr_dev(div4, "class", "self-stretch flex flex-col items-stretch mt-4 gap-8");
     			add_location(div4, file$5, 19, 4, 1005);
     			attr_dev(h12, "class", "highlight-text-big mt-8");
-    			add_location(h12, file$5, 25, 4, 1367);
+    			add_location(h12, file$5, 25, 4, 1371);
     			attr_dev(a, "href", "https://freezedice.itch.io");
     			attr_dev(a, "class", "link self-center mt-2");
-    			add_location(a, file$5, 32, 8, 1748);
+    			add_location(a, file$5, 32, 8, 1752);
     			attr_dev(div5, "class", "self-stretch flex flex-col items-stretch mt-4 gap-8");
-    			add_location(div5, file$5, 26, 4, 1422);
+    			add_location(div5, file$5, 26, 4, 1426);
     			attr_dev(h13, "class", "highlight-text-big mt-8");
     			attr_dev(h13, "id", "contact");
-    			add_location(h13, file$5, 38, 4, 2190);
+    			add_location(h13, file$5, 38, 4, 2194);
     			attr_dev(div6, "id", "contact");
     			attr_dev(div6, "class", "self-stretch flex flex-row items-stretch justify-between mt-4");
-    			add_location(div6, file$5, 39, 4, 2257);
+    			add_location(div6, file$5, 39, 4, 2261);
     			attr_dev(div7, "class", "mt-8 flex flex-col items-start");
     			add_location(div7, file$5, 17, 0, 883);
     		},
