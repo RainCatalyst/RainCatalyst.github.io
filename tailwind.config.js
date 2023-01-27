@@ -14,7 +14,11 @@ module.exports = {
         '10/9': '10 / 9',
         '15/12': '15 / 12',
         'itch': '13 / 10'
-      }
+      },
+      fontFamily: {
+        'main': ['Merriweather', 'serif'],
+        'code': ['Fire Code', 'monospace'],
+      },
     },
   },
   plugins: [],

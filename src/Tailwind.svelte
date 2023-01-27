@@ -3,6 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"); */
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/Merriweather-Regular.ttf");
+}
 
 body::-webkit-scrollbar {
   display: none;
@@ -15,14 +22,32 @@ body {
   /* background-image: url("../img/background.png"); */
   background-attachment: fixed;
   background-size: cover;
+  touch-action: none;
+  @apply select-none;
 }
 
 main {
-  @apply h-full;
+  @apply h-full font-main text-white;
+}
+
+.background {
+  @apply absolute w-auto h-auto min-w-full min-h-full max-w-none -z-10;
 }
 
 .content {
-  @apply max-w-[54rem] px-12 mx-auto pt-3 flex flex-col items-stretch gap-3;
+  @apply w-screen h-screen m-0 py-20 px-40 text-2xl;
+}
+
+.content-side {
+  @apply w-1/3 h-full flex flex-col items-start justify-center gap-1;
+}
+
+.content-full {
+  @apply w-full h-full flex flex-col items-center justify-center;
+}
+
+.item-group {
+  @apply flex flex-col items-start justify-start ml-6;
 }
 
 .highlight-text {
@@ -34,7 +59,7 @@ main {
 }
 
 .link {
-  @apply tracking-wider font-bold hover:underline underline-offset-4;
+  @apply hover:underline underline-offset-4 text-rose-400 hover:text-white;
 }
 
 .contact-link {
@@ -61,7 +86,7 @@ main {
 }
 
 .card {
-  @apply outline outline-1 outline-black overflow-hidden;
+  @apply outline outline-1 outline-white overflow-hidden;
 }
 
 @media
