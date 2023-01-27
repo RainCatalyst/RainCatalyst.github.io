@@ -1,5 +1,5 @@
 <script>
-    import VerticalCard from "../components/VerticalCard.svelte";
+    import VerticalCard from "../components/ProjectCard.svelte";
 </script>
 
 <div class="pt-6 flex flex-col items-start">

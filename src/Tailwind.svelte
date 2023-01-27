@@ -27,7 +27,7 @@ body {
 }
 
 main {
-  @apply h-full font-main text-white;
+  @apply relative font-main text-white h-screen w-screen overflow-hidden bg-black bg-opacity-40;
 }
 
 .background {
@@ -43,7 +43,7 @@ main {
 }
 
 .content-full {
-  @apply w-full h-full flex flex-col items-center justify-center;
+  @apply w-full h-full;
 }
 
 .item-group {
@@ -59,7 +59,7 @@ main {
 }
 
 .link {
-  @apply hover:underline underline-offset-4 text-rose-400 hover:text-white;
+  @apply hover:underline underline-offset-4 text-rose-200 hover:text-white;
 }
 
 .contact-link {

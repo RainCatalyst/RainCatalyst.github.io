@@ -1,17 +1,24 @@
 <script>
     export let name;
+    export let img;
     export let href;
-    export let link;
     export let description;
+
+    import NavItem from "../components/NavItem.svelte";
 </script>
 
 
-<div class="card flex flex-col">
-    <div class="aspect-video">
-        <img href={href} alt="">
+<div class="flex flex-col basis-1/4 h-1/2 p-4">
+    <!-- <div>??</div> -->
+    <div class="card basis-1/2">
+        <img class="w-full h-full object-cover" src={img} alt="">
     </div>
-    <div class="text-box font-semibold">{name}</div>
-    <!-- <div class="flex flex-col items-start justify-between mx-3 my-3">
-        <h1 class="text-box font-semibold">{name}</h1>
-    </div> -->
+    <div class="font-code text-2xl mt-3 basis-1/8">
+        {name}
+    </div>
+    <div class="font-code text-xl mt-3 basis-1/6">
+        <slot name="description"></slot>
+    </div>
+    <NavItem text="itch" href="/vfx"/>
+    <NavItem text="github" href="/vfx"/>
 </div>

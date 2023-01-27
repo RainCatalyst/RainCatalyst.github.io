@@ -5,6 +5,7 @@
     import {Route,router,active} from 'tinro'; 
     import Main from "./pages/Main.svelte";
     import Empty from "./pages/Empty.svelte";
+    import Games from "./pages/Games.svelte";
     import Transition from "./components/Transition.svelte";
 
     router.mode.hash();
@@ -20,13 +21,19 @@
             </div>
         </Route>
         <Route path="/work">
-            <div class="background">
-            </div>
+            <div class="background bg-black"></div>
             <div class="content">
                 <Empty/>
             </div>
         </Route>
         <Route path="/games">
+            <div class="background bg-black"></div>
+            <div class="content">
+                <Games/>
+            </div>
+        </Route>
+        <Route path="/vfx">
+            <div class="background bg-black"></div>
             <div class="content">
                 <Empty/>
             </div>
