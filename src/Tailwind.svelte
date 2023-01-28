@@ -23,7 +23,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   touch-action: none;
-  @apply select-none;
+  @apply select-none bg-black;
 }
 
 main {
