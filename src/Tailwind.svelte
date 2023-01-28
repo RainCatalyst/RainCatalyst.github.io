@@ -27,7 +27,10 @@ body {
 }
 
 main {
-  @apply relative font-main text-white h-screen w-screen overflow-hidden bg-black bg-opacity-40;
+  overflow: hidden;
+  /* overflow-y: hidden;
+  white-space: nowrap; */
+  @apply relative font-main text-white h-screen w-auto bg-black bg-opacity-40;
 }
 
 .background {
@@ -38,16 +41,20 @@ main {
   @apply w-screen h-screen m-0 py-20 px-40 text-2xl;
 }
 
+.project-column {
+  @apply basis-1/3 px-4 item-group;
+}
+
 .project-card {
-  @apply flex flex-col justify-center p-4 min-w-[350px] overflow-hidden;
+  @apply flex flex-col justify-center p-4 w-full overflow-hidden;
 }
 
 .project-image {
-  @apply h-1/2 w-full object-cover;
+  @apply card w-full aspect-video object-cover;
 }
 
 .project-container {
-  @apply content-full flex flex-row flex-wrap justify-center;
+  @apply content-full flex flex-row;
 }
 
 .content-side {
@@ -71,7 +78,7 @@ main {
 }
 
 .link {
-  @apply hover:underline underline-offset-4 text-rose-200 hover:text-white;
+  @apply cursor-pointer hover:underline underline-offset-4 text-rose-200 hover:text-white;
 }
 
 .contact-link {

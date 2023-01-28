@@ -79,7 +79,7 @@ var projects =
             "description": "Tile flipping nautical puzzle",
             "image": "img/flipseas/logo.png",
             "hoverImage": "img/flipseas/gameplay.mp4",
-            "link": "#/constellations"
+            "link": "https://freezedice.itch.io/flip-and-seas"
         },
         "description": {
             "title": "Flip'n Seas",
@@ -102,7 +102,7 @@ var projects =
             "description": "Relaxing golf game",
             "image": "img/treegolf/logo.png",
             "hoverImage": "img/treegolf/gameplay.mp4",
-            "link": "#/constellations"
+            "link": "https://freezedice.itch.io/tree-golf"
         },
         "description": {
             "title": "Tree Golf",
@@ -122,10 +122,10 @@ var projects =
     {
         "card": {
             "title": "Other Games",
-            "description": "Games from gamejams and personal projects",
+            "description": "old games and projects",
             "image": "img/other/logo.png",
             "hoverImage": "img/other/logo.png",
-            "link": "#/constellations"
+            "link": "https://freezedice.itch.io/"
         },
         "description": {
             "title": "Other Games",

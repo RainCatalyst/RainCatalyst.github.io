@@ -10,8 +10,9 @@
 
 <div class="project-card">
     <!-- <div class="w-full h-full bg-white"></div> -->
-    <img class="project-image" src={img} alt="">
-    <div class="flex-grow bg-gray-100">
+    <img class="w-[250px] aspect-video card object-cover" src={img} alt="">
+    <div class="font-code text-2xl mt-3">
+        {name}
     </div>
     <!-- <div class="card basis-1/2 flex">
         <img class="project-image" src={img} alt="">

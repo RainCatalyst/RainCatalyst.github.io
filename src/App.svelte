@@ -6,9 +6,22 @@
     import Main from "./pages/Main.svelte";
     import Empty from "./pages/Empty.svelte";
     import Games from "./pages/Games.svelte";
+    import GamesList from "./pages/GamesList.svelte";
+    import Work from "./pages/Work.svelte";
+    import Art from "./pages/Art.svelte";
     import Transition from "./components/Transition.svelte";
 
     router.mode.hash();
+
+    // var element = document.documentElement;
+
+    // element.addEventListener('wheel', (event) => {
+    //     event.preventDefault();
+
+    //     element.scrollBy({
+    //         left: event.deltaY < 0 ? -30 : 30,
+    //     });
+    // }, {passive:false});
 </script>
 <Tailwind/>
 
@@ -23,19 +36,19 @@
         <Route path="/work">
             <div class="background bg-black"></div>
             <div class="content">
-                <Empty/>
+                <Work/>
             </div>
         </Route>
         <Route path="/games">
             <div class="background bg-black"></div>
             <div class="content">
-                <Games/>
+                <GamesList/>
             </div>
         </Route>
         <Route path="/vfx">
             <div class="background bg-black"></div>
             <div class="content">
-                <Empty/>
+                <Art/>
             </div>
         </Route>
     </Transition>
