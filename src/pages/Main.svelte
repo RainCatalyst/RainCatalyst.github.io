@@ -16,7 +16,7 @@
     </div>
     <div class="item-group">
         <NavItem text="work" href="/work" local=true/>
-        <NavItem text="games" href="https://freezedice.itch.io"/>
+        <NavItem text="games" href="/games" local=true/>
         <NavItem text="vfx" href="/vfx" local=true/>
     </div>
     <div class="font-light mt-3">

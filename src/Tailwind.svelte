@@ -38,6 +38,18 @@ main {
   @apply w-screen h-screen m-0 py-20 px-40 text-2xl;
 }
 
+.project-card {
+  @apply flex flex-col justify-center p-4 min-w-[350px] overflow-hidden;
+}
+
+.project-image {
+  @apply h-1/2 w-full object-cover;
+}
+
+.project-container {
+  @apply content-full flex flex-row flex-wrap justify-center;
+}
+
 .content-side {
   @apply w-1/3 h-full flex flex-col items-start justify-center gap-1;
 }
