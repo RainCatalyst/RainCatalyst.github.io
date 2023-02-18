@@ -2,6 +2,32 @@ var projects =
 [
     {
         "card": {
+            "title": "Paleo Pines",
+            "description": "Dinosaur themed ranching game",
+            "image": "img/paleo/logo.png",
+            "hoverImage": "img/constellations/gameplay.mp4",
+            "link": "https://store.steampowered.com/app/1202200/Paleo_Pines/"
+        },
+        "description": {
+            "title": "Constellations",
+            "description": "Constellations is a minimalist puzzle game about connecting stars.<br><br>This was a personal year-long project with my friend. I was responsible for all the code and tech art, as well as some level design for the game.<br><br>Constellations is released on <a href='https://store.steampowered.com/app/1819520/Constellations_Puzzles_in_the_Sky/' class='link'>Steam</a> and <a href='https://icedropgames.itch.io/constellationsitch' class='link'>itch.io</a> and is coming to mobile devices soon.",
+            "video": "img/constellations/gameplay.mp4",
+            "images": [
+                "img/constellations/1.png",
+                "img/constellations/2.png",
+                "img/constellations/3.png"
+            ]
+        },
+        "meta": {
+            "teamSize": 20,
+            "team": "Italic Pig",
+            "role": "Gameplay Programming",
+            "tools": "Unity",
+            "timeSpan": "1 year"
+        }
+    },
+    {
+        "card": {
             "title": "Constellations",
             "description": "Minimalist puzzle game about connecting stars",
             "image": "img/constellations/logo.png",
@@ -20,7 +46,9 @@ var projects =
         },
         "meta": {
             "teamSize": 2,
-            "engine": "Godot",
+            "team": "Icedrop Games",
+            "role": "Programming, Game Design",
+            "tools": "Godot",
             "timeSpan": "1 year"
         }
     },
@@ -45,7 +73,9 @@ var projects =
         },
         "meta": {
             "teamSize": 2,
-            "engine": "Godot",
+            "team": "Icedrop Games",
+            "role": "Programming, Game Design, Technical Art",
+            "tools": "Godot",
             "timeSpan": "2 weeks"
         }
     },
@@ -69,7 +99,9 @@ var projects =
         },
         "meta": {
             "teamSize": 2,
-            "engine": "Godot",
+            "team": "Icedrop Games",
+            "role": "Programming, Game Design, Technical Art",
+            "tools": "Godot",
             "timeSpan": "2 weeks"
         }
     },
@@ -92,7 +124,9 @@ var projects =
         },
         "meta": {
             "teamSize": 2,
-            "engine": "Unity",
+            "team": "Icedrop Games",
+            "role": "Programming, Game & Level Design, Technical Art",
+            "tools": "Unity, Blender",
             "timeSpan": "4 weeks"
         }
     },
@@ -115,7 +149,9 @@ var projects =
         },
         "meta": {
             "teamSize": 2,
-            "engine": "Godot",
+            "team": "Icedrop Games",
+            "role": "Programming, Game & Level Design",
+            "tools": "Godot",
             "timeSpan": "1 week"
         }
     },
@@ -138,7 +174,9 @@ var projects =
         },
         "meta": {
             "teamSize": "1-4",
-            "engine": "Mixed",
+            "team": "Icedrop Games",
+            "role": "Programming, Game Design, Technical Art",
+            "tools": "Mixed",
             "timeSpan": "3 years"
         }
     }

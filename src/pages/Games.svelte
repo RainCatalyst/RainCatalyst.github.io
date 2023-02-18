@@ -1,6 +1,6 @@
 <script>
     import ProjectItemCard from "../components/ProjectItemCard.svelte";
-    import NavItem from "../components/GameNavItem.svelte";
+    import NavItem from "../components/LinkNavItem.svelte";
 
     import {cards, metas} from "../data/projects"
 </script>

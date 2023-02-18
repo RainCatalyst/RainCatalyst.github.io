@@ -6,6 +6,7 @@
     import Main from "./pages/Main.svelte";
     import Empty from "./pages/Empty.svelte";
     import Games from "./pages/Games.svelte";
+    import GameExample from "./pages/GameExample.svelte";
     import GamesList from "./pages/GamesList.svelte";
     import Work from "./pages/Work.svelte";
     import Art from "./pages/Art.svelte";
@@ -31,6 +32,11 @@
         <Route path="/">
             <div class="content">
                 <Main/>
+            </div>
+        </Route>
+        <Route path="/example">
+            <div class="content">
+                <GameExample/>
             </div>
         </Route>
         <Route path="/work">

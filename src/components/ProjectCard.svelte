@@ -4,7 +4,7 @@
     export let href;
     export let description;
 
-    import NavItem from "./GameNavItem.svelte";
+    import NavItem from "./LinkNavItem.svelte";
 </script>
 
 
