@@ -12,10 +12,11 @@
         A gameplay programmer with a passion for game design and tech art.
     </div>
     <div class="font-light mt-3">
-        Here is what I do —
+        About me —
     </div>
     <div class="item-group">
         <NavItem text="work" href="/work" local=true/>
+        <!-- <NavItem text="experience" href="/experience" local=true/> -->
         <NavItem text="games" href="/games" local=true/>
         <NavItem text="vfx" href="/vfx" local=true/>
     </div>

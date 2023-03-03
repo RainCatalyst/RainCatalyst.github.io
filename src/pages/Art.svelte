@@ -6,7 +6,7 @@
     import {cards, metas} from "../data/projects"
 </script>
 
-<div class="content-full flex flex-col items-start justify-center gap-1">
+<div class="content-full flex flex-col items-start justify-center gap-1 flex-1">
     <div class="font-light">
         Links to my vfx projects (both realtime and not) —
     </div>

@@ -10,7 +10,7 @@
     export let meta;
 </script>
 
-<div class="flex flex-row h-[200px] w-full">
+<div class="flex flex-row flex-wrap h-auto w-full">
     <div class="basis-1/3 mt-2 pb-2 ml-0">
         <LinkNavItem name={name} href={href} description={description} local=true/>
     </div>
@@ -24,7 +24,7 @@
             </div>
 
     </div>
-    <div class="min-w-[350px] w-[350px] h-[200px] outline outline-1 outline-white">
+    <div class="md:min-w-[350px] md:w-[350px] md:h-[200px] w-[280px] h-[160px] md:my-0 my-3 outline outline-1 outline-white">
         <img class="w-full h-full object-cover" src={img} alt="">
     </div>
     <!-- <div class="flex flex-col flex-grow">

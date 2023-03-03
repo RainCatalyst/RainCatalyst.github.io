@@ -28,17 +28,32 @@ body {
 
 main {
   overflow: hidden;
-  /* overflow-y: hidden;
-  white-space: nowrap; */
+  overflow-y: scroll;
+  /* white-space: nowrap; */
   @apply relative font-main text-white h-screen w-auto bg-black bg-opacity-40;
 }
 
-.background {
+/* .background {
   @apply absolute w-auto h-auto min-w-full min-h-full max-w-none -z-10;
+} */
+
+.video {
+  @apply absolute max-w-none -z-10;
+  max-width:100%;
+  max-height:100%;
+  vertical-align: middle;
 }
 
 .content {
-  @apply w-screen h-screen m-0 py-20 px-40 text-2xl;
+  @apply w-screen min-h-screen h-auto m-0 md:px-40 px-10 text-2xl flex items-center flex-row;
+}
+
+.content-screen {
+  @apply w-screen h-[500px] m-0 py-0 md:px-40 px-10 text-2xl;
+}
+
+.content-nopad {
+  @apply w-screen h-auto min-h-screen m-0 py-10 md:px-40 px-6 text-2xl;
 }
 
 .project-column {
@@ -58,7 +73,7 @@ main {
 }
 
 .content-side {
-  @apply w-1/3 h-full flex flex-col items-start justify-center gap-1;
+  @apply md:w-1/3 w-2/3 h-auto flex flex-col items-start justify-center gap-1;
 }
 
 .content-full {

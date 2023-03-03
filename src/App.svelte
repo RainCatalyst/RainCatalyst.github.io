@@ -47,13 +47,13 @@
         </Route>
         <Route path="/games">
             <div class="background bg-black"></div>
-            <div class="content">
+            <div class="content py-10">
                 <GamesList/>
             </div>
         </Route>
         <Route path="/vfx">
             <div class="background bg-black"></div>
-            <div class="content">
+            <div class="content flex flex-row">
                 <Art/>
             </div>
         </Route>
