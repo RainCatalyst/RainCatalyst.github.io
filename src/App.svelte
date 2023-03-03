@@ -40,19 +40,19 @@
             </div>
         </Route>
         <Route path="/work">
-            <div class="background bg-black"></div>
+            <div class="background"></div>
             <div class="content">
                 <Work/>
             </div>
         </Route>
         <Route path="/games">
-            <div class="background bg-black"></div>
+            <div class="background"></div>
             <div class="content py-10">
                 <GamesList/>
             </div>
         </Route>
         <Route path="/vfx">
-            <div class="background bg-black"></div>
+            <div class="background"></div>
             <div class="content flex flex-row">
                 <Art/>
             </div>

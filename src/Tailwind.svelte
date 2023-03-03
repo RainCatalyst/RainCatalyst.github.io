@@ -33,9 +33,10 @@ main {
   @apply relative font-main text-white h-screen w-auto bg-black bg-opacity-40;
 }
 
-/* .background {
+.background {
   @apply absolute w-auto h-auto min-w-full min-h-full max-w-none -z-10;
-} */
+  background-color: rgba(0, 0, 0, 0.65);
+}
 
 .video {
   @apply absolute max-w-none -z-10;
