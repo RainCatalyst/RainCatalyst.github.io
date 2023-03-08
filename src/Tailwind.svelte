@@ -35,7 +35,7 @@ main {
 
 .background {
   @apply absolute w-auto h-auto min-w-full min-h-full max-w-none -z-10;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .video {
