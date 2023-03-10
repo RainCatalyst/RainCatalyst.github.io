@@ -6,7 +6,7 @@ var projects =
             "description": "Dinosaur themed ranching game",
             "image": "img/paleo/logo_wide.jpg",
             "hoverImage": "img/constellations/gameplay.mp4",
-            "link": "https://store.steampowered.com/app/1202200/Paleo_Pines/"
+            "link": "#/paleo"
         },
         "description": {
             "title": "Constellations",

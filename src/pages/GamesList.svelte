@@ -1,22 +1,18 @@
 <script>
     import NavItem from "../components/NavItem.svelte";
     import ProjectItem from "../components/ProjectItem.svelte";
-    import GameNavItem from "../components/GameNavItem.svelte";
-    import ProjectCard from "../components/ProjectCard.svelte";
-    import TextItemSlot from "../components/TextItemSlot.svelte";
-    import LinkNavItem from "../components/LinkNavItem.svelte";
 
     import {cards, metas} from "../data/projects"
 </script>
 
 <div class="py-16 flex-1 flex flex-col items-stretch justify-start gap-1">
-    <div class="text-2xl font-bold mb-2">
+    <div class="header-box mb-2">
         Published and work projects
     </div>
     {#each {length: 2} as _, i}
         <ProjectItem title={cards[i].title.toLowerCase()} href={cards[i].link} description={cards[i].description} img={cards[i].image} meta={metas[i]} />
     {/each}
-    <div class="text-2xl font-bold mb-2">
+    <div class="header-box mb-2">
         Games from game jams
     </div>
     {#each {length: 5} as _, i}

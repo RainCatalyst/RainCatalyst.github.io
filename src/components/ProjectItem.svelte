@@ -3,6 +3,7 @@
     export let img;
     export let href;
     export let description;
+    export let local = false;
     export let meta;
 
     import NavItem from "./NavItem.svelte";
@@ -10,7 +11,7 @@
 
 <div class="flex flex-row flex-wrap justify-between gap-4 my-4">
     <div class="">
-        <NavItem text={title} href={href}/>
+        <NavItem text={title} href={href} local={href.startsWith("#")} />
         <div class="text-base h-auto w-full text-start leading-relaxed mt-2 font-light">
             {description}<br>
             <b>Role:</b> {meta.role}<br>

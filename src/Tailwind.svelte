@@ -3,13 +3,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"); */
-
-/* @font-face {
-  font-family: "Merriweather";
-  src: url("/fonts/Merriweather-Regular.ttf");
-} */
 
 body::-webkit-scrollbar {
   display: none;
@@ -51,7 +44,14 @@ main {
   vertical-align: middle;
 }
 
-/* Stuff */
+.text-box {
+  @apply text-base h-auto w-full text-justify leading-relaxed font-light;
+}
+
+.header-box {
+  @apply text-2xl font-bold;
+}
+
 .image-group {
   @apply flex flex-row flex-wrap justify-center gap-4;
 }
@@ -60,36 +60,12 @@ main {
   @apply rounded-lg outline-2 outline outline-white max-h-[250px];
 }
 
-.content {
+.content-main {
   @apply w-screen h-auto min-h-screen m-0 md:px-40 px-10 text-2xl flex flex-row;
 }
 
-.content-job {
+.content-page {
   @apply w-screen h-auto min-h-screen m-0 2xl:px-[500px] lg:px-40 px-10 text-2xl flex flex-row justify-center;
-}
-
-.content-screen {
-  @apply w-screen h-[500px] m-0 py-0 md:px-40 px-10 text-2xl;
-}
-
-.content-nopad {
-  @apply w-screen h-auto min-h-screen m-0 py-10 md:px-40 px-6 text-2xl;
-}
-
-.project-column {
-  @apply basis-1/3 px-4 item-group;
-}
-
-.project-card {
-  @apply flex flex-col justify-center p-4 w-full overflow-hidden;
-}
-
-.project-image {
-  @apply card w-full aspect-video object-cover;
-}
-
-.project-container {
-  @apply content-full flex flex-row;
 }
 
 .content-side {
@@ -104,43 +80,8 @@ main {
   @apply flex flex-col items-start justify-start ml-6;
 }
 
-.highlight-text {
-  @apply font-bold text-xl;
-}
-
-.highlight-text-big {
-  @apply font-bold text-2xl;
-}
-
 .link {
   @apply cursor-pointer hover:underline underline-offset-4 text-rose-200 hover:text-white;
-}
-
-.contact-link {
-  @apply tracking-wide font-bold hover:underline underline-offset-4;
-}
-
-.text-box {
-  @apply text-justify text-lg;
-}
-
-.header {
-  background-image: url("../img/background.png");
-  background-attachment: fixed;
-  background-size: 100% auto;
-  @apply top-0 sticky z-10;
-}
-
-.header-sticky {
-  @apply top-0 sticky z-10 flex flex-col items-stretch gap-3;
-}
-
-.button {
-  @apply font-bold tracking-wider cursor-pointer px-1 hover:underline underline-offset-4;
-}
-
-.card {
-  @apply outline outline-1 outline-white overflow-hidden;
 }
 
 @media
