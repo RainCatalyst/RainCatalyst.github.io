@@ -6,10 +6,10 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap"); */
 /* @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"); */
 
-@font-face {
+/* @font-face {
   font-family: "Merriweather";
   src: url("/fonts/Merriweather-Regular.ttf");
-}
+} */
 
 body::-webkit-scrollbar {
   display: none;
@@ -34,7 +34,13 @@ main {
 }
 
 .background {
-  @apply absolute w-auto h-auto min-w-full min-h-full max-w-none -z-10;
+  /* @apply absolute min-w-full min-h-full max-w-none -z-10; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -10;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -45,8 +51,21 @@ main {
   vertical-align: middle;
 }
 
+/* Stuff */
+.image-group {
+  @apply flex flex-row flex-wrap justify-center gap-4;
+}
+
+.image-item {
+  @apply rounded-lg outline-2 outline outline-white max-h-[250px];
+}
+
 .content {
-  @apply w-screen min-h-screen h-auto m-0 md:px-40 px-10 text-2xl flex items-center flex-row;
+  @apply w-screen h-auto min-h-screen m-0 md:px-40 px-10 text-2xl flex flex-row;
+}
+
+.content-job {
+  @apply w-screen h-auto min-h-screen m-0 2xl:px-[500px] lg:px-40 px-10 text-2xl flex flex-row justify-center;
 }
 
 .content-screen {

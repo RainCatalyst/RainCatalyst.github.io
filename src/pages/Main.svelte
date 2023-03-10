@@ -15,10 +15,9 @@
         About me —
     </div>
     <div class="item-group">
-        <NavItem text="work" href="/work" local=true/>
+        <NavItem text="work and experience" href="/work" local=true/>
         <!-- <NavItem text="experience" href="/experience" local=true/> -->
-        <NavItem text="games" href="/games" local=true/>
-        <NavItem text="vfx" href="/vfx" local=true/>
+        <NavItem text="projects" href="/games" local=true/>
     </div>
     <div class="font-light mt-3">
         Reach me —

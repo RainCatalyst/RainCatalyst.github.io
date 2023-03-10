@@ -4,7 +4,7 @@ var projects =
         "card": {
             "title": "Paleo Pines",
             "description": "Dinosaur themed ranching game",
-            "image": "img/paleo/logo.png",
+            "image": "img/paleo/logo_wide.jpg",
             "hoverImage": "img/constellations/gameplay.mp4",
             "link": "https://store.steampowered.com/app/1202200/Paleo_Pines/"
         },
@@ -19,18 +19,18 @@ var projects =
             ]
         },
         "meta": {
-            "teamSize": 20,
+            "teamSize": "20+",
             "team": "Italic Pig",
             "role": "Gameplay Programming",
-            "tools": "Unity",
-            "timeSpan": "1 year"
+            "tools": "Unity, C#",
+            "timeSpan": "2021-now"
         }
     },
     {
         "card": {
             "title": "Constellations",
             "description": "Minimalist puzzle game about connecting stars",
-            "image": "img/constellations/logo.png",
+            "image": "img/constellations/logo_high.png",
             "hoverImage": "img/constellations/gameplay.mp4",
             "link": "https://store.steampowered.com/app/1819520/Constellations_Puzzles_in_the_Sky/"
         },
@@ -48,7 +48,7 @@ var projects =
             "teamSize": 2,
             "team": "Icedrop Games",
             "role": "Programming, Game Design",
-            "tools": "Godot",
+            "tools": "Godot, GDscript, C++",
             "timeSpan": "1 year"
         }
     },
@@ -74,7 +74,7 @@ var projects =
         "meta": {
             "teamSize": 2,
             "team": "Icedrop Games",
-            "role": "Programming, Game Design, Technical Art",
+            "role": "Programming, Game Design, Shaders",
             "tools": "Godot",
             "timeSpan": "2 weeks"
         }
@@ -100,7 +100,7 @@ var projects =
         "meta": {
             "teamSize": 2,
             "team": "Icedrop Games",
-            "role": "Programming, Game Design, Technical Art",
+            "role": "Programming, Game Design, Shaders",
             "tools": "Godot",
             "timeSpan": "2 weeks"
         }
@@ -125,7 +125,7 @@ var projects =
         "meta": {
             "teamSize": 2,
             "team": "Icedrop Games",
-            "role": "Programming, Game & Level Design, Technical Art",
+            "role": "Programming, Game & Level Design, Shaders",
             "tools": "Unity, Blender",
             "timeSpan": "4 weeks"
         }
@@ -158,8 +158,8 @@ var projects =
     {
         "card": {
             "title": "Other Games",
-            "description": "old games and projects",
-            "image": "img/other/logo.png",
+            "description": "My itch.io profile",
+            "image": "img/other/nw.png",
             "hoverImage": "img/other/logo.png",
             "link": "https://freezedice.itch.io/"
         },

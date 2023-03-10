@@ -41,13 +41,13 @@
         </Route>
         <Route path="/work">
             <div class="background"></div>
-            <div class="content">
+            <div class="content-job">
                 <Work/>
             </div>
         </Route>
         <Route path="/games">
             <div class="background"></div>
-            <div class="content py-10">
+            <div class="content-job">
                 <GamesList/>
             </div>
         </Route>
