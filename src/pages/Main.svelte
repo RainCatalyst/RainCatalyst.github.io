@@ -23,9 +23,21 @@
         Reach me —
     </div>
     <div class="item-group">
+        <a href="files/CV.pdf" download="ArsenyDremin_CV.pdf" target="_blank" rel="noopener noreferrer">
+            <div class="flex flex-row items-start justify-start font-code font-light gap-3">
+                <div>
+                    >
+                </div>
+                <div class="flex flex-row items-center gap-3">
+                    <div class="link">
+                        resume
+                    </div>
+                </div>
+            </div>
+        </a>
         <NavItem text="linkedin" href="https://www.linkedin.com/in/arseny-dremin-b74135207"/>
-        <NavItem text="itch" href="https://freezedice.itch.io"/>
         <NavItem text="github" href="https://github.com/RainCatalyst"/>
         <NavItem text="twitter" href="https://twitter.com/freezed_ice"/>
+        <!-- <NavItem text="itch" href="https://freezedice.itch.io"/> -->
     </div>
 </div>
