@@ -7,16 +7,22 @@
         Paleo Pines
     </div>
     <div class="text-box mb-2">
-        My experience working on Paleo Pines.
-        <br><br>
-        <div class="image-group">
-            <img src="img/paleo/game.png" class="image-item">
+        <div class="image-group my-4">
+            <img src="img/paleo/gameplay1.jpg" class="image-item">
             <video autoplay muted loop class="image-item">
-                <source src="img/paleo/gameplay.mp4" type="video/mp4">
+                <source src="img/paleo/gameplay1.mp4" type="video/mp4">
             </video>
         </div>
+        I joined the project during its later stages of development, so I had to do various tasks ranging from fixing bugs to implementing new systems on top of the existing ones.
+        <br><br>
+        Some of my tasks include:<br>
+        - Implementing UI, backend and quest systems<br>
+        - Working with CSV tables and Scriptable Objects<br>
+        - Fixing bugs and improving overall game performance<br>
         <br>
-        I'm currently employed as a Gameplay Programmer at <a href="https://italicpig.com/" target="_blank" rel="noopener noreferrer" class="link">Italic Pig</a>, working on the upcoming title <a href="https://store.steampowered.com/app/1202200/Paleo_Pines/" class="link" target="_blank" rel="noopener noreferrer">Paleo Pines</a>. I’m primarily responsible for implementing different gameplay systems, however I often get involved in things outside of programming as well. You can read more about my experience <a href="/italic" class="link">here</a>.
+        Our studio encourages everyone to participate in design discussions, so I was glad to have a say. With my previous design experience, I was able to ensure that my code aligned with the design team's vision.
+        <br><br>
+        You can find the game's steam page <a class="link" target="_blank" rel="noopener noreferrer" href="https://store.steampowered.com/app/1202200/Paleo_Pines/">here</a>.
     </div>
     <NavItem text="back" href="/" local=true/>
 </div>

@@ -34,7 +34,7 @@ main {
   min-width: 100vw;
   min-height: 100vh;
   z-index: -10;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .video {

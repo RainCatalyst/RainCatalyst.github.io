@@ -10,14 +10,39 @@
         Published and work projects
     </div>
     {#each {length: 2} as _, i}
-        <ProjectItem title={cards[i].title.toLowerCase()} href={cards[i].link} description={cards[i].description} img={cards[i].image} meta={metas[i]} />
+        <ProjectItem title={cards[i].title} href={cards[i].link} video={cards[i].hoverImage} description={cards[i].description} img={cards[i].image} source={cards[i].source} meta={metas[i]} />
     {/each}
     <div class="header-box mb-2">
         Games from game jams
     </div>
-    {#each {length: 5} as _, i}
-        <ProjectItem title={cards[i+2].title.toLowerCase()} href={cards[i+2].link} description={cards[i+2].description} img={cards[i+2].image} meta={metas[i+2]} />
+    {#each {length: 6} as _, i}
+        <ProjectItem title={cards[i+2].title} href={cards[i+2].link} video={cards[i+2].hoverImage} description={cards[i+2].description} img={cards[i+2].image} source={cards[i+2].source}  meta={metas[i+2]} />
     {/each}
+    <div class="header-box mb-2">
+        Technical Art
+    </div>
+    <div class="flex flex-row flex-wrap justify-between gap-4 my-4">
+        <div class="">
+            <NavItem text="Visual Effects" href="https://www.artstation.com/raincatalyst" />
+            <div class="text-base h-auto w-full text-start leading-relaxed mt-2 font-light">
+                My Artstation portfolio.<br>Featuring a mix of realtime and film VFX.<br><br>
+                <b>Tools:</b> Unity, Houdini, Blender
+            </div>
+        </div>
+            <img src="img/art/vfx.png" class="image-item max-w-[350px] object-cover mt-2" alt="">
+    </div>
+    <div class="flex flex-row flex-wrap justify-between gap-4 my-4">
+        <div class="">
+            <NavItem text="Compute Shaders" href="https://twitter.com/freezed_ice/status/1375451078699929600?s=20" />
+            <div class="text-base h-auto w-full text-start leading-relaxed mt-2 font-light">
+                Slime mold simulation using Compute Shaders in Unity.<br>Inspired by Sebastian Lague videos.<br><br>
+                <b>Tools:</b> Unity, HLSL
+            </div>
+        </div>
+        <video autoplay muted loop class="image-item max-w-[350px] object-cover mt-2">
+            <source src="img/art/slime.mp4" type="video/mp4">
+        </video>
+    </div>
     <!-- <div class="item-group mt-2 pb-2 gap-2 w-full">
         {#each {length: 2} as _, i}
             <GameNavItem name={cards[i].title.toLowerCase()} href={cards[i].link} description={cards[i].description.toLowerCase()} img={cards[i].image} meta={metas[i]} local=true/>

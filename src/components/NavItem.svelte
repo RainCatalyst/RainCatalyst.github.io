@@ -2,6 +2,7 @@
     export let text;
     export let href;
     export let local = false;
+    export let img;
 </script>
 
 {#if local}
@@ -10,8 +11,13 @@
             <div>
                 >
             </div>
-            <div class="link">
-                {text}
+            <div class="flex flex-row gap-3">
+                <div class="link">
+                    {text}
+                </div>
+                {#if img != null}
+                    <img src={img} class="h-[1em]" alt="">
+                {/if}
             </div>
         </div>
     </a>
@@ -21,8 +27,13 @@
             <div>
                 >
             </div>
-            <div class="link">
-                {text}
+            <div class="flex flex-row items-center gap-3">
+                <div class="link">
+                    {text}
+                </div>
+                {#if img != null}
+                    <img src={img} class="h-[1em]" alt="">
+                {/if}
             </div>
         </div>
     </a>

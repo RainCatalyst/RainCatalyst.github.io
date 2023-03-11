@@ -5,8 +5,8 @@ var projects =
             "title": "Paleo Pines",
             "description": "Dinosaur themed ranching game",
             "image": "img/paleo/logo_wide.jpg",
-            "hoverImage": "img/constellations/gameplay.mp4",
-            "link": "#/paleo"
+            "hoverImage": "",
+            "link": "#/paleo",
         },
         "description": {
             "title": "Constellations",
@@ -31,8 +31,9 @@ var projects =
             "title": "Constellations",
             "description": "Minimalist puzzle game about connecting stars",
             "image": "img/constellations/logo_high.png",
-            "hoverImage": "img/constellations/gameplay.mp4",
-            "link": "https://store.steampowered.com/app/1819520/Constellations_Puzzles_in_the_Sky/"
+            "hoverImage": "",
+            "link": "https://store.steampowered.com/app/1819520/Constellations_Puzzles_in_the_Sky/",
+            "source": "img/other/steam.svg"
         },
         "description": {
             "title": "Constellations",
@@ -54,11 +55,40 @@ var projects =
     },
     {
         "card": {
+            "title": "Palchemy",
+            "description": "Cute potion brewing puzzle",
+            "image": "img/palchemy/logo.png",
+            "hoverImage": "img/palchemy/gameplay.mp4",
+            "link": "https://github.com/FreezedRain/Palchemy",
+            "source": "img/other/github.svg"
+        },
+        "description": {
+            "title": "Retro Rift",
+            "description": "Retro rift is a fast-paced precision platformer with time travel mechanics.<br><br>This was a week-long project I made in collaboration with my friend. I was behind the game’s movement code and designed most of the levels.<br><br>The game has received the 9th place (out of nearly 1800 entires) at <a href='https://itch.io/jam/brackeys-4/rate/719663' class='link'>Brackeys Jam 2020.2</a>.",
+            "contribution": "This was a week-long project I made in collaboration with my friend. I was behind game’s movement code and designed most of the levels.",
+            "video": "img/retrorift/gameplay.mp4",
+            "images": [
+                "img/retrorift/1.png",
+                "img/retrorift/2.png",
+                "img/retrorift/3.png"
+            ]
+        },
+        "meta": {
+            "teamSize": 2,
+            "team": "Icedrop Games",
+            "role": "Programming, Game Design, Shaders",
+            "tools": "Unity, C#",
+            "timeSpan": "2 weeks"
+        }
+    },
+    {
+        "card": {
             "title": "Retro Rift",
             "description": "Fast-paced platformer with time travel mechanics",
             "image": "img/retrorift/logo.png",
             "hoverImage": "img/retrorift/gameplay.mp4",
-            "link": "https://freezedice.itch.io/retrorift"
+            "link": "https://freezedice.itch.io/retrorift",
+            "source": "img/other/itch.svg"
         },
         "description": {
             "title": "Retro Rift",
@@ -82,10 +112,11 @@ var projects =
     {
         "card": {
             "title": "Sneks",
-            "description": "Classic snakes meets Rush Hour",
+            "description": "Classic snake meets Rush Hour",
             "image": "img/sneks/logo.png",
             "hoverImage": "img/sneks/gameplay.mp4",
-            "link": "https://freezedice.itch.io/sneks"
+            "link": "https://github.com/FreezedRain/Sneks",
+            "source": "img/other/github.svg"
         },
         "description": {
             "title": "Sneks",
@@ -111,7 +142,8 @@ var projects =
             "description": "Tile flipping nautical puzzle",
             "image": "img/flipseas/logo.png",
             "hoverImage": "img/flipseas/gameplay.mp4",
-            "link": "https://freezedice.itch.io/flip-and-seas"
+            "link": "https://github.com/RainCatalyst/FlipnSeas",
+            "source": "img/other/github.svg"
         },
         "description": {
             "title": "Flip'n Seas",
@@ -136,7 +168,8 @@ var projects =
             "description": "Relaxing golf game",
             "image": "img/treegolf/logo.png",
             "hoverImage": "img/treegolf/gameplay.mp4",
-            "link": "https://freezedice.itch.io/tree-golf"
+            "link": "https://freezedice.itch.io/tree-golf",
+            "source": "img/other/itch.svg"
         },
         "description": {
             "title": "Tree Golf",
@@ -158,10 +191,11 @@ var projects =
     {
         "card": {
             "title": "Other Games",
-            "description": "My itch.io profile",
+            "description": "Listed on the itch.io page",
             "image": "img/other/nw.png",
-            "hoverImage": "img/other/logo.png",
-            "link": "https://freezedice.itch.io/"
+            "hoverImage": "",
+            "link": "https://freezedice.itch.io/",
+            "source": "img/other/itch.svg"
         },
         "description": {
             "title": "Other Games",

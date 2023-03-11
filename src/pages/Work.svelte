@@ -16,7 +16,7 @@
             </video>
         </div>
         <br>
-        I'm currently employed as a Gameplay Programmer at <a href="https://italicpig.com/" target="_blank" rel="noopener noreferrer" class="link">Italic Pig</a>, working on the upcoming title <a href="https://store.steampowered.com/app/1202200/Paleo_Pines/" class="link" target="_blank" rel="noopener noreferrer">Paleo Pines</a>. I’m primarily responsible for implementing different gameplay systems, however I often get involved in things outside of programming as well. You can read more about my experience <a href="/italic" class="link">here</a>.
+        I'm currently employed as a Gameplay Programmer at <a href="https://italicpig.com/" target="_blank" rel="noopener noreferrer" class="link">Italic Pig</a>, working on the upcoming title <a href="https://store.steampowered.com/app/1202200/Paleo_Pines/" class="link" target="_blank" rel="noopener noreferrer">Paleo Pines</a>. I’m primarily responsible for implementing different gameplay systems, however I often get involved in things outside of programming as well. You can read more about my experience <a href="/paleo" class="link">here</a>.
         <br><br>
         <div class="image-group">
             <img src="img/icedrop/logo.png" class="image-item">
