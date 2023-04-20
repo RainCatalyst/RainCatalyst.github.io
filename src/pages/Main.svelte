@@ -1,28 +1,26 @@
 <script>
     import NavItem from "../components/NavItem.svelte";
-
-    import {cards, metas} from "../data/projects"
 </script>
 
-<div class="content-side">
-    <div class="text-4xl font-bold">
+<div class="content-side select-none">
+    <div class="text-3xl font-bold">
         Hi, I'm Arseny.
     </div>
-    <div class="font-light">
+    <div class="font-light text-xl">
         A gameplay programmer with a passion for game design and tech art.
     </div>
-    <div class="font-light mt-3">
+    <div class="font-light mt-3 text-xl">
         About me —
     </div>
-    <div class="item-group">
+    <div class="item-group text-xl">
         <NavItem text="work and experience" href="/work" local=true/>
         <!-- <NavItem text="experience" href="/experience" local=true/> -->
         <NavItem text="projects" href="/games" local=true/>
     </div>
-    <div class="font-light mt-3">
+    <div class="font-light mt-3 text-xl">
         Reach me —
     </div>
-    <div class="item-group">
+    <div class="item-group text-xl">
         <a href="files/CV.pdf" download="ArsenyDremin_CV.pdf" target="_blank" rel="noopener noreferrer">
             <div class="flex flex-row items-start justify-start font-code font-light gap-3">
                 <div>

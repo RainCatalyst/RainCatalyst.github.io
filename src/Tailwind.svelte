@@ -16,7 +16,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   touch-action: none;
-  @apply select-none bg-black;
+  @apply bg-black;
 }
 
 main {
@@ -49,7 +49,7 @@ main {
 }
 
 .header-box {
-  @apply text-2xl font-bold;
+  @apply text-2xl font-bold select-none;
 }
 
 .image-group {
@@ -57,19 +57,19 @@ main {
 }
 
 .image-item {
-  @apply rounded-lg outline-2 outline outline-white max-h-[250px];
+  @apply rounded-lg outline-2 outline outline-white max-h-[250px] select-none;
 }
 
 .content-main {
-  @apply w-screen h-auto min-h-screen m-0 md:px-40 px-10 text-2xl flex flex-row;
+  @apply w-screen h-auto min-h-screen m-0 md:px-40 px-10 flex flex-row;
 }
 
 .content-page {
-  @apply w-screen h-auto min-h-screen m-0 2xl:px-[500px] lg:px-40 px-10 text-2xl flex flex-row justify-center;
+  @apply w-screen h-auto min-h-screen m-0 2xl:px-[300px] lg:px-40 px-10 text-2xl flex flex-row justify-center;
 }
 
 .content-side {
-  @apply md:w-1/3 w-2/3 h-auto flex flex-col items-start justify-center gap-1;
+  @apply md:w-2/5 w-2/3 h-auto flex flex-col items-start justify-center gap-1;
 }
 
 .content-full {

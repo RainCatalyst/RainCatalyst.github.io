@@ -12,13 +12,15 @@
     {#each {length: 2} as _, i}
         <ProjectItem title={cards[i].title} href={cards[i].link} video={cards[i].hoverImage} description={cards[i].description} img={cards[i].image} source={cards[i].source} meta={metas[i]} />
     {/each}
-    <div class="header-box mb-2">
+    <!-- <div class="h-[1px] w-1/2 bg-white rounded-sm mt-8 self-center"></div> -->
+    <div class="header-box mb-2 mt-8">
         Games from game jams
     </div>
     {#each {length: 6} as _, i}
         <ProjectItem title={cards[i+2].title} href={cards[i+2].link} video={cards[i+2].hoverImage} description={cards[i+2].description} img={cards[i+2].image} source={cards[i+2].source}  meta={metas[i+2]} />
     {/each}
-    <div class="header-box mb-2">
+    <!-- <div class="h-[1px] w-1/2 bg-white rounded-sm mt-8 self-center"></div> -->
+    <div class="header-box mb-2 mt-8">
         Technical Art
     </div>
     <div class="flex flex-row flex-wrap justify-between gap-4 my-4">

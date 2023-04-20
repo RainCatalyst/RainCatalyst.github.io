@@ -7,7 +7,7 @@
 
 <div class="flex flex-col">
     <a {href} target="_blank" rel="noopener noreferrer">
-        <div class="flex flex-row items-start justify-start font-code font-light gap-3">
+        <div class="flex flex-row items-start justify-start font-code font-light gap-3 select-none">
             <div>
                 >
             </div>
