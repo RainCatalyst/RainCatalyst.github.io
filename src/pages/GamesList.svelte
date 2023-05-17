@@ -27,7 +27,7 @@
         <div class="">
             <NavItem text="Visual Effects" href="https://www.artstation.com/raincatalyst" />
             <div class="text-base h-auto w-full text-start leading-relaxed mt-2 font-light">
-                My Artstation portfolio.<br>Featuring a mix of realtime and film VFX.<br><br>
+                Artstation portfolio featuring a mix of realtime and film VFX.<br><br>
                 <b>Tools:</b> Unity, Houdini, Blender
             </div>
         </div>

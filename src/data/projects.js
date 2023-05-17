@@ -55,6 +55,34 @@ var projects =
     },
     {
         "card": {
+            "title": "Postal Town",
+            "description": "Minimalist mail delivery arcade made for Ludum Dare #53",
+            "image": "img/palchemy/logo.png",
+            "hoverImage": "img/postaltown/gameplay.mp4",
+            "link": "https://freezedice.itch.io/postal-town",
+            "source": "img/other/itch.svg"
+        },
+        "description": {
+            "title": "Retro Rift",
+            "description": "Retro rift is a fast-paced precision platformer with time travel mechanics.<br><br>This was a week-long project I made in collaboration with my friend. I was behind the game’s movement code and designed most of the levels.<br><br>The game has received the 9th place (out of nearly 1800 entires) at <a href='https://itch.io/jam/brackeys-4/rate/719663' class='link'>Brackeys Jam 2020.2</a>.",
+            "contribution": "This was a week-long project I made in collaboration with my friend. I was behind game’s movement code and designed most of the levels.",
+            "video": "img/retrorift/gameplay.mp4",
+            "images": [
+                "img/retrorift/1.png",
+                "img/retrorift/2.png",
+                "img/retrorift/3.png"
+            ]
+        },
+        "meta": {
+            "teamSize": 3,
+            "team": "Icedrop Games",
+            "role": "Programming, Game Design",
+            "tools": "Unity, C#",
+            "timeSpan": "72 hours"
+        }
+    },
+    {
+        "card": {
             "title": "Palchemy",
             "description": "Cute potion brewing puzzle",
             "image": "img/palchemy/logo.png",
