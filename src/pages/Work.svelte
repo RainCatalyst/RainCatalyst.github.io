@@ -7,7 +7,7 @@
         Work and experience
     </div>
     <div class="text-box mb-2">
-        Hey! I'm a Game Programmer based in Stockholm. I have an education in Computer Science supported by practical experience working professionally and participating in game jams.
+        Hey! I'm a Computer Science student making games and working on personal projects in my free time.
         <br>
         I primarily use <b>Unity and C#</b>, but I also have a fair amount of experience working with <b>C++ (including OpenGL), Lua and HLSL</b>.<br>
         <br>
@@ -28,10 +28,10 @@
         </div>
         <br>    
         Throughout the years participating in game jams I have published <a href="https://freezedice.itch.io/" target="_blank" rel="noopener noreferrer" class="link">over 15 projects</a> of various scope and made countless prototypes (most of which can be seen in the reel). One of my projects is <a href="https://store.steampowered.com/app/1819520/Constellations_Puzzles_in_the_Sky/" target="_blank" rel="noopener noreferrer" class="link">now released on Steam</a> and another one is coming there soon with a <a href="https://store.steampowered.com/app/2207440/LOK_Digital/" target="_blank" rel="noopener noreferrer" class="link">playable demo</a> available now.
+        <!--Feel free to look at the <a href="/games" class="link">full list of my projects</a> (including some source code).-->
         <br>
         <br>
-        Feel free to look at the <a href="/games" class="link">full list of my projects</a> (including some source code).
-        <!-- Recently, my friend and I have established <a href="https://icedropgames.com/" target="_blank" rel="noopener noreferrer" class="link">Icedrop</a>, a 2-person brand / studio for the games we have made together. Read more about our projects and my involvement <a href="/games" class="link">here</a>. -->
+        Recently, my friend and I have established <a href="https://icedropgames.com/" target="_blank" rel="noopener noreferrer" class="link">Icedrop</a>, a 2-person brand / studio for the games we have made together. Read more about our projects and my involvement <a href="/games" class="link">here</a>.
         <br>
         <br>
         Below you can find a list of tools that I've had experience using, but I'm always open to learning new ones!

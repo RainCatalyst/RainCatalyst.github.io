@@ -7,7 +7,7 @@
         Hi, I'm Arseny.
     </div>
     <div class="font-light text-xl">
-        A gameplay programmer with a passion for game design and tech art.
+        A game programmer and computer science student with a passion for game design and tech art.
     </div>
     <div class="font-light mt-3 text-xl">
         About me —
