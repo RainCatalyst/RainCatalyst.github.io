@@ -15,7 +15,8 @@
     <div class="item-group text-xl">
         <NavItem text="work and experience" href="/work" local=true/>
         <!-- <NavItem text="experience" href="/experience" local=true/> -->
-        <NavItem text="projects" href="/games" local=true/>
+        <NavItem text="games" href="/games" local=true/>
+        <NavItem text="art" href="/art" local=true/>
     </div>
     <div class="font-light mt-3 text-xl">
         Reach me —

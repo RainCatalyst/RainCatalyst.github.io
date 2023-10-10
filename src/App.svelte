@@ -7,6 +7,7 @@
     import GamesList from "./pages/GamesList.svelte";
     import Paleo from "./pages/Paleo.svelte";
     import Work from "./pages/Work.svelte";
+    import Art from "./pages/Art.svelte";
     import Transition from "./components/Transition.svelte";
 
     router.mode.hash();
@@ -31,6 +32,12 @@
             <div class="background"></div>
             <div class="content-page">
                 <GamesList/>
+            </div>
+        </Route>
+        <Route path="/art">
+            <div class="background"></div>
+            <div class="content-page">
+                <Art/>
             </div>
         </Route>
         <Route path="/paleo">

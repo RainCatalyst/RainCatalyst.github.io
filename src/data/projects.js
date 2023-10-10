@@ -6,7 +6,8 @@ var projects =
             "description": "Dinosaur themed ranching game",
             "image": "img/paleo/logo_wide.jpg",
             "hoverImage": "",
-            "link": "#/paleo",
+            "link": "https://store.steampowered.com/app/1202200/Paleo_Pines/",
+            "source": "img/other/steam.svg"
         },
         "description": {
             "title": "Constellations",
@@ -56,7 +57,7 @@ var projects =
     {
         "card": {
             "title": "Postal Town",
-            "description": "Minimalist mail delivery arcade made for Ludum Dare #53",
+            "description": "Minimalist mail delivery arcade made for Ludum Dare",
             "image": "img/palchemy/logo.png",
             "hoverImage": "img/postaltown/gameplay.mp4",
             "link": "https://freezedice.itch.io/postal-town",
