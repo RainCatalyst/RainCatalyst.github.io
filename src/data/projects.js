@@ -20,11 +20,11 @@ var projects =
             ]
         },
         "meta": {
-            "teamSize": "20+",
+            "teamSize": "Italic Pig, 20+",
             "team": "Italic Pig",
             "role": "Gameplay Programming",
             "tools": "Unity, C#",
-            "timeSpan": "2021-now"
+            "timeSpan": "2021-2023"
         }
     },
     {
@@ -82,31 +82,56 @@ var projects =
             "timeSpan": "72 hours"
         }
     },
-    {
+        {
         "card": {
-            "title": "Palchemy",
-            "description": "Cute potion brewing puzzle",
-            "image": "img/palchemy/logo.png",
-            "hoverImage": "img/palchemy/gameplay.mp4",
-            "link": "https://github.com/FreezedRain/Palchemy",
+            "title": "Flip'n Seas",
+            "description": "Tile flipping nautical puzzle",
+            "image": "img/flipseas/logo.png",
+            "hoverImage": "img/flipseas/gameplay.mp4",
+            "link": "https://github.com/RainCatalyst/FlipnSeas",
             "source": "img/other/github.svg"
         },
         "description": {
-            "title": "Retro Rift",
-            "description": "Retro rift is a fast-paced precision platformer with time travel mechanics.<br><br>This was a week-long project I made in collaboration with my friend. I was behind the game’s movement code and designed most of the levels.<br><br>The game has received the 9th place (out of nearly 1800 entires) at <a href='https://itch.io/jam/brackeys-4/rate/719663' class='link'>Brackeys Jam 2020.2</a>.",
-            "contribution": "This was a week-long project I made in collaboration with my friend. I was behind game’s movement code and designed most of the levels.",
-            "video": "img/retrorift/gameplay.mp4",
+            "title": "Flip'n Seas",
+            "description": "Flip’n Seas is a tactile puzzle about flipping tiles to lead your ship to a treasure.<br><br>This is a personal project, I was responsible for all aspects of the game, except for the tile art.<br>You find out more on the <a href='https://itch.io/jam/godot-wild-jam-45/rate/1536621' class='link'>game's page</a>.",
+            "video": "img/flipseas/gameplay.mp4",
             "images": [
-                "img/retrorift/1.png",
-                "img/retrorift/2.png",
-                "img/retrorift/3.png"
+                "img/flipseas/1.png",
+                "img/flipseas/2.png"
+            ]
+        },
+        "meta": {
+            "teamSize": 2,
+            "team": "Icedrop Games",
+            "role": "Programming, Game & Level Design, Shaders",
+            "tools": "Unity, Blender",
+            "timeSpan": "4 weeks"
+        }
+    },
+    {
+        "card": {
+            "title": "Sneks",
+            "description": "Classic snake meets Rush Hour",
+            "image": "img/sneks/logo.png",
+            "hoverImage": "img/sneks/gameplay.mp4",
+            "link": "https://github.com/FreezedRain/Sneks",
+            "source": "img/other/github.svg"
+        },
+        "description": {
+            "title": "Sneks",
+            "description": "Sneks is a cute puzzle inspired by the classic snake game.<br><br>Sneks was made over the month-long <a href='https://itch.io/jam/godot-wild-jam-45/rate/1536621' class='link'>Godot Wild Jam #45</a>. I was responsible for the game’s internal logic and smooth line rendering for snakes, as well as helped design some levels and mechanics.",
+            "video": "img/sneks/gameplay.mp4",
+            "images": [
+                "img/sneks/1.png",
+                "img/sneks/2.png",
+                "img/sneks/3.png"
             ]
         },
         "meta": {
             "teamSize": 2,
             "team": "Icedrop Games",
             "role": "Programming, Game Design, Shaders",
-            "tools": "Unity, C#",
+            "tools": "Godot",
             "timeSpan": "2 weeks"
         }
     },
@@ -140,59 +165,6 @@ var projects =
     },
     {
         "card": {
-            "title": "Sneks",
-            "description": "Classic snake meets Rush Hour",
-            "image": "img/sneks/logo.png",
-            "hoverImage": "img/sneks/gameplay.mp4",
-            "link": "https://github.com/FreezedRain/Sneks",
-            "source": "img/other/github.svg"
-        },
-        "description": {
-            "title": "Sneks",
-            "description": "Sneks is a cute puzzle inspired by the classic snake game.<br><br>Sneks was made over the month-long <a href='https://itch.io/jam/godot-wild-jam-45/rate/1536621' class='link'>Godot Wild Jam #45</a>. I was responsible for the game’s internal logic and smooth line rendering for snakes, as well as helped design some levels and mechanics.",
-            "video": "img/sneks/gameplay.mp4",
-            "images": [
-                "img/sneks/1.png",
-                "img/sneks/2.png",
-                "img/sneks/3.png"
-            ]
-        },
-        "meta": {
-            "teamSize": 2,
-            "team": "Icedrop Games",
-            "role": "Programming, Game Design, Shaders",
-            "tools": "Godot",
-            "timeSpan": "2 weeks"
-        }
-    },
-    {
-        "card": {
-            "title": "Flip'n Seas",
-            "description": "Tile flipping nautical puzzle",
-            "image": "img/flipseas/logo.png",
-            "hoverImage": "img/flipseas/gameplay.mp4",
-            "link": "https://github.com/RainCatalyst/FlipnSeas",
-            "source": "img/other/github.svg"
-        },
-        "description": {
-            "title": "Flip'n Seas",
-            "description": "Flip’n Seas is a tactile puzzle about flipping tiles to lead your ship to a treasure.<br><br>This is a personal project, I was responsible for all aspects of the game, except for the tile art.<br>You find out more on the <a href='https://itch.io/jam/godot-wild-jam-45/rate/1536621' class='link'>game's page</a>.",
-            "video": "img/flipseas/gameplay.mp4",
-            "images": [
-                "img/flipseas/1.png",
-                "img/flipseas/2.png"
-            ]
-        },
-        "meta": {
-            "teamSize": 2,
-            "team": "Icedrop Games",
-            "role": "Programming, Game & Level Design, Shaders",
-            "tools": "Unity, Blender",
-            "timeSpan": "4 weeks"
-        }
-    },
-    {
-        "card": {
             "title": "Tree Golf",
             "description": "Relaxing golf game",
             "image": "img/treegolf/logo.png",
@@ -215,6 +187,34 @@ var projects =
             "role": "Programming, Game & Level Design",
             "tools": "Godot",
             "timeSpan": "1 week"
+        }
+    },
+    {
+        "card": {
+            "title": "Palchemy",
+            "description": "Cute potion brewing puzzle",
+            "image": "img/palchemy/logo.png",
+            "hoverImage": "img/palchemy/gameplay.mp4",
+            "link": "https://github.com/FreezedRain/Palchemy",
+            "source": "img/other/github.svg"
+        },
+        "description": {
+            "title": "Retro Rift",
+            "description": "Retro rift is a fast-paced precision platformer with time travel mechanics.<br><br>This was a week-long project I made in collaboration with my friend. I was behind the game’s movement code and designed most of the levels.<br><br>The game has received the 9th place (out of nearly 1800 entires) at <a href='https://itch.io/jam/brackeys-4/rate/719663' class='link'>Brackeys Jam 2020.2</a>.",
+            "contribution": "This was a week-long project I made in collaboration with my friend. I was behind game’s movement code and designed most of the levels.",
+            "video": "img/retrorift/gameplay.mp4",
+            "images": [
+                "img/retrorift/1.png",
+                "img/retrorift/2.png",
+                "img/retrorift/3.png"
+            ]
+        },
+        "meta": {
+            "teamSize": 2,
+            "team": "Icedrop Games",
+            "role": "Programming, Game Design, Shaders",
+            "tools": "Unity, C#",
+            "timeSpan": "2 weeks"
         }
     },
     {
