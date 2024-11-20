@@ -7,7 +7,7 @@
         Work and experience
     </div>
     <div class="text-box mb-2">
-        Hey! I'm a Computer Science student making games and working on personal projects in my free time.
+        Hey! I'm a Computer Science student making games, art and working on personal projects in my free time.
         <br>
         I primarily use <b>Unity/Godot C#</b>, but I also have a fair amount of experience working with <b>C++ (including OpenGL), Python, Lua and HLSL</b>.<br>
         <br>
@@ -18,7 +18,7 @@
             </video>
         </div>
         <br>
-        Before joining the university, I was employed for 1.5 years as a Gameplay Programmer at <a href="https://italicpig.com/" target="_blank" rel="noopener noreferrer" class="link">Italic Pig</a>, working on <a href="https://store.steampowered.com/app/1202200/Paleo_Pines/" class="link" target="_blank" rel="noopener noreferrer">Paleo Pines</a>. My main responsibility is implementing gameplay systems, but I also often get involved in tasks outside programming. You can read more about my experience <a href="/paleo" class="link">here</a>.
+        Before joining the university, I was employed for around 2 years as a Gameplay Programmer at <a href="https://italicpig.com/" target="_blank" rel="noopener noreferrer" class="link">Italic Pig</a>, working on <a href="https://store.steampowered.com/app/1202200/Paleo_Pines/" class="link" target="_blank" rel="noopener noreferrer">Paleo Pines</a>. My main responsibility is implementing gameplay systems, but I also often get involved in tasks outside programming. You can read more about my experience <a href="/paleo" class="link">here</a>.
         <br><br>
         <div class="image-group">
             <!-- <img src="img/icedrop/logo.png" class="image-item"> -->
@@ -28,7 +28,7 @@
         </div>
         <br>
         <br>
-        Besides gamedev, I'm also excited to do general software development! I'm currently helping with developing a C++ <a href="https://github.com/RainCatalyst/ZeusRenderer" class="link" target="_blank" rel="noopener noreferrer">Pathtracing Render Engine</a> as a part of the Computer Graphics department at my university. 
+        I also do quite a lot of technical art, making shaders and custom tools for my games and other projects. I'm currently helping with developing a C++ <a href="https://github.com/RainCatalyst/ZeusRenderer" class="link" target="_blank" rel="noopener noreferrer">Pathtracing Render Engine</a> as a part of the Computer Graphics department at my university. 
         <br>
         <br><br>
         <div class="image-group">
@@ -43,14 +43,11 @@
         <!--Feel free to look at the <a href="/games" class="link">full list of my projects</a> (including some source code).-->
         <br>
         <br>
-        Recently, my friend and I have established <a href="https://icedropgames.com/" target="_blank" rel="noopener noreferrer" class="link">Icedrop</a>, a 2-person brand / studio for the games we have made together. Read more about our projects and my involvement <a href="/games" class="link">here</a>.
-        <br>
-        <br>
         Below you can find a list of tools that I've had experience using, but I'm always open to learning new ones!
         <br>
         <b>Languages:</b> C#, C++, HLSL, Python, GDScript<br>
         <b>Game Engines:</b> Unity, Godot, Unreal Engine<br>
-        <b>Tools:</b> Blender, Houdini, Aseprite, Krita
+        <b>Tools:</b> Blender, Houdini, Aseprite, Krita, Substance Designer
     </div>
     <NavItem text="back" href="/" local=true/>
 </div>
