@@ -46,5 +46,12 @@
                 <Paleo/>
             </div>
         </Route>
+        <Route path="/wikicrawl">
+            <script>
+                onMount(() => {
+                    window.location.href = "/wikicrawl/index.html";
+                });
+            </script>
+        </Route>
     </Transition>
 </main>
