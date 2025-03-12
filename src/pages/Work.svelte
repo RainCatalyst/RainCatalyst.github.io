@@ -7,9 +7,9 @@
         Work and experience
     </div>
     <div class="text-box mb-2">
-        Hey! I'm a Computer Science student making games, art and working on personal projects in my free time.
+        Hey! I'm currently a freelance developer, I also do art and work on personal projects in my free time.
         <br>
-        I primarily use <b>Unity/Godot C#</b>, but I also have a fair amount of experience working with <b>C++ (including OpenGL), Python, Lua and HLSL</b>.<br>
+        I primarily use <b>Unity C# or Godot</b>, but I also have a fair amount of experience working with <b>C++ (including OpenGL), Python, Lua and HLSL</b>.<br>
         <br>
         <div class="image-group">
             <img src="img/paleo/game.png" class="image-item">
@@ -18,7 +18,7 @@
             </video>
         </div>
         <br>
-        Before joining the university, I was employed for around 2 years as a Gameplay Programmer at <a href="https://italicpig.com/" target="_blank" rel="noopener noreferrer" class="link">Italic Pig</a>, working on <a href="https://store.steampowered.com/app/1202200/Paleo_Pines/" class="link" target="_blank" rel="noopener noreferrer">Paleo Pines</a>. My main responsibility is implementing gameplay systems, but I also often get involved in tasks outside programming. You can read more about my experience <a href="/paleo" class="link">here</a>.
+        Previously, I was employed for around 2 years as a Gameplay Programmer at <a href="https://italicpig.com/" target="_blank" rel="noopener noreferrer" class="link">Italic Pig</a>, working on <a href="https://store.steampowered.com/app/1202200/Paleo_Pines/" class="link" target="_blank" rel="noopener noreferrer">Paleo Pines</a>. My main responsibility is implementing gameplay systems, but I also often get involved in tasks outside programming. You can read more about my experience <a href="/paleo" class="link">here</a>.
         <br><br>
         <div class="image-group">
             <!-- <img src="img/icedrop/logo.png" class="image-item"> -->
