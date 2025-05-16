@@ -31,5 +31,5 @@
     <div class="item-group mt-2 pb-2 gap-2 w-full">
         <LinkNavItem name="personal" href="https://freezedice.itch.io" description="games from game jams and other related projects" />
     </div> -->
-    <NavItem text="back" href="/" local=true/>
+    <NavItem text="back" href="/gamedev" local=true/>
 </div>

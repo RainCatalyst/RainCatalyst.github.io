@@ -31,5 +31,5 @@
             <source src="img/art/slime.mp4" type="video/mp4">
         </video>
     </div>
-    <NavItem text="back" href="/" local=true/>
+    <NavItem text="back" href="/gamedev" local=true/>
 </div>

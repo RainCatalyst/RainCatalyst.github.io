@@ -4,6 +4,7 @@
     
     import {Route,router,active} from 'tinro'; 
     import Main from "./pages/Main.svelte";
+    import FrontPage from "./pages/FrontPage.svelte";
     import GamesList from "./pages/GamesList.svelte";
     import Paleo from "./pages/Paleo.svelte";
     import Work from "./pages/Work.svelte";
@@ -18,6 +19,9 @@
     <Background/>
     <Transition>
         <Route path="/">
+            <FrontPage/>
+        </Route>
+        <Route path="/gamedev">
             <div class="content-main">
                 <Main/>
             </div>

@@ -24,5 +24,5 @@
         <br><br>
         You can find the game's steam page <a class="link" target="_blank" rel="noopener noreferrer" href="https://store.steampowered.com/app/1202200/Paleo_Pines/">here</a>.
     </div>
-    <NavItem text="back" href="/" local=true/>
+    <NavItem text="back" href="/gamedev" local=true/>
 </div>

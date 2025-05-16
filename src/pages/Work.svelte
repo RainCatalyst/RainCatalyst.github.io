@@ -49,5 +49,5 @@
         <b>Game Engines:</b> Unity, Godot, Unreal Engine<br>
         <b>Tools:</b> Blender, Houdini, Aseprite, Krita, Substance Designer
     </div>
-    <NavItem text="back" href="/" local=true/>
+    <NavItem text="back" href="/gamedev" local=true/>
 </div>

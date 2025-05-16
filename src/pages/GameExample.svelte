@@ -21,5 +21,5 @@
         <LinkNavItem name="steam" href="https://store.steampowered.com/app/1819520/Constellations_Puzzles_in_the_Sky/" />
         <LinkNavItem name="itchio" href="https://icedropgames.itch.io/constellations" />
     </div>
-    <NavItem text="back" href="/" local=true/>
+    <NavItem text="back" href="/gamedev" local=true/>
 </div>
