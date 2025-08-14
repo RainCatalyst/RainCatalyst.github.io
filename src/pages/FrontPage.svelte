@@ -84,44 +84,73 @@
 </svelte:head>
 
 <style>
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  position: relative;
+  padding-left: 1.5rem; /* space for bullet */
+}
+
+.list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 1.0rem;
+  height: 1.0rem;
+  background-image: url("/img/dot.svg"); /* custom bullet SVG */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.title-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  object-fit: contain;
+}
+
+.media-preview {
+  width: 12rem;
+  height: 8rem;
+  margin-left: 4rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  flex-shrink: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
   .list-item {
-    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
-    position: relative;
-    padding-left: 1.5rem; /* space for bullet */
   }
-  .list-item::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.35em;
-    width: 1.0rem;
-    height: 1.0rem;
-    background-image: url("/img/dot.svg"); /* your custom bullet SVG */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .title-with-icon {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem; /* space between title and icon */
-  }
-  .title-icon {
-    width: 1.25rem;
-    height: 1.25rem;
-    object-fit: contain;
-  }
+
   .media-preview {
-    width: 12rem;
-    height: 8rem;
-    margin-left: 4rem;
-    object-fit: cover;
-    border-radius: 0.25rem;
-    flex-shrink: 0;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: auto;
+    max-height: 12rem; /* optional: keep proportions reasonable */
   }
+
+  /* Education & work images */
+  .list-item img:not(.title-icon) {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: auto;
+    max-height: 12rem;
+  }
+}
 </style>
 
 <div class="min-h-screen min-w-screen bg-[#0d0d0d] text-[#e4e4e4] font-sans flex justify-center items-start py-10 box-border">
