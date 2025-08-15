@@ -40,18 +40,32 @@
       icon: "/img/other/github.svg"
     },
     {
-      name: "UmaMusume Skill Optimizer",
-      url: "https://github.com/RainCatalyst/UmaOptimizer",
-      description: "A Python + Streamlit app using a genetic algorithm to optimize Uma Musume decks. Runs both on Streamlit and as a standalone site.",
-      icon: "/img/other/github.svg"
-    },
-    {
       name: "Game Portfolio",
       url: "https://freezedice.itch.io/",
       description: "Over 15 small to mid-scale games, from jam entries to experimental prototypes.",
       video: "/img/projects/reel_all.mp4",
       icon: "/img/other/itch.svg"
     },
+    {
+      name: "Ankidot",
+      url: "https://github.com/RainCatalyst/Ankidot",
+      description: "A Godot & Anki integration for interactive language learning.",
+      video: "/img/projects/ankidot.mp4",
+      icon: "/img/other/github.svg"
+    },
+    {
+      name: "VFX Portfolio",
+      url: "https://www.artstation.com/raincatalyst",
+      description: "A mix of real-time and renderered VFX, mostly done in Houdini, Blender or Unity.",
+      video: "/img/projects/vfx.mp4",
+      icon: "/img/other/artstation.svg"
+    },
+    {
+      name: "UmaMusume Skill Optimizer",
+      url: "https://github.com/RainCatalyst/UmaOptimizer",
+      description: "A Python + Streamlit app using a genetic algorithm to optimize Uma Musume decks. Runs both on Streamlit and as a standalone site.",
+      icon: "/img/other/github.svg"
+    }
   ];
 
   const jobs = [
