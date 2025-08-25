@@ -65,6 +65,18 @@
       url: "https://github.com/RainCatalyst/UmaOptimizer",
       description: "A Python + Streamlit app using a genetic algorithm to optimize Uma Musume decks. Runs both on Streamlit and as a standalone site.",
       icon: "/img/other/github.svg"
+    },
+    {
+      name: "NLP Reminder Bot",
+      url: "https://github.com/RainCatalyst/ReminderBot",
+      description: "A Python Telegram bot that can parse human readable dates for reminders",
+      icon: "/img/other/github.svg"
+    },
+    {
+      name: "Language Exercise Bot",
+      url: "https://github.com/RainCatalyst/LanguageExerciseBot",
+      description: "A Telegram bot that helps people practice a language with an LLM integration",
+      icon: "/img/other/github.svg"
     }
   ];
 
@@ -77,10 +89,10 @@
       image: "/img/projects/paleo.png"
     },
     {
-      name: "Lead Developer @ Icedrop Games",
+      name: "Developer @ Icedrop Games",
       extra: "(2022-Now)",
       url: "https://icedropgames.com/#/games",
-      description: "Co-founded a small studio with a friend, releasing multiple titles. I am responsible for Programming and Technical Art at the studio.",
+      description: "Co-founded a small studio with a friend, releasing multiple titles. I am mainly responsible for programming, automation and technical art.",
       image: "/img/projects/icedrop.png"
     },
     {
