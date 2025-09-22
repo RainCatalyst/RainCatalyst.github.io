@@ -13,7 +13,7 @@
     {
       institution: "Saarland University",
       degree: "Bachelor in Computer Science",
-      period: "Graduating in 2025"
+      period: "2023-2025"
     }
   ];
 
