@@ -20,7 +20,7 @@
   const projects = [
     {
       name: "Zeus Renderer",
-      url: "https://github.com/RainCatalyst?tab=repositories",
+      url: "https://github.com/RainCatalyst/ZeusRenderer",
       description: "A custom C++ path-tracing engine with Blender scene import, volumetric rendering, and performance optimizations. Built on a modified Mitsuba v3 architecture.",
       image: "/img/projects/zeus.png",
       icon: "/img/other/github.svg"
@@ -197,8 +197,8 @@
   </div>
 
 <p class="mb-4 text-[#e4e4e4]">
-  Software engineer and game developer with experience in graphics programming, gameplay systems, and full-stack tools. <br><br>
-    I've shipped multiple commercial games on PC and consoles, and I'm currently working on expanding my graphics programming skills.
+  Game developer with experience in graphics programming, gameplay systems.<br><br>
+    I've shipped commercial games on PC and consoles, and I'm currently working on expanding my graphics programming skills.
     I also have experience with general web development, but I'm most focused on gameplay and graphics programming.
 </p>
 
