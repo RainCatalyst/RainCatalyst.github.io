@@ -19,6 +19,13 @@
 
   const projects = [
     {
+      name: "Game Jam Portfolio",
+      url: "https://freezedice.itch.io/",
+      description: "Over 15 small to mid-scale games, mostly made for game jams over the years.",
+      video: "/img/projects/reel_all.mp4",
+      icon: "/img/other/itch.svg"
+    },
+    {
       name: "Zeus Renderer",
       url: "https://github.com/RainCatalyst/ZeusRenderer",
       description: "A custom C++ path-tracing engine with Blender scene import, volumetric rendering, and performance optimizations. Built on a modified Mitsuba v3 architecture.",
@@ -38,13 +45,6 @@
       description: "A simple yet functional C-based raytracer made to run on Arduino with custom integer math, rendered on a monochrome display.",
       image: "/img/projects/arduino.png",
       icon: "/img/other/github.svg"
-    },
-    {
-      name: "Game Portfolio",
-      url: "https://freezedice.itch.io/",
-      description: "Over 15 small to mid-scale games, from jam entries to experimental prototypes.",
-      video: "/img/projects/reel_all.mp4",
-      icon: "/img/other/itch.svg"
     },
     {
       name: "Ankidot",
@@ -82,24 +82,31 @@
 
   const jobs = [
     {
-      name: "C# Gameplay Programmer @ Italic Pig",
-      extra: "(2022-2024)",
-      url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
-      description: "Worked on Paleo Pines, a cozy dinosaur-themed farming sim in Unity. Focused on gameplay systems, with contributions to design and VFX.",
-      image: "/img/projects/paleo.png"
+      name: "Lead Godot C# Programmer @ NDA",
+      extra: "(2025 - Now)",
+      url: "",
+      description: "Lead a small team working on an internal project for a US-based publisher. Unfortunately, I cannot reveal the name of the project or the company yet.",
+      image: ""
     },
     {
       name: "Developer @ Icedrop Games",
-      extra: "(2022-Now)",
+      extra: "(2022 - Now)",
       url: "https://icedropgames.com/#/games",
-      description: "Co-founded a small studio with a friend, releasing multiple titles. I am mainly responsible for programming, automation and technical art.",
+      description: "Co-founded a small studio with a friend, releasing multiple titles. I am mainly responsible for the technical side of the project and shaders/vfx.",
       image: "/img/projects/icedrop.png"
     },
     {
+      name: "Unity Gameplay Programmer @ Italic Pig",
+      extra: "(2022 - 2024)",
+      url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
+      description: "Worked on Paleo Pines, a cozy dinosaur-themed farming sim in Unity. Focused on gameplay systems and automation, as well some custom editor tools.",
+      image: "/img/projects/paleo.png"
+    },
+    {
       name: "Teaching Assistant @ UdS Graphics Lab",
-      extra: "(2024-Now)",
+      extra: "(2024 - 2025)",
       url: "https://graphics.cg.uni-saarland.de/",
-      description: "Assist in designing assignments and developing a custom rendering framework for the Computer Graphics course."
+      description: "I helped design assignments and work on a custom rendering framework for the Computer Graphics course at Saarland University."
     }
   ];
 </script>
@@ -198,12 +205,11 @@
 
 <p class="mb-4 text-[#e4e4e4]">
   Game developer with experience in graphics programming, gameplay systems.<br><br>
-    I've shipped commercial games on PC and consoles, and I'm currently working on expanding my graphics programming skills.
-    I also have experience with general web development, but I'm most focused on gameplay and graphics programming.
+    I've shipped commercial games on PC and consoles, and I'm currently working on my own games and expanding my project management skills.
 </p>
 
 <p class="mb-4 text-[#aaa] text-sm">
-  <strong>Tech stack:</strong> C++, C#, Python, Unity, Godot, GLSL/HLSL, Git, Blender, Arduino, NodeJS, Svelte
+  <strong>Tech stack:</strong> C++, C#, Python, Unity, Godot, GLSL/HLSL, Blender
 </p>
 
   <hr class="border-t border-white my-5" />
