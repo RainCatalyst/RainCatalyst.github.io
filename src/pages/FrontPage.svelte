@@ -2,7 +2,8 @@
   const profile = {
     name: "Arseny Dremin",
     title: "Software engineer and game programmer.",
-    description: "Recent IT graduate based in Germany with a focus on software engineering, graphics programming, and interactive applications. Experienced in building games, rendering engines, and tools across C++, C#, Python, and more. Passionate about solving complex problems and delivering polished, user-focused solutions.",
+    description:
+    "Gameplay and graphics programmer with professional and indie experience shipping games on PC, console, and mobile. Strong focus on gameplay systems, shaders, rendering, and tooling across Unity and Godot.",
     aboutLink: "/about/",
     cvLink: "/files/CV.pdf",
     oldWebsiteLink: "/gamedev",
@@ -14,6 +15,11 @@
       institution: "Saarland University",
       degree: "Bachelor in Computer Science",
       period: "2023-2025"
+    },
+    {
+      institution: "Futuregames Sweden",
+      degree: "Vocational Education",
+      period: "2022-2023"
     }
   ];
 
@@ -21,7 +27,7 @@
     {
       name: "Game Jam Portfolio",
       url: "https://freezedice.itch.io/",
-      description: "Over 15 small to mid-scale games, mostly made for game jams over the years.",
+      description: "A collection of all my game jam games. Over 15 small to mid-scale games, made over the last 8 years.",
       video: "/img/projects/reel_all.mp4",
       icon: "/img/other/itch.svg"
     },
@@ -31,13 +37,6 @@
       description: "A custom C++ path-tracing engine with Blender scene import, volumetric rendering, and performance optimizations. Built on a modified Mitsuba v3 architecture.",
       image: "/img/projects/zeus.png",
       icon: "/img/other/github.svg"
-    },
-    {
-      name: "Constellations",
-      url: "https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-Download-Software/Constellations-2384059.html",
-      description: "A minimalistic puzzle game for PC and Nintendo Switch. I handled all programming, shaders, and technical art.",
-      video: "/img/projects/constellations.mp4",
-      icon: "/img/other/steam.svg"
     },
     {
       name: "Arduino Raytracer",
@@ -80,20 +79,38 @@
     }
   ];
 
+  const featured = [
+    {
+      name: "Paleo Pines",
+      url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
+      description: "Cute dinosaur themed farming sim. I've worked on the gameplay systems and general optimization/bugfixing as a part of the Italic Pig team.",
+      video: "/img/projects/paleo_new.mp4",
+      icon: "/img/other/steam.svg"
+    },
+        {
+      name: "Constellations",
+      url: "https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-Download-Software/Constellations-2384059.html",
+      description: "Minimalistic puzzle game released for PC and Nintendo Switch. I was responsible for all the programming, shaders, and technical art.",
+      video: "/img/projects/constellations.mp4",
+      icon: "/img/other/steam.svg"
+    },
+        {
+      name: "LOK Digital",
+      url: "https://store.steampowered.com/app/2207440/LOK_Digital/",
+      description: "Quirky word search puzzle based on a physical puzzle book. I've worked on some technical art and additional programming for the project.",
+      video: "/img/projects/lok_new.mp4",
+      icon: "/img/other/steam.svg"
+    },
+
+  ];
+
   const jobs = [
     {
-      name: "Lead Godot C# Programmer @ NDA",
+      name: "Lead Godot Programmer @ NDA",
       extra: "(2025 - Now)",
       url: "",
       description: "Lead a small team working on an internal project for a US-based publisher. Unfortunately, I cannot reveal the name of the project or the company yet.",
       image: ""
-    },
-    {
-      name: "Developer @ Icedrop Games",
-      extra: "(2022 - Now)",
-      url: "https://icedropgames.com/#/games",
-      description: "Co-founded a small studio with a friend, releasing multiple titles. I am mainly responsible for the technical side of the project and shaders/vfx.",
-      image: "/img/projects/icedrop.png"
     },
     {
       name: "Unity Gameplay Programmer @ Italic Pig",
@@ -101,6 +118,13 @@
       url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
       description: "Worked on Paleo Pines, a cozy dinosaur-themed farming sim in Unity. Focused on gameplay systems and automation, as well some custom editor tools.",
       image: "/img/projects/paleo.png"
+    },
+    {
+      name: "Developer @ Icedrop Games",
+      extra: "(2022 - Now)",
+      url: "https://icedropgames.com/#/games",
+      description: "Co-founded a small studio with a friend, releasing multiple titles. I am mainly responsible for the technical side of the project and shaders/vfx.",
+      image: "/img/projects/icedrop.png"
     },
     {
       name: "Teaching Assistant @ UdS Graphics Lab",
@@ -152,6 +176,15 @@
 }
 
 .media-preview {
+  width: 18rem;
+  height: 12rem;
+  margin-left: 4rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  flex-shrink: 0;
+}
+
+.media-preview-img {
   width: 12rem;
   height: 8rem;
   margin-left: 4rem;
@@ -204,8 +237,8 @@
   </div>
 
 <p class="mb-4 text-[#e4e4e4]">
-  Game developer with experience in graphics programming, gameplay systems.<br><br>
-    I've shipped commercial games on PC and consoles, and I'm currently working on my own games and expanding my project management skills.
+  Game developer with experience in gameplay systems and graphics programming.<br><br>
+    I've shipped commercial games on PC and consoles. Strong focus on gameplay systems, shaders, rendering, and tooling across Unity and Godot.
 </p>
 
 <p class="mb-4 text-[#aaa] text-sm">
@@ -214,33 +247,38 @@
 
   <hr class="border-t border-white my-5" />
 
-  <section class="my-8">
-    <h2 class="text-2xl font-semibold text-[#e4e4e4] mb-3">Education</h2>
-    <ul class="space-y-4">
-      {#each education as item}
-        <li class="list-item flex items-start justify-between gap-4">
-          <div class="flex-1">
-            <strong class="text-[#e4e4e4]">{item.institution}</strong> - {item.degree} ({item.period})
-          </div>
-          {#if item.image}
-            <img src={item.image} alt={item.institution} class="ml-16 w-32 h-20 object-cover rounded flex-shrink-0" />
-          {/if}
-        </li>
-      {/each}
-    </ul>
-  </section>
-
 <section class="my-8">
-  <h2 class="text-2xl font-semibold text-[#e4e4e4] mb-3">Work</h2>
+  <h2 class="text-2xl font-semibold text-[#e4e4e4] mb-3">Games I've worked on</h2>
   <ul class="space-y-6">
-    {#each jobs as job}
-      <li class="list-item flex items-start justify-between gap-4">
+    {#each featured as project}
+      <li class="list-item">
         <div class="flex-1">
-          <a href={job.url} target="_blank" class="text-blue-400 hover:underline">{job.name}</a> <i>{job.extra}</i>
-          <div>{job.description}</div>
+          <span class="title-with-icon">
+            <a href={project.url} target="_blank" class="text-blue-400 hover:underline">{project.name}</a>
+            {#if project.icon}
+              <img src={project.icon} alt="" class="title-icon" />
+            {/if}
+          </span>
+          <div>{project.description}</div>
         </div>
-        {#if job.image}
-          <img src={job.image} alt={job.name} class="ml-16 w-48 h-32 object-cover rounded flex-shrink-0" />
+
+        <!-- Media: prefers video if provided, falls back to image -->
+        {#if project.video}
+          <video
+            class="media-preview"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src={project.video} type="video/mp4" />
+          </video>
+        {:else if project.image}
+          <img
+            src={project.image}
+            alt={project.name}
+            class="media-preview-img"
+          />
         {:else}
           <img
             src="/img/projects/empty.png"
@@ -253,7 +291,7 @@
 </section>
 
 <section class="my-8">
-  <h2 class="text-2xl font-semibold text-[#e4e4e4] mb-3">Projects</h2>
+  <h2 class="text-2xl font-semibold text-[#e4e4e4] mb-3">Other Projects</h2>
   <ul class="space-y-6">
     {#each projects as project}
       <li class="list-item">
@@ -284,6 +322,44 @@
             alt={project.name}
             class="media-preview"
           />
+        {:else}
+          <img
+            src="/img/projects/empty.png"
+            class="media-preview"
+          />
+        {/if}
+      </li>
+    {/each}
+  </ul>
+</section>
+
+<section class="my-8">
+    <h2 class="text-2xl font-semibold text-[#e4e4e4] mb-3">Education</h2>
+    <ul class="space-y-4">
+      {#each education as item}
+        <li class="list-item flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <strong class="text-[#e4e4e4]">{item.institution}</strong> - {item.degree} ({item.period})
+          </div>
+          {#if item.image}
+            <img src={item.image} alt={item.institution} class="ml-16 w-32 h-20 object-cover rounded flex-shrink-0" />
+          {/if}
+        </li>
+      {/each}
+    </ul>
+  </section>
+
+<section class="my-8">
+  <h2 class="text-2xl font-semibold text-[#e4e4e4] mb-3">Work Experience</h2>
+  <ul class="space-y-6">
+    {#each jobs as job}
+      <li class="list-item flex items-start justify-between gap-4">
+        <div class="flex-1">
+          <a href={job.url} target="_blank" class="text-blue-400 hover:underline">{job.name}</a> <i>{job.extra}</i>
+          <div>{job.description}</div>
+        </div>
+        {#if job.image}
+          <img src={job.image} alt={job.name} class="ml-16 w-48 h-32 object-cover rounded flex-shrink-0" />
         {:else}
           <img
             src="/img/projects/empty.png"
