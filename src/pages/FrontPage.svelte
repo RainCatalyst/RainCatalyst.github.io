@@ -1,14 +1,14 @@
 <script>
-  const profile = {
-    name: "Arseny Dremin",
-    title: "Software engineer and game programmer.",
-    description:
-    "Gameplay and graphics programmer with professional and indie experience shipping games on PC, console, and mobile. Strong focus on gameplay systems, shaders, rendering, and tooling across Unity and Godot.",
-    aboutLink: "/about/",
-    cvLink: "/files/CV.pdf",
-    oldWebsiteLink: "/gamedev",
-    logo: "/favicon.png" // Added logo path
-  };
+const profile = {
+  name: "Arseny Dremin",
+  title: "Gameplay & graphics programmer",
+  description:
+    "Programmer with professional and indie experience shipping games on PC, console, and mobile. Comfortable across gameplay systems, shaders, rendering, and tooling — mainly in Unity and Godot, with lower-level experience in C++ and OpenGL.",
+  aboutLink: "/about/",
+  cvLink: "/files/CV.pdf",
+  oldWebsiteLink: "/gamedev",
+  logo: "/favicon.png"
+};
 
   const education = [
     {
@@ -87,6 +87,13 @@
       video: "/img/projects/paleo_new.mp4",
       icon: "/img/other/steam.svg"
     },
+    {
+      name: "Ultrapool",
+      url: "https://store.steampowered.com/app/4195110/Ultrapool/",
+      description: "Pool-themed Roguelike Deckbuilder made in Godot. Public demo out on Steam with 15k+ wishlists.",
+      video: "/img/projects/ultrapool.mp4",
+      icon: "/img/other/steam.svg"
+    },
         {
       name: "Constellations",
       url: "https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-Download-Software/Constellations-2384059.html",
@@ -105,34 +112,34 @@
   ];
 
   const jobs = [
-    {
-      name: "Lead Godot Programmer @ NDA",
-      extra: "(2025 - Now)",
-      url: "",
-      description: "Lead a small team working on an internal project for a US-based publisher. Unfortunately, I cannot reveal the name of the project or the company yet.",
-      image: ""
-    },
-    {
-      name: "Unity Gameplay Programmer @ Italic Pig",
-      extra: "(2022 - 2024)",
-      url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
-      description: "Worked on Paleo Pines, a cozy dinosaur-themed farming sim in Unity. Focused on gameplay systems and automation, as well some custom editor tools.",
-      image: "/img/projects/paleo.png"
-    },
-    {
-      name: "Developer @ Icedrop Games",
-      extra: "(2022 - Now)",
-      url: "https://icedropgames.com/#/games",
-      description: "Co-founded a small studio with a friend, releasing multiple titles. I am mainly responsible for the technical side of the project and shaders/vfx.",
-      image: "/img/projects/icedrop.png"
-    },
-    {
-      name: "Teaching Assistant @ UdS Graphics Lab",
-      extra: "(2024 - 2025)",
-      url: "https://graphics.cg.uni-saarland.de/",
-      description: "I helped design assignments and work on a custom rendering framework for the Computer Graphics course at Saarland University."
-    }
-  ];
+  {
+    name: "Godot Programmer @ NDA",
+    extra: "(2025 - 2026)",
+    url: "",
+    description: "Working on an unannounced project for a US-based publisher. Details under NDA.",
+    image: ""
+  },
+  {
+    name: "Unity Gameplay Programmer @ Italic Pig",
+    extra: "(2022 - 2024)",
+    url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
+    description: "Worked on Paleo Pines, a cozy dinosaur farming sim. Focused on gameplay systems, automation, and custom editor tooling.",
+    image: "/img/projects/paleo.png"
+  },
+  {
+    name: "Developer @ Icedrop Games",
+    extra: "(2022 - Now)",
+    url: "https://icedropgames.com/#/games",
+    description: "Co-founded a small indie studio. Shipped multiple titles, currently releasing a roguelike deckbuilder in Steam Next Fest. Responsible for the technical side, shaders, and VFX.",
+    image: "/img/projects/icedrop.png"
+  },
+  {
+    name: "Teaching Assistant @ UdS Graphics Lab",
+    extra: "(2024 - 2025)",
+    url: "https://graphics.cg.uni-saarland.de/",
+    description: "Helped design assignments and contributed to a custom rendering framework for the Computer Graphics course at Saarland University."
+  }
+];
 </script>
 
 <svelte:head>
@@ -238,7 +245,7 @@
 
 <p class="mb-4 text-[#e4e4e4]">
   Game developer with experience in gameplay systems and graphics programming.<br><br>
-    I've shipped commercial games on PC and consoles. Strong focus on gameplay systems, shaders, rendering, and tooling across Unity and Godot.
+    I'm quite versatile, but I'm most comfortable working with gameplay systems and tooling across Unity, Godot or custom engines.
 </p>
 
 <p class="mb-4 text-[#aaa] text-sm">
@@ -291,6 +298,44 @@
 </section>
 
 <section class="my-8">
+  <h2 class="text-2xl font-semibold text-[#e4e4e4] mb-3">Work Experience</h2>
+  <ul class="space-y-6">
+    {#each jobs as job}
+      <li class="list-item flex items-start justify-between gap-4">
+        <div class="flex-1">
+          <a href={job.url} target="_blank" class="text-blue-400 hover:underline">{job.name}</a> <i>{job.extra}</i>
+          <div>{job.description}</div>
+        </div>
+        {#if job.image}
+          <img src={job.image} alt={job.name} class="ml-16 w-48 h-32 object-cover rounded flex-shrink-0" />
+        {:else}
+          <img
+            src="/img/projects/empty.png"
+            class="media-preview"
+          />
+        {/if}
+      </li>
+    {/each}
+  </ul>
+</section>
+
+<section class="my-8">
+    <h2 class="text-2xl font-semibold text-[#e4e4e4] mb-3">Education</h2>
+    <ul class="space-y-4">
+      {#each education as item}
+        <li class="list-item flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <strong class="text-[#e4e4e4]">{item.institution}</strong> - {item.degree} ({item.period})
+          </div>
+          {#if item.image}
+            <img src={item.image} alt={item.institution} class="ml-16 w-32 h-20 object-cover rounded flex-shrink-0" />
+          {/if}
+        </li>
+      {/each}
+    </ul>
+  </section>
+
+<section class="my-8">
   <h2 class="text-2xl font-semibold text-[#e4e4e4] mb-3">Other Projects</h2>
   <ul class="space-y-6">
     {#each projects as project}
@@ -333,42 +378,6 @@
   </ul>
 </section>
 
-<section class="my-8">
-    <h2 class="text-2xl font-semibold text-[#e4e4e4] mb-3">Education</h2>
-    <ul class="space-y-4">
-      {#each education as item}
-        <li class="list-item flex items-start justify-between gap-4">
-          <div class="flex-1">
-            <strong class="text-[#e4e4e4]">{item.institution}</strong> - {item.degree} ({item.period})
-          </div>
-          {#if item.image}
-            <img src={item.image} alt={item.institution} class="ml-16 w-32 h-20 object-cover rounded flex-shrink-0" />
-          {/if}
-        </li>
-      {/each}
-    </ul>
-  </section>
 
-<section class="my-8">
-  <h2 class="text-2xl font-semibold text-[#e4e4e4] mb-3">Work Experience</h2>
-  <ul class="space-y-6">
-    {#each jobs as job}
-      <li class="list-item flex items-start justify-between gap-4">
-        <div class="flex-1">
-          <a href={job.url} target="_blank" class="text-blue-400 hover:underline">{job.name}</a> <i>{job.extra}</i>
-          <div>{job.description}</div>
-        </div>
-        {#if job.image}
-          <img src={job.image} alt={job.name} class="ml-16 w-48 h-32 object-cover rounded flex-shrink-0" />
-        {:else}
-          <img
-            src="/img/projects/empty.png"
-            class="media-preview"
-          />
-        {/if}
-      </li>
-    {/each}
-  </ul>
-</section>
   </div>
 </div>
