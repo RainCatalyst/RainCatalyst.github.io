@@ -1,27 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width,initial-scale=1'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arseny Dremin</title>
+  <meta name="description" content="Graphics & Systems Programmer — portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@freezed_ice" />
+  <meta property="og:title" content="Arseny Dremin" />
+  <meta property="og:description" content="Graphics & Systems Programmer" />
+  <meta property="og:image" content="/img/Logo_Icedrop.png" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @font-face {
+      font-family: 'Merriweather';
+      src: url('/fonts/Merriweather-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Merriweather';
+      src: url('/fonts/Merriweather-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
 
-	<title>FreezedIce</title>
+    html, body {
+      font-family: 'Merriweather', Georgia, serif;
+    }
 
-	<link rel='icon' type='image/png' href='/favicon.png'>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-	<link rel='stylesheet' href='./build/bundle.css'>
-	<meta name="twitter:card" content="FreezedIce" />
-	<meta name="twitter:site" content="freezedice.com" />
-	<meta name="twitter:creator" content="@freezed_ice" />
-	<meta property="og:url" content="https://freezedice.com" />
-	<meta property="og:title" content="FreezedIce" />
-	<meta property="og:description" content="Game Developer" />
-	<meta property="og:image" content="https://freezedice.com/img/Logo_Icedrop.png" />
+    :root {
+      --media-col: 11rem;   /* right column width  — change here */
+      --media-h:   7.5rem;  /* image/video height  — change here */
+      --media-r:   4px;     /* border radius       — change here */
+    }
 
-	<script defer src='./build/bundle.js'></script>
+    /* Two-column grid: text left, media right, aligned across all rows */
+    .section-list {
+      display: grid;
+      grid-template-columns: 1fr var(--media-col);
+      column-gap: 1.5rem;
+      row-gap: 1.5rem;
+      align-items: start;
+    }
+
+    /* Bullet lives here, not on the container */
+    .list-text {
+      position: relative;
+      padding-left: 1.25rem;
+    }
+    .list-text::before {
+      content: "";
+      position: absolute;
+      left: 0.05rem;
+      top: 0.55em;
+      width: 0.4rem;
+      height: 0.4rem;
+      background-color: #9ca3af;
+      border-radius: 50%;
+    }
+    /* No media → span both columns */
+    .list-text.full {
+      grid-column: 1 / -1;
+    }
+
+    .title-with-icon {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .title-icon {
+      width: 1rem;
+      height: 1rem;
+      object-fit: contain;
+      filter: brightness(0);
+      opacity: 0.5;
+      flex-shrink: 0;
+    }
+
+    .media-el {
+      display: block;
+      width: 100%;
+      height: var(--media-h);
+      object-fit: cover;
+      border-radius: var(--media-r);
+    }
+
+    @media (max-width: 600px) {
+      .section-list {
+        grid-template-columns: 1fr;
+      }
+      .media-el {
+        height: auto;
+        max-height: 10rem;
+      }
+    }
+  </style>
 </head>
+<body class="bg-white text-gray-800 antialiased">
+  <div class="min-h-screen flex justify-center py-12 px-6">
+    <div class="max-w-3xl w-full" id="app"></div>
+  </div>
 
-<body>
+  <script>
+    // ── Data ──────────────────────────────────────────────────────────────────
+
+    const profile = {
+      name: "Arseny Dremin",
+      title: "Graphics & Systems Programmer",
+      cvLink: "/files/CV.pdf",
+      logo: "/favicon.png"
+    };
+
+    const featured = [
+      {
+        name: "Paleo Pines",
+        url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
+        description: "Cozy dinosaur farming sim shipped on PC, Switch, and console. Worked on gameplay systems, automation, and general optimization as part of the Italic Pig team.",
+        video: "/img/projects/paleo_new.mp4",
+        icon: "/img/other/steam.svg"
+      },
+      {
+        name: "Ultrapool",
+        url: "https://store.steampowered.com/app/4195110/Ultrapool/",
+        description: "Pool-themed roguelike deckbuilder made in Godot. Public demo on Steam with 15k+ wishlists.",
+        video: "/img/projects/ultrapool.mp4",
+        icon: "/img/other/steam.svg"
+      },
+      {
+        name: "Constellations",
+        url: "https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-Download-Software/Constellations-2384059.html",
+        description: "Minimalistic puzzle game for PC and Nintendo Switch. Responsible for all programming, shaders, and technical art.",
+        video: "/img/projects/constellations.mp4",
+        icon: "/img/other/steam.svg"
+      },
+      {
+        name: "LOK Digital",
+        url: "https://store.steampowered.com/app/2207440/LOK_Digital/",
+        description: "Quirky word-search puzzle based on a physical puzzle book. Contributed technical art and additional programming.",
+        video: "/img/projects/lok_new.mp4",
+        icon: "/img/other/steam.svg"
+      }
+    ];
+
+    const jobs = [
+      {
+        name: "Godot Programmer @ NDA",
+        extra: "(2025 – 2026)",
+        url: "",
+        description: "Working on an unannounced project for a US-based publisher. Details under NDA."
+      },
+      {
+        name: "Unity Gameplay Programmer @ Italic Pig",
+        extra: "(2022 – 2024)",
+        url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
+        description: "Worked on Paleo Pines, a cozy dinosaur farming sim. Focused on gameplay systems, automation, and custom editor tooling.",
+        image: "/img/projects/paleo.png"
+      },
+      {
+        name: "Developer @ Icedrop Games",
+        extra: "(2022 – Now)",
+        url: "https://icedropgames.com/#/games",
+        description: "Co-founded a small indie studio. Shipped multiple titles, currently releasing a roguelike deckbuilder in Steam Next Fest. Responsible for the technical side, shaders, and VFX.",
+        image: "/img/projects/icedrop.png"
+      },
+      {
+        name: "Teaching Assistant @ UdS Graphics Lab",
+        extra: "(2024 – 2025)",
+        url: "https://graphics.cg.uni-saarland.de/",
+        description: "Helped design assignments and contributed to a custom rendering framework for the Computer Graphics course at Saarland University."
+      }
+    ];
+
+    const education = [
+      {
+        institution: "Saarland University",
+        degree: "Bachelor in Computer Science",
+        period: "2023 – 2025"
+      },
+      {
+        institution: "Futuregames Sweden",
+        degree: "Vocational Education in Game Development",
+        period: "2022 – 2023"
+      }
+    ];
+
+    // Zeus first — strongest piece for graphics/systems roles
+    const projects = [
+      {
+        name: "Zeus Renderer",
+        url: "https://github.com/RainCatalyst/ZeusRenderer",
+        description: "Custom C++ path-tracing engine with Blender scene import, volumetric rendering, and performance optimizations. Built on a modified Mitsuba v3 architecture.",
+        image: "/img/projects/zeus.png",
+        icon: "/img/other/github.svg"
+      },
+      {
+        name: "Arduino Raytracer",
+        url: "https://github.com/RainCatalyst/ArduinoRaytracer",
+        description: "C-based raytracer running on Arduino with custom integer math, rendered on a monochrome display.",
+        image: "/img/projects/arduino.png",
+        icon: "/img/other/github.svg"
+      },
+      {
+        name: "Game Jam Portfolio",
+        url: "https://freezedice.itch.io/",
+        description: "Over 15 small to mid-scale games made over 8 years of game jams.",
+        video: "/img/projects/reel_all.mp4",
+        icon: "/img/other/itch.svg"
+      },
+      {
+        name: "Ankidot",
+        url: "https://github.com/RainCatalyst/Ankidot",
+        description: "Godot & Anki integration for interactive language learning.",
+        video: "/img/projects/ankidot.mp4",
+        icon: "/img/other/github.svg"
+      },
+      {
+        name: "VFX Portfolio",
+        url: "https://www.artstation.com/raincatalyst",
+        description: "Real-time and rendered VFX, mostly made in Houdini, Blender, or Unity.",
+        video: "/img/projects/vfx.mp4",
+        icon: "/img/other/artstation.svg"
+      },
+      {
+        name: "UmaMusume Skill Optimizer",
+        url: "https://github.com/RainCatalyst/UmaOptimizer",
+        description: "Python + Streamlit app using a genetic algorithm to solve a combinatorial optimization problem over skill decks.",
+        icon: "/img/other/github.svg"
+      },
+      {
+        name: "NLP Reminder Bot",
+        url: "https://github.com/RainCatalyst/ReminderBot",
+        description: "Telegram bot that parses human-readable dates and schedules reminders.",
+        icon: "/img/other/github.svg"
+      },
+      {
+        name: "Language Exercise Bot",
+        url: "https://github.com/RainCatalyst/LanguageExerciseBot",
+        description: "Telegram bot for language practice with LLM integration.",
+        icon: "/img/other/github.svg"
+      }
+    ];
+
+    // ── Helpers ───────────────────────────────────────────────────────────────
+
+    function esc(s) {
+      return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function hasMedia(item) {
+      return !!(item.video || item.image);
+    }
+
+    function renderMedia(item) {
+      if (item.video) {
+        return `<video class="media-el" autoplay muted loop playsinline>
+          <source src="${esc(item.video)}" type="video/mp4">
+        </video>`;
+      }
+      return `<img src="${esc(item.image)}" alt="${esc(item.name)}" class="media-el">`;
+    }
+
+    function renderIcon(src) {
+      return src ? `<img src="${esc(src)}" alt="" class="title-icon">` : '';
+    }
+
+    function renderLink(url, text, cls) {
+      if (url) {
+        return `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer" class="${cls}">${esc(text)}</a>`;
+      }
+      return `<span class="font-medium text-gray-900">${esc(text)}</span>`;
+    }
+
+    // ── Sections ──────────────────────────────────────────────────────────────
+
+    // Each item emits a text div + optional media div as direct grid children.
+    // No media → text div spans both columns via .full.
+
+    function renderFeatured() {
+      return featured.map(p => {
+        const m = hasMedia(p);
+        return `
+          <div class="list-text${m ? '' : ' full'}">
+            <div class="title-with-icon mb-1">
+              <a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer"
+                 class="text-blue-600 hover:underline font-medium">${esc(p.name)}</a>
+              ${renderIcon(p.icon)}
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">${esc(p.description)}</p>
+          </div>
+          ${m ? `<div>${renderMedia(p)}</div>` : ''}
+        `;
+      }).join('');
+    }
+
+    function renderJobs() {
+      return jobs.map(j => {
+        const m = hasMedia(j);
+        return `
+          <div class="list-text${m ? '' : ' full'}">
+            <div class="mb-1">
+              ${renderLink(j.url, j.name, 'text-blue-600 hover:underline font-medium')}
+              <i class="text-gray-500 text-sm ml-1">${esc(j.extra)}</i>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">${esc(j.description)}</p>
+          </div>
+          ${m ? `<div>${renderMedia(j)}</div>` : ''}
+        `;
+      }).join('');
+    }
+
+    function renderEducation() {
+      return education.map(e => `
+        <div class="list-text full">
+          <strong class="text-gray-900">${esc(e.institution)}</strong>
+          <span class="text-gray-600"> — ${esc(e.degree)}</span>
+          <span class="text-gray-500 text-sm ml-1">(${esc(e.period)})</span>
+        </div>
+      `).join('');
+    }
+
+    function renderProjects() {
+      return projects.map(p => {
+        const m = hasMedia(p);
+        return `
+          <div class="list-text${m ? '' : ' full'}">
+            <div class="title-with-icon mb-1">
+              <a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer"
+                 class="text-blue-600 hover:underline font-medium">${esc(p.name)}</a>
+              ${renderIcon(p.icon)}
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">${esc(p.description)}</p>
+          </div>
+          ${m ? `<div>${renderMedia(p)}</div>` : ''}
+        `;
+      }).join('');
+    }
+
+    // ── Render ────────────────────────────────────────────────────────────────
+
+    document.getElementById('app').innerHTML = `
+      <header class="mb-5 flex items-center gap-3">
+        <img src="${profile.logo}" alt="" class="w-8 h-8 object-contain" />
+        <h1 class="text-3xl font-bold text-gray-900">${esc(profile.name)}</h1>
+      </header>
+
+      <div class="text-sm text-gray-500 mb-4 flex flex-wrap gap-x-3 gap-y-1 items-center">
+        <a href="mailto:arseny.dremin@proton.me" class="text-blue-600 hover:underline">Contact</a>
+        <span>·</span>
+        <a href="https://github.com/RainCatalyst" target="_blank" rel="noopener noreferrer"
+           class="text-blue-600 hover:underline">GitHub</a>
+        <span>·</span>
+        <a href="${esc(profile.cvLink)}" download="ArsenyDremin_CV.pdf" target="_blank" rel="noopener noreferrer"
+           class="text-blue-600 hover:underline">Download CV</a>
+      </div>
+
+      <p class="mb-4 text-gray-800 leading-relaxed">
+        Programmer with professional and indie experience building real-time systems, shipping products to PC, console, and mobile.
+        Comfortable across rendering, gameplay systems, and tooling — primarily in Unity and Godot,
+        with lower-level experience in C++ and OpenGL.
+      </p>
+
+      <p class="mb-4 text-gray-500 text-sm">
+        <strong class="text-gray-700">Tech:</strong> C++, C#, Python, Unity, Godot, GLSL/HLSL, Blender
+      </p>
+
+      <hr class="border-gray-200 my-6" />
+
+      <section class="my-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Games I've shipped</h2>
+        <div class="section-list">${renderFeatured()}</div>
+      </section>
+
+      <section class="my-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Work Experience</h2>
+        <div class="section-list">${renderJobs()}</div>
+      </section>
+
+      <section class="my-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Education</h2>
+        <div class="section-list">${renderEducation()}</div>
+      </section>
+
+      <section class="my-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Other Projects</h2>
+        <div class="section-list">${renderProjects()}</div>
+      </section>
+
+      <footer class="mt-12 pt-6 border-t border-gray-100 text-xs text-gray-400 text-center">
+        arseny.dremin@proton.me
+      </footer>
+    `;
+  </script>
 </body>
 </html>
