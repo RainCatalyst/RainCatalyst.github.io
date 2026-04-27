@@ -1,6 +1,4 @@
 # Arseny Dremin
-**Graphics & Systems Programmer**
-
 arseny.dremin@proton.me · github.com/RainCatalyst · freezedice.com · Saarbrücken, Germany
 
 ---
@@ -14,11 +12,11 @@ I have a strong technical background in realtime systems and computer graphics, 
 
 ## Work Experience
 
-**Unity Developer @ NDA** *(Forklift Interactive, Remote) · 2026 – now*
-- Implementing gameplay systems for a Colony Building game in Unity C#
+**Unity Developer @ Forklift Interactive** *(US, Remote) · 2026 – now*
+- Implementing gameplay systems for a [Colony Building Game](https://store.steampowered.com/app/3783980/Above_Colonies_of_the_Mist/) in Unity C#
 
 **Godot Developer @ NDA** *(US-based Publisher, Remote) · 2025 – 2026*
-- Worked on an unannounced 3D action-adventure title for an internal publisher team
+- Worked on unannounced 3D action-adventure title for an internal publisher team
 - Responsible for setting up core gameplay systems and project structure
 
 **Unity Gameplay Programmer @ Italic Pig** *(United Kingdom, Remote) · 2022 – 2024*
@@ -27,7 +25,7 @@ I have a strong technical background in realtime systems and computer graphics, 
 
 **Developer & Co-founder @ Icedrop Games** *(Remote) · 2020 – Present*
 - Co-founded an indie studio; shipped [LOK Digital](https://store.steampowered.com/app/2207440/) (PC, Mobile, Switch) and [Constellations](https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-Download-Software/Constellations-2384059.html) (PC, Switch)
-- Responsible for most technical aspects - gameplay, real-time shaders (GLSL/HLSL), and VFX in Unity and Godot
+- Responsible for most technical aspects — gameplay, real-time shaders (GLSL/HLSL), and VFX in Unity and Godot
 - Currently releasing [Ultrapool](https://store.steampowered.com/app/4195110/) — a roguelike deckbuilder with 20k+ Steam wishlists
 
 **Teaching Assistant @ UdS Graphics Lab** *(Saarland University) · 2024 – 2025*
@@ -36,13 +34,13 @@ I have a strong technical background in realtime systems and computer graphics, 
 
 **Personal Projects**
 - **[Zeus Renderer](https://github.com/RainCatalyst/ZeusRenderer)** — C++ path tracer with volumetric rendering and SDF support
-- *Full list at freezedice.com*
+- Full list of other projects at [freezedice.com](https://freezedice.com)
 
 ---
 
 ## Technical Stack
 
-**Game Development:** C#/C++, Unity, Godot, Unreal Engine, Houdini<br>
+**Game Development:** C#, C++, Unity, Godot, Unreal Engine, Houdini<br>
 **Software Development:** Python, .NET (Backend)<br>
 **Tools:** Git, Perforce 
 
