@@ -123,7 +123,7 @@
       {
         name: "Ultrapool",
         url: "https://store.steampowered.com/app/4195110/Ultrapool/",
-        description: "Pool-themed roguelike deckbuilder made in Godot. Public demo on Steam with 15k+ wishlists.",
+        description: "Pool-themed roguelike deckbuilder made in Godot. Public demo on Steam with 20k+ wishlists.",
         video: "/img/projects/ultrapool.mp4",
         icon: "/img/other/steam.svg"
       },
@@ -145,30 +145,36 @@
 
     const jobs = [
       {
-        name: "Godot Programmer @ NDA",
+        name: "Unity Developer @ Forklift Interactive",
+        extra: "(2026 – Now)",
+        url: "https://store.steampowered.com/app/3783980/Above_Colonies_of_the_Mist/",
+        description: "Implementing gameplay systems for a Colony Building Game in Unity C#."
+      },
+      {
+        name: "Godot Developer @ NDA",
         extra: "(2025 – 2026)",
         url: "",
-        description: "Working on an unannounced project for a US-based publisher. Details under NDA."
+        description: "Worked on an unannounced 3D action-adventure title for an internal publisher team. Responsible for setting up core gameplay systems and project structure."
       },
       {
         name: "Unity Gameplay Programmer @ Italic Pig",
         extra: "(2022 – 2024)",
         url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
-        description: "Worked on Paleo Pines, a cozy dinosaur farming sim. Focused on gameplay systems, automation, and custom editor tooling.",
+        description: "Shipped Paleo Pines on PC and console. Built gameplay systems, automation tools, and custom Unity editor tooling in C#.",
         image: "/img/projects/paleo.png"
       },
       {
-        name: "Developer @ Icedrop Games",
-        extra: "(2022 – Now)",
+        name: "Developer & Co-founder @ Icedrop Games",
+        extra: "(2020 – Now)",
         url: "https://icedropgames.com/#/games",
-        description: "Co-founded a small indie studio. Shipped multiple titles, currently releasing a roguelike deckbuilder in Steam Next Fest. Responsible for the technical side, shaders, and VFX.",
+        description: "Co-founded an indie studio that shipped LOK Digital and Constellations. <br>Currently releasing Ultrapool - a pool roguelike deckbuilder made in Godot.",
         image: "/img/projects/icedrop.png"
       },
       {
         name: "Teaching Assistant @ UdS Graphics Lab",
         extra: "(2024 – 2025)",
         url: "https://graphics.cg.uni-saarland.de/",
-        description: "Helped design assignments and contributed to a custom rendering framework for the Computer Graphics course at Saarland University."
+        description: "Designed assignments and contributed to a custom C++ rendering framework for the Computer Graphics course. <br>Topics covered: rasterization, ray tracing, physically-based shading, GPU pipeline."
       }
     ];
 
@@ -176,7 +182,7 @@
       {
         institution: "Saarland University",
         degree: "Bachelor in Computer Science",
-        period: "2023 – 2025"
+        period: "2023 – 2026"
       },
       {
         institution: "Futuregames Sweden",
@@ -194,22 +200,10 @@
         icon: "/img/other/github.svg"
       },
       {
-        name: "Unreal Infinite Runner",
-        url: "https://github.com/RainCatalyst/InfiniteRunner",
-        description: "Unreal Engine C++ game with custom game mode, player components, and spawner systems.",
-        icon: "/img/other/github.svg"
-      },
-      {
         name: "Arduino Raytracer",
         url: "https://github.com/RainCatalyst/ArduinoRaytracer",
         description: "Raytracer in C running on Arduino hardware with fixed-point integer math.",
         image: "/img/projects/arduino.png",
-        icon: "/img/other/github.svg"
-      },
-      {
-        name: "Compute Shaders",
-        url: "https://github.com/RainCatalyst/compute-shaders",
-        description: "GPU gas simulation using Godot compute shaders.",
         icon: "/img/other/github.svg"
       },
       {
@@ -250,6 +244,12 @@
         url: "https://github.com/RainCatalyst/LanguageExerciseBot",
         description: "Telegram bot for language practice with LLM integration.",
         icon: "/img/other/github.svg"
+      },
+      {
+        name: "Unreal Infinite Runner",
+        url: "https://github.com/RainCatalyst/InfiniteRunner",
+        description: "Unreal Engine C++ game with custom game mode, player components, and spawner systems.",
+        icon: "/img/other/github.svg"
       }
     ];
 
@@ -280,6 +280,23 @@
       return src ? `<img src="${esc(src)}" alt="" class="title-icon">` : '';
     }
 
+    // Renders a description string supporting <br> and [text](url) links.
+    // Everything else is HTML-escaped.
+    function renderDesc(s) {
+      const parts = [];
+      let last = 0;
+      const re = /(<br\s*\/?>)|\[([^\]]+)\]\(([^)]+)\)/g;
+      let m;
+      while ((m = re.exec(s)) !== null) {
+        if (m.index > last) parts.push(esc(s.slice(last, m.index)));
+        if (m[1]) parts.push('<br>');
+        else parts.push(`<a href="${esc(m[3])}" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">${esc(m[2])}</a>`);
+        last = re.lastIndex;
+      }
+      if (last < s.length) parts.push(esc(s.slice(last)));
+      return parts.join('');
+    }
+
     function renderLink(url, text, cls) {
       if (url) {
         return `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer" class="${cls}">${esc(text)}</a>`;
@@ -302,7 +319,7 @@
                  class="text-blue-600 hover:underline font-medium">${esc(p.name)}</a>
               ${renderIcon(p.icon)}
             </div>
-            <p class="text-gray-600 text-sm leading-relaxed">${esc(p.description)}</p>
+            <p class="text-gray-600 text-sm leading-relaxed">${renderDesc(p.description)}</p>
           </div>
           ${m ? `<div>${renderMedia(p)}</div>` : ''}
         `;
@@ -318,7 +335,7 @@
               ${renderLink(j.url, j.name, 'text-blue-600 hover:underline font-medium')}
               <i class="text-gray-500 text-sm ml-1">${esc(j.extra)}</i>
             </div>
-            <p class="text-gray-600 text-sm leading-relaxed">${esc(j.description)}</p>
+            <p class="text-gray-600 text-sm leading-relaxed">${renderDesc(j.description)}</p>
           </div>
           ${m ? `<div>${renderMedia(j)}</div>` : ''}
         `;
@@ -345,7 +362,7 @@
                  class="text-blue-600 hover:underline font-medium">${esc(p.name)}</a>
               ${renderIcon(p.icon)}
             </div>
-            <p class="text-gray-600 text-sm leading-relaxed">${esc(p.description)}</p>
+            <p class="text-gray-600 text-sm leading-relaxed">${renderDesc(p.description)}</p>
           </div>
           ${m ? `<div>${renderMedia(p)}</div>` : ''}
         `;
@@ -373,10 +390,6 @@
       <p class="mb-4 text-gray-800 leading-relaxed">
         Game developer with 3+ years of professional experience shipping on PC, console and mobile.<br>
         I have a strong technical background in realtime systems and computer graphics, and I'm looking to apply that beyond games as well.
-      </p>
-
-      <p class="mb-4 text-gray-500 text-sm">
-        <strong class="text-gray-700">Tech:</strong> C++, C#, Python, Unity, Godot, GLSL/HLSL, Blender
       </p>
 
       <hr class="border-gray-200 my-6" />

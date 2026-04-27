@@ -6,7 +6,7 @@
    ============================================================ */
 
 :root {
-  --teal:       #3D9A8B;   /* accent color — name, headers, links    */
+  --teal:       #4076b8;   /* accent color — name, headers, links    */
   --text:       #1a1a1a;   /* main body text                          */
   --muted:      #5a5a5a;   /* dates, locations, secondary info        */
   --border:     #e0e0e0;   /* horizontal rules                        */
@@ -53,16 +53,6 @@ h1 {
 }
 
 /* "Graphics & Systems Programmer" line */
-h1 + p {
-  font-size: 11pt;
-  font-weight: 500;
-  color: var(--muted);
-  margin: 0 0 5px 0;
-}
-h1 + p strong {
-  font-weight: 500;
-  color: var(--muted);
-}
 
 /* Contact line: email · github · website · location */
 h1 + p + p {

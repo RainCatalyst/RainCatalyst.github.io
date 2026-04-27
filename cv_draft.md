@@ -12,23 +12,23 @@ I have a strong technical background in realtime systems and computer graphics, 
 
 ## Work Experience
 
-**Unity Developer @ Forklift Interactive** *(US, Remote) · 2026 – now*
-- Implementing gameplay systems for a [Colony Building Game](https://store.steampowered.com/app/3783980/Above_Colonies_of_the_Mist/) in Unity C#
+**Unity Developer @ Forklift Interactive** *2026 – Now*
+- Implementing gameplay systems for a Colony Building Game in Unity C#
 
-**Godot Developer @ NDA** *(US-based Publisher, Remote) · 2025 – 2026*
-- Worked on unannounced 3D action-adventure title for an internal publisher team
+**Godot Developer @ NDA** *2025 – 2026*
+- Worked on an unannounced 3D action-adventure title for an internal publisher team
 - Responsible for setting up core gameplay systems and project structure
 
-**Unity Gameplay Programmer @ Italic Pig** *(United Kingdom, Remote) · 2022 – 2024*
-- Shipped [Paleo Pines](https://store.steampowered.com/app/1202200/) on PC and console
+**Unity Gameplay Programmer @ Italic Pig** *2022 – 2024*
+- Shipped Paleo Pines on PC and console
 - Built gameplay systems, automation tools, and custom Unity editor tooling in C#
 
-**Developer & Co-founder @ Icedrop Games** *(Remote) · 2020 – Present*
-- Co-founded an indie studio; shipped [LOK Digital](https://store.steampowered.com/app/2207440/) (PC, Mobile, Switch) and [Constellations](https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-Download-Software/Constellations-2384059.html) (PC, Switch)
-- Responsible for most technical aspects — gameplay, real-time shaders (GLSL/HLSL), and VFX in Unity and Godot
-- Currently releasing [Ultrapool](https://store.steampowered.com/app/4195110/) — a roguelike deckbuilder with 20k+ Steam wishlists
+**Developer & Co-founder @ Icedrop Games** *2020 – Now*
+- Co-founded an indie studio; shipped LOK Digital and Constellations
+- Responsible for most technical aspects - gameplay, real-time shaders, and VFX in Unity and Godot
+- Currently releasing Ultrapool - a roguelike deckbuilder with 20k+ Steam wishlists
 
-**Teaching Assistant @ UdS Graphics Lab** *(Saarland University) · 2024 – 2025*
+**Teaching Assistant @ UdS Graphics Lab** *2024 – 2025*
 - Designed assignments and contributed to a custom C++ rendering framework for the Computer Graphics course
 - Topics covered: rasterization, ray tracing, physically-based shading, GPU pipeline
 
@@ -48,6 +48,6 @@ I have a strong technical background in realtime systems and computer graphics, 
 
 ## Education
 
-**Bachelor's in Computer Science** — Saarland University *(2023 – 2026)*
+**Bachelor in Computer Science** — Saarland University *(2023 – 2026)*
 
 **Vocational Education in Game Development** — Futuregames Sweden *(2022 – 2023)*
