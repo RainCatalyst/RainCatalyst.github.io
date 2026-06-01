@@ -1,11 +1,11 @@
 # Arseny Dremin
-arseny.dremin@proton.me · github.com/RainCatalyst · freezedice.com · Saarbrücken, Germany
+arseny.dremin@proton.me · [Github](https://github.com/RainCatalyst) · [freezedice.com](https://freezedice.com) · Saarbrücken, Germany
 
 ---
 
 ## Summary
 
-Game developer with 3+ years of professional experience shipping on PC, console and mobile.
+Game developer with 4+ years of professional experience shipping on PC, console and mobile.
 I have a strong technical background in realtime systems and computer graphics, and I'm looking to apply that beyond games as well.
 
 ---
@@ -32,18 +32,6 @@ I have a strong technical background in realtime systems and computer graphics, 
 - Designed assignments and contributed to a custom C++ rendering framework for the Computer Graphics course
 - Topics covered: rasterization, ray tracing, physically-based shading, GPU pipeline
 
-**Personal Projects**
-- **[Zeus Renderer](https://github.com/RainCatalyst/ZeusRenderer)** — C++ path tracer with volumetric rendering and SDF support
-- Full list of other projects at [freezedice.com](https://freezedice.com)
-
----
-
-## Technical Stack
-
-**Game Development:** C#, C++, Unity, Godot, Unreal Engine, Houdini<br>
-**Software Development:** Python, .NET (Backend)<br>
-**Tools:** Git, Perforce 
-
 ---
 
 ## Education
@@ -51,3 +39,14 @@ I have a strong technical background in realtime systems and computer graphics, 
 **Bachelor in Computer Science** — Saarland University *(2023 – 2026)*
 
 **Vocational Education in Game Development** — Futuregames Sweden *(2022 – 2023)*
+
+## Technical Stack
+
+**Game Development:** C#, C++, Unity, Godot, Unreal Engine, Houdini<br>
+**Software Development:** Python, .NET (Backend)<br>
+**Tools:** Git, Perforce 
+
+## Projects
+[Zeus Renderer]((https://github.com/RainCatalyst/ZeusRenderer) — C++ path tracer with volumetric rendering, PBR, and SDF support.<br>
+More at [freezedice.com](https://freezedice.com)
+

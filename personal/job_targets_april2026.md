@@ -252,3 +252,131 @@ If your graduation is in ~3 months (July/August 2026), start applying now. Many 
 ---
 
 *Research conducted: April 2026. Verify all listings before applying — job boards move fast.*
+
+---
+
+---
+
+# Phase 3 — Job Board Sweep: Additional Leads
+*Boards checked: EuroTechJobs, arbeitnow, WeAreDevelopers, ingamejob, germantechjobs, devjobsscanner*
+
+---
+
+## New Confirmed Positions
+
+---
+
+### A. TeamViewer — (Senior) Software Engineer C++
+**Location:** Stuttgart, hybrid (50% home office + Work From Abroad up to 40 days/yr)  
+**Company:** TeamViewer, ~1,900 employees globally — remote access / digital workplace platform  
+**Status:** ✅ CONFIRMED LIVE (direct Chrome read, April 2026)  
+**Apply:** [careers.teamviewer.com/jobs/7197035](https://careers.teamviewer.com/jobs/7197035-senior-software-engineer-c-all-genders)  
+**Also open:** C++/Network variant, C++/C# variant, C++ Remote Management variant — all at Stuttgart
+
+**What they want:**
+- 5+ years of C++ (C++14 or above), OOP, design patterns
+- Platform-independent client/service development
+- Parallel programming, distributed systems, network communication a plus
+- Agile/Scrum, CI/CD workflow
+- Fluency in English mandatory; German a plus
+
+**Why it's relevant:**
+TeamViewer is the largest remote access software company in the world and a stable Blue Card anchor. The role is not graphics-related, but it's pure C++ systems work — and your Zeus Renderer, Arduino Raytracer, and cross-platform game experience (Unity/Godot both ship Windows/Mac/Linux) demonstrate platform-independent C++ thinking. The 50% home office + 40-day work-from-abroad policy makes Stuttgart distance manageable even from NRW.
+
+**CV angle for this role:**
+Lead with cross-platform C++ delivery (Constellations shipped PC + Nintendo Switch; your renderer was built on a portable Mitsuba architecture). Mention performance-critical work (raytracing, real-time rendering — both require the same discipline as network/distributed systems: minimize latency, maximize throughput). Downplay gamedev branding; position yourself as a systems engineer who happens to have shipped products.
+
+**One honest caveat:** "Senior" here likely means 5+ real-world years. You're at 3–4. You may get screened by an ATS at this threshold. Apply anyway — they have multiple C++ variants open, and recruiters sometimes interview you for the right tier.
+
+---
+
+### B. Cognex — Principal Software Engineer (Aachen, NRW)
+**Location:** Aachen — NRW, ~1 hour from Cologne  
+**Company:** Cognex Corporation — world's largest machine vision company, ~1,000 employees  
+**Status:** ✅ CONFIRMED LIVE (Workday posting R0011810, April 2026)  
+**Apply:** [cognex.wd1.myworkdayjobs.com](https://cognex.wd1.myworkdayjobs.com/External_Career_Site)  
+**Search tip:** Filter by "Aachen" on their Workday portal — may have additional mid-level roles beyond the Principal posting
+
+**What they want (based on Principal-level posting R0011810):**
+- C++ development for machine vision systems and industrial imaging products
+- Algorithm development for image processing and pattern recognition
+- Cross-team collaboration on next-generation vision hardware/software
+
+**Why it's relevant:**
+Cognex's Aachen office does C++ development for their industrial machine vision products — think image processing, pattern recognition, real-time camera pipelines. This overlaps directly with your shader/VFX experience (both are pixel-level computation problems) and your graphics background. Aachen is in NRW, meaning no relocation needed if you're already in Saarland/NRW region.
+
+**CV angle for this role:**
+Your Zeus Renderer with Blender scene import and volumetric rendering shows you understand computational imaging from scratch. Your Arduino Raytracer (integer-precision rendering on embedded hardware) is genuinely relevant to constrained real-time imaging. Your computer graphics TA role at Saarland University reinforces the theory.
+
+**Caveat:** "Principal" is senior+ in US/global tech companies (typically 7–10+ years). The posting R0011810 is likely out of reach right now. However, Cognex historically runs multiple levels in Aachen. Browse their full Workday portal — there may be mid-level Software Engineer listings that aren't yet indexed on aggregators.
+
+---
+
+### C. SafeAD — ML Engineer (multiple roles, Karlsruhe)
+**Location:** Karlsruhe (on-site, ~2.5 hrs from Cologne — not NRW, but remote may be negotiable for PhD/strong candidates)  
+**Company:** SafeAD GmbH — KIT spinoff, autonomy stack for automotive OEMs, VC-backed  
+**Status:** ✅ CONFIRMED LIVE (multiple live listings on safead.de as of April 2026)  
+**Open roles:** ML Engineer – Perception, ML Engineer – Planning & E2E Driving, ML Engineer – Sensor Fusion, Visual SLAM / 3D Reconstruction Engineer  
+**Apply:** [safead.de](https://www.safead.de) → Careers, or email jobs@safead.de
+
+**What they want:**
+- Deep learning for camera/LiDAR/RADAR perception (transformer models, CNNs)
+- Strong Python, PyTorch, ideally C++ for real-time inference
+- Experience in autonomous driving, robotics, or similar real-world ML systems
+
+**Why it's relevant:**
+SafeAD's stack is ML-heavy Python rather than pure C++, so it's not a primary fit — but your UmaMusume Optimizer (Python + genetic algorithm + optimization), your NLP bots (LLM integration), and your computer graphics background (3D scene understanding) all cross-cut here. The "Visual SLAM / 3D Reconstruction" role specifically overlaps with your rendering knowledge: you understand 3D geometry, camera models, and real-time scene representation.
+
+**CV angle if applying:**
+Don't lead with gamedev. Lead with your CS degree (KIT is a peer institution to Saarland — SafeAD will respect this), your Zeus Renderer's volumetric/geometric pipeline, and any coursework in computer vision or numerical methods. Your genetic algo optimizer demonstrates algorithmic fluency — SafeAD's ML engineers need both ML depth AND systems thinking.
+
+**Honest assessment:** This is a stretch unless your CS coursework included ML/CV modules. Worth a speculative application if it did. The SLAM role is closer to your graphics background than the perception/planning roles.
+
+---
+
+## Leads That Didn't Pan Out
+
+| Company | What happened |
+|---|---|
+| **Homa Games Unity/C#** (arbeitnow, remote Germany) | **EXPIRED** — arbeitnow listing 404'd. Was a Unity/C# fullstack role, remote Germany. Watch their careers page directly. |
+| **Chaos C++ Rendering Engineer** (Germany remote) | **EXPIRED** — confirmed dead in Phase 1. |
+| **Fraunhofer FKIE Bonn** (Unity/Python, Bonn — NRW) | Live, but **German language required** — disqualifies as English-only. Check back if your German improves. |
+| **King Berlin** (C++ Software Engineer) | Stockholm/Barcelona only in practice — German location filter was a mislabel. |
+| **Ubisoft Germany** (all 3 studios) | Düsseldorf: anti-cheat C++ only. Berlin: 0 programmer roles. Mainz: Lead 3D BGE2 only (too senior). Thin right now. |
+| **CGI Bochum** (Space Systems Engineer, NRW) | Live, but requires aerospace/space C++ background (MATLAB, Simulink, space-grade SW). Not a fit without retraining. |
+
+---
+
+## Job Boards — Ongoing Sweep Recommendations
+
+These are where the new leads above came from, and where the freshest listings will appear going forward.
+
+| Board | Best filter for your profile | URL |
+|---|---|---|
+| **EuroTechJobs** | C++ Developer → Germany → filter by city | [eurotechjobs.com — C++ Germany](https://www.eurotechjobs.com/job_search/category/c++_developer/location/germany) |
+| **WeAreDevelopers** | C++ Germany (1,420+ jobs), Unity Germany (10+ jobs) | [C++ Germany](https://www.wearedevelopers.com/en/jobs/ls/germany/cpp) · [Unity Germany](https://www.wearedevelopers.com/en/jobs/ls/germany/unity) |
+| **arbeitnow** | C++ filter (page large — check directly), Python jobs Germany | [C++ arbeitnow](https://www.arbeitnow.com/jobs/c-plus-plus) · [Python arbeitnow](https://www.arbeitnow.com/jobs/python) |
+| **ingamejob** | Unity developer Germany (10 active listings) | [ingamejob Unity Germany](https://de.ingamejob.com/en/jobs/p/unity-developer) |
+| **devjobsscanner** | Godot Germany, Unity Germany, C++ Germany | [Godot Germany](https://www.devjobsscanner.com/godot-developer-jobs-in-germany/) · [C++ Germany](https://www.devjobsscanner.com/c-developer-jobs-in-germany/) |
+| **careers.teamviewer.com** | Multiple C++ variants open right now | [TeamViewer jobs](https://careers.teamviewer.com/jobs) → filter C++ |
+| **cognex.wd1.myworkdayjobs.com** | Filter by Aachen for NRW C++ roles | [Cognex careers](https://cognex.wd1.myworkdayjobs.com/External_Career_Site) |
+
+---
+
+## Updated Priority Order (All Phases Combined)
+
+| # | Role | Company | Why |
+|---|---|---|---|
+| 1 | C++ & Unreal Developer | **Toyota GAZOO Racing Europe** (Cologne) | Best technical fit, NRW, motorsport = interesting work |
+| 2 | Senior C/C++ Driving Simulation Engineer | **TGR-E** (Cologne) | Same company, more senior — apply both |
+| 3 | Junior Quant Developer | **Scalable Capital** (remote Germany) | Strong remote, accessible level, good salary |
+| 4 | (Senior) Software Engineer C++ | **TeamViewer** (Stuttgart, hybrid) | Confirmed live, English mandatory, real C++ systems |
+| 5 | Software Engineer | **Trivago** (Düsseldorf, NRW) | Exceptional visa/relocation package, English-first culture |
+| 6 | Software Engineer | **Picnic** (Düsseldorf, NRW) | English company, 163 Düsseldorf positions, active visa support |
+| 7 | Principal Software Engineer | **Cognex** (Aachen, NRW) | Likely too senior — but browse their portal for mid-level C++ roles |
+| 8 | ML Engineer — SLAM / 3D | **SafeAD** (Karlsruhe) | Stretch if you have CV/ML coursework; graphics background helps |
+| 9 | Software Developer | **Vodafone / Deutsche Telekom** (Düsseldorf / Bonn) | Safe Blue Card anchor — apply in parallel |
+
+---
+
+*Phase 3 research completed: April 2026.*
