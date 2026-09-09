@@ -26,17 +26,20 @@
       font-style: normal;
     }
 
+    html {
+      font-size: 17px;
+    }
     html, body {
       font-family: 'Merriweather', Georgia, serif;
     }
 
     :root {
-      --media-col: 11rem;   /* right column width  — change here */
-      --media-h:   7.5rem;  /* image/video height  — change here */
-      --media-r:   4px;     /* border radius       — change here */
+      --media-col: 17rem;
+      --media-h:   12rem;
+      --media-r:   4px;
     }
 
-    /* Two-column grid: text left, media right, aligned across all rows */
+
     .section-list {
       display: grid;
       grid-template-columns: 1fr var(--media-col);
@@ -45,38 +48,49 @@
       align-items: start;
     }
 
-    /* Bullet lives here, not on the container */
     .list-text {
       position: relative;
-      padding-left: 1.25rem;
+      padding-left: 1.4rem;
     }
+
     .list-text::before {
       content: "";
       position: absolute;
-      left: 0.05rem;
+      left: 0.1rem;
       top: 0.55em;
-      width: 0.4rem;
-      height: 0.4rem;
+      width: 0.5rem;
+      height: 0.5rem;
       background-color: #9ca3af;
       border-radius: 50%;
     }
-    /* No media → span both columns */
+
     .list-text.full {
       grid-column: 1 / -1;
     }
 
+
     .title-with-icon {
       display: inline-flex;
       align-items: center;
-      gap: 0.35rem;
+      flex-wrap: wrap;
+      gap: 0.4rem;
     }
+
     .title-icon {
-      width: 1rem;
-      height: 1rem;
-      object-fit: contain;
-      filter: brightness(0);
-      opacity: 0.5;
+      display: inline-block;
+      width: 1.15rem;
+      height: 1.15rem;
       flex-shrink: 0;
+      position: relative;
+      top: -1px;
+      background-color: #000;
+      opacity: 0.5;
+      -webkit-mask-repeat: no-repeat;
+              mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+              mask-position: center;
+      -webkit-mask-size: contain;
+              mask-size: contain;
     }
 
     .media-el {
@@ -93,7 +107,7 @@
       }
       .media-el {
         height: auto;
-        max-height: 10rem;
+        max-height: 13rem;
       }
     }
   </style>
@@ -104,7 +118,6 @@
   </div>
 
   <script>
-    // ── Data ──────────────────────────────────────────────────────────────────
 
     const profile = {
       name: "Arseny Dremin",
@@ -114,32 +127,32 @@
 
     const featured = [
       {
+        name: "Ultrapool",
+        url: "https://store.steampowered.com/app/4195110/Ultrapool/",
+        description: "Pool inspired roguelike deckbuilder made in Godot. <br>70k+ copies sold across Steam, iOS, and Android. <br>I was responsible for programming, design and technical art.",
+        video: "/img/projects/ultrapool.mp4",
+        icons: ["/img/other/steam.svg", "/img/other/android.svg", "/img/other/apple.svg"]
+      },
+      {
         name: "Paleo Pines",
         url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
         description: "Cozy dinosaur farming sim shipped on PC, Switch, and console. Worked on gameplay systems, automation, and general optimization as part of the Italic Pig team.",
         video: "/img/projects/paleo_new.mp4",
-        icon: "/img/other/steam.svg"
-      },
-      {
-        name: "Ultrapool",
-        url: "https://store.steampowered.com/app/4195110/Ultrapool/",
-        description: "Pool-themed roguelike deckbuilder made in Godot. Public demo on Steam with 20k+ wishlists.",
-        video: "/img/projects/ultrapool.mp4",
-        icon: "/img/other/steam.svg"
+        icons: ["/img/other/steam.svg", "/img/other/switch.svg", "/img/other/playstation.svg"]
       },
       {
         name: "Constellations",
         url: "https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-Download-Software/Constellations-2384059.html",
         description: "Minimalistic puzzle game for PC and Nintendo Switch. Responsible for all programming, shaders, and technical art.",
         video: "/img/projects/constellations.mp4",
-        icon: "/img/other/steam.svg"
+        icons: ["/img/other/steam.svg", "/img/other/switch.svg"]
       },
       {
         name: "LOK Digital",
         url: "https://store.steampowered.com/app/2207440/LOK_Digital/",
         description: "Quirky word-search puzzle based on a physical puzzle book. Contributed technical art and additional programming.",
         video: "/img/projects/lok_new.mp4",
-        icon: "/img/other/steam.svg"
+        icons: ["/img/other/steam.svg", "/img/other/android.svg", "/img/other/apple.svg", "/img/other/switch.svg"]
       }
     ];
 
@@ -164,11 +177,12 @@
         image: "/img/projects/paleo.png"
       },
       {
-        name: "Developer & Co-founder @ Icedrop Games",
+        name: "Developer @ Icedrop Games",
         extra: "(2020 – Now)",
         url: "https://icedropgames.com/#/games",
-        description: "Co-founded an indie studio that shipped LOK Digital and Constellations. <br>Currently releasing Ultrapool - a pool roguelike deckbuilder made in Godot.",
-        image: "/img/projects/icedrop.png"
+        description: "Two-person indie studio I run with a friend; shipped LOK Digital, Constellations, and Ultrapool. <br>Responsible for gameplay, shaders, and VFX in Unity and Godot.",
+        image: "/img/projects/icedrop.png",
+        icon: "/img/other/icedrop.png"
       },
       {
         name: "Teaching Assistant @ UdS Graphics Lab",
@@ -193,6 +207,13 @@
 
     const projects = [
       {
+        name: "Game Jam Portfolio",
+        url: "https://freezedice.itch.io/",
+        description: "15+ games made over 8 years of game jams.",
+        video: "/img/projects/reel_all.mp4",
+        icon: "/img/other/itch.svg"
+      },
+      {
         name: "Zeus Renderer",
         url: "https://github.com/RainCatalyst/ZeusRenderer",
         description: "C++ path-tracing engine with volumetric rendering, PBR materials, and SDF fractals.",
@@ -205,13 +226,6 @@
         description: "Raytracer in C running on Arduino hardware with fixed-point integer math.",
         image: "/img/projects/arduino.png",
         icon: "/img/other/github.svg"
-      },
-      {
-        name: "Game Jam Portfolio",
-        url: "https://freezedice.itch.io/",
-        description: "15+ games made over 8 years of game jams.",
-        video: "/img/projects/reel_all.mp4",
-        icon: "/img/other/itch.svg"
       },
       {
         name: "Ankidot",
@@ -276,12 +290,17 @@
       return `<img src="${esc(item.image)}" alt="${esc(item.name)}" class="media-el">`;
     }
 
-    function renderIcon(src) {
-      return src ? `<img src="${esc(src)}" alt="" class="title-icon">` : '';
+    function renderIcons(item) {
+      const list = item.icons || (item.icon ? [item.icon] : []);
+      return list
+        .map(src => {
+          const u = `url('${esc(src)}')`;
+          return `<span class="title-icon" style="-webkit-mask-image:${u};mask-image:${u}"></span>`;
+        })
+        .join('');
     }
 
-    // Renders a description string supporting <br> and [text](url) links.
-    // Everything else is HTML-escaped.
+
     function renderDesc(s) {
       const parts = [];
       let last = 0;
@@ -304,11 +323,6 @@
       return `<span class="font-medium text-gray-900">${esc(text)}</span>`;
     }
 
-    // ── Sections ──────────────────────────────────────────────────────────────
-
-    // Each item emits a text div + optional media div as direct grid children.
-    // No media → text div spans both columns via .full.
-
     function renderFeatured() {
       return featured.map(p => {
         const m = hasMedia(p);
@@ -317,7 +331,7 @@
             <div class="title-with-icon mb-1">
               <a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer"
                  class="text-blue-600 hover:underline font-medium">${esc(p.name)}</a>
-              ${renderIcon(p.icon)}
+              ${renderIcons(p)}
             </div>
             <p class="text-gray-600 text-sm leading-relaxed">${renderDesc(p.description)}</p>
           </div>
@@ -331,9 +345,10 @@
         const m = hasMedia(j);
         return `
           <div class="list-text${m ? '' : ' full'}">
-            <div class="mb-1">
+            <div class="title-with-icon mb-1">
               ${renderLink(j.url, j.name, 'text-blue-600 hover:underline font-medium')}
-              <i class="text-gray-500 text-sm ml-1">${esc(j.extra)}</i>
+              <i class="text-gray-500 text-sm">${esc(j.extra)}</i>
+              ${renderIcons(j)}
             </div>
             <p class="text-gray-600 text-sm leading-relaxed">${renderDesc(j.description)}</p>
           </div>
@@ -360,7 +375,7 @@
             <div class="title-with-icon mb-1">
               <a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer"
                  class="text-blue-600 hover:underline font-medium">${esc(p.name)}</a>
-              ${renderIcon(p.icon)}
+              ${renderIcons(p)}
             </div>
             <p class="text-gray-600 text-sm leading-relaxed">${renderDesc(p.description)}</p>
           </div>
@@ -368,8 +383,6 @@
         `;
       }).join('');
     }
-
-    // ── Render ────────────────────────────────────────────────────────────────
 
     document.getElementById('app').innerHTML = `
       <header class="mb-5 flex items-center gap-3">
@@ -388,7 +401,7 @@
       </div>
 
       <p class="mb-4 text-gray-800 leading-relaxed">
-        Game developer with 4+ years of professional experience shipping on PC, console and mobile.<br>
+        Game developer with 5 years of professional experience shipping on PC, console and mobile.<br>
         I have a strong technical background in realtime systems and computer graphics, and I'm looking to apply that beyond games as well.
       </p>
 
@@ -418,6 +431,14 @@
         arseny.dremin@proton.me
       </footer>
     `;
+
+    document.querySelectorAll('.title-icon').forEach(el => {
+      const m = /url\(["']?(.*?)["']?\)/.exec(el.style.maskImage || el.style.webkitMaskImage);
+      if (!m) return;
+      const probe = new Image();
+      probe.onerror = () => el.remove();
+      probe.src = m[1];
+    });
   </script>
 </body>
 </html>
