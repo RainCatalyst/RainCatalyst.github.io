@@ -1,444 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arseny Dremin</title>
-  <meta name="description" content="Game Programmer" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:creator" content="@freezed_ice" />
-  <meta property="og:title" content="Arseny Dremin" />
-  <meta property="og:description" content="Game & Systems Programmer" />
-  <meta property="og:image" content="/img/Logo_Icedrop.png" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    @font-face {
-      font-family: 'Merriweather';
-      src: url('/fonts/Merriweather-Regular.ttf') format('truetype');
-      font-weight: 400;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: 'Merriweather';
-      src: url('/fonts/Merriweather-Bold.ttf') format('truetype');
-      font-weight: 700;
-      font-style: normal;
-    }
-
-    html {
-      font-size: 17px;
-    }
-    html, body {
-      font-family: 'Merriweather', Georgia, serif;
-    }
-
-    :root {
-      --media-col: 17rem;
-      --media-h:   12rem;
-      --media-r:   4px;
-    }
-
-
-    .section-list {
-      display: grid;
-      grid-template-columns: 1fr var(--media-col);
-      column-gap: 1.5rem;
-      row-gap: 1.5rem;
-      align-items: start;
-    }
-
-    .list-text {
-      position: relative;
-      padding-left: 1.4rem;
-    }
-
-    .list-text::before {
-      content: "";
-      position: absolute;
-      left: 0.1rem;
-      top: 0.55em;
-      width: 0.5rem;
-      height: 0.5rem;
-      background-color: #9ca3af;
-      border-radius: 50%;
-    }
-
-    .list-text.full {
-      grid-column: 1 / -1;
-    }
-
-
-    .title-with-icon {
-      display: inline-flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-    }
-
-    .title-icon {
-      display: inline-block;
-      width: 1.15rem;
-      height: 1.15rem;
-      flex-shrink: 0;
-      position: relative;
-      top: -1px;
-      background-color: #000;
-      opacity: 0.5;
-      -webkit-mask-repeat: no-repeat;
-              mask-repeat: no-repeat;
-      -webkit-mask-position: center;
-              mask-position: center;
-      -webkit-mask-size: contain;
-              mask-size: contain;
-    }
-
-    .media-el {
-      display: block;
-      width: 100%;
-      height: var(--media-h);
-      object-fit: cover;
-      border-radius: var(--media-r);
-    }
-
-    @media (max-width: 600px) {
-      .section-list {
-        grid-template-columns: 1fr;
-      }
-      .media-el {
-        height: auto;
-        max-height: 13rem;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arseny Dremin</title>
+<meta name="description" content="Game Programmer">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@freezed_ice">
+<meta property="og:title" content="Arseny Dremin">
+<meta property="og:description" content="Game & Systems Programmer">
+<meta property="og:image" content="/img/Logo_Icedrop.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<style>
+  @font-face { font-family: M; src: url(/fonts/Merriweather-Regular.ttf); }
+  @font-face { font-family: M; src: url(/fonts/Merriweather-Bold.ttf); font-weight: 700; }
+  :root { --ink: #ececec; --mute: #8f8f8f; --rule: #2a2a2a; --bg: #0e0e0e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.7 M, Georgia, serif; }
+  main { max-width: 750px; margin: 0 auto; padding: 72px 20px 96px; }
+  a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  h1 { font-size: 22px; margin: 0; }
+  .links { font-size: 14px; display: flex; gap: 16px; flex-wrap: wrap; margin: 10px 0 24px; }
+  h2 { font-size: 13px; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); margin: 72px 0 24px; }
+  figure { margin: 0 0 56px; }
+  figure video, figure img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #000; }
+  figcaption { font-size: 14px; color: var(--mute); margin-top: 10px; }
+  figcaption b { color: var(--ink); }
+  .small { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 20px; }
+  .small figure { margin: 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  td { padding: 8px 0; border-top: 1px solid var(--rule); vertical-align: top; }
+  td:first-child { width: 90px; color: var(--mute); font-variant-numeric: tabular-nums; }
+  footer { margin-top: 72px; font-size: 13px; color: var(--mute); }
+  @media (max-width: 560px) {
+    main { padding: 48px 12px 72px; }
+    .small { grid-template-columns: 1fr; }
+  }
+</style>
 </head>
-<body class="bg-white text-gray-800 antialiased">
-  <div class="min-h-screen flex justify-center py-12 px-6">
-    <div class="max-w-3xl w-full" id="app"></div>
-  </div>
+<body>
+<main id="app"></main>
+<script>
+const email = "arseny.dremin@proton.me";
 
-  <script>
+const links = [
+  { label: "CV", url: "/files/CV.pdf" },
+  { label: "GitHub", url: "https://github.com/RainCatalyst" },
+  { label: "itch.io", url: "https://freezedice.itch.io/" },
+  { label: "ArtStation", url: "https://www.artstation.com/raincatalyst" },
+  { label: "Email", url: "mailto:" + email },
+];
 
-    const profile = {
-      name: "Arseny Dremin",
-      cvLink: "/files/CV.pdf",
-      logo: "/favicon.png"
-    };
+const games = [
+  {
+    name: "Ultrapool", year: "2025", url: "https://store.steampowered.com/app/4195110/Ultrapool/",
+    note: "Pool-inspired roguelike deckbuilder. 100k+ copies sold.",
+    role: "Programming, design, tech art · Godot",
+    platforms: "Steam · iOS · Android",
+    video: "/img/projects/ultrapool.mp4",
+  },
+  {
+    name: "Paleo Pines", year: "2023", url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
+    note: "Cozy dinosaur ranch sim. Gameplay systems, automation, editor tooling.",
+    role: "Gameplay programming · Unity",
+    platforms: "Steam · Switch · PlayStation · Xbox",
+    video: "/img/projects/paleo_new.mp4",
+  },
+  {
+    name: "LOK Digital", year: "2023", url: "https://store.steampowered.com/app/2207440/LOK_Digital/",
+    note: "Word-search puzzle adapted from a physical puzzle book. Overwhelmingly Positive on Steam (500+ reviews).",
+    role: "Tech art, additional programming · Unity",
+    platforms: "Steam · Switch · iOS · Android",
+    video: "/img/projects/lok_new.mp4",
+  },
+  {
+    name: "Constellations", year: "2021", url: "https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-Download-Software/Constellations-2384059.html",
+    note: "Minimal puzzle game about connecting stars.",
+    role: "All programming, shaders, tech art · Godot",
+    platforms: "Steam · Switch",
+    video: "/img/projects/constellations.mp4",
+  },
+];
 
-    const featured = [
-      {
-        name: "Ultrapool",
-        url: "https://store.steampowered.com/app/4195110/Ultrapool/",
-        description: "Pool inspired roguelike deckbuilder made in Godot. <br>70k+ copies sold across Steam, iOS, and Android. <br>I was responsible for programming, design and technical art.",
-        video: "/img/projects/ultrapool.mp4",
-        icons: ["/img/other/steam.svg", "/img/other/android.svg", "/img/other/apple.svg"]
-      },
-      {
-        name: "Paleo Pines",
-        url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
-        description: "Cozy dinosaur farming sim shipped on PC, Switch, and console. Worked on gameplay systems, automation, and general optimization as part of the Italic Pig team.",
-        video: "/img/projects/paleo_new.mp4",
-        icons: ["/img/other/steam.svg", "/img/other/switch.svg", "/img/other/playstation.svg"]
-      },
-      {
-        name: "Constellations",
-        url: "https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-Download-Software/Constellations-2384059.html",
-        description: "Minimalistic puzzle game for PC and Nintendo Switch. Responsible for all programming, shaders, and technical art.",
-        video: "/img/projects/constellations.mp4",
-        icons: ["/img/other/steam.svg", "/img/other/switch.svg"]
-      },
-      {
-        name: "LOK Digital",
-        url: "https://store.steampowered.com/app/2207440/LOK_Digital/",
-        description: "Quirky word-search puzzle based on a physical puzzle book. Contributed technical art and additional programming.",
-        video: "/img/projects/lok_new.mp4",
-        icons: ["/img/other/steam.svg", "/img/other/android.svg", "/img/other/apple.svg", "/img/other/switch.svg"]
-      }
-    ];
+const other = [
+  { name: "Game jams", year: "2018–", note: "15+ jam games over 8 years.", url: "https://freezedice.itch.io/", video: "/img/projects/reel_all.mp4" },
+  { name: "VFX", note: "Real-time and rendered VFX in Houdini, Blender, Unity.", url: "https://www.artstation.com/raincatalyst", video: "/img/projects/vfx.mp4" },
+  { name: "Zeus Renderer", year: "2025", note: "C++ path tracer: volumetrics, PBR, SDF fractals.", url: "https://github.com/RainCatalyst/ZeusRenderer", image: "/img/projects/zeus.png" },
+  { name: "Shader toys", note: "Small Godot shader experiments.", url: "https://github.com/RainCatalyst", video: "/img/shaders/blackhole.mp4" },
+  { name: "Arduino Raytracer", year: "2024", note: "Fixed-point raytracer on a microcontroller.", url: "https://github.com/RainCatalyst/ArduinoRaytracer", image: "/img/projects/arduino.png" },
+  { name: "Ankidot", year: "2024", note: "Godot × Anki for language learning.", url: "https://github.com/RainCatalyst/Ankidot", video: "/img/projects/ankidot.mp4" },
+];
 
-    const jobs = [
-      {
-        name: "Unity Developer @ Forklift Interactive",
-        extra: "(2026 – Now)",
-        url: "https://store.steampowered.com/app/3783980/Above_Colonies_of_the_Mist/",
-        description: "Implementing gameplay systems for a Colony Building Game in Unity C#."
-      },
-      {
-        name: "Godot Developer @ NDA",
-        extra: "(2025 – 2026)",
-        url: "",
-        description: "Worked on an unannounced 3D action-adventure title for an internal publisher team. Responsible for setting up core gameplay systems and project structure."
-      },
-      {
-        name: "Unity Gameplay Programmer @ Italic Pig",
-        extra: "(2022 – 2024)",
-        url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
-        description: "Shipped Paleo Pines on PC and console. Built gameplay systems, automation tools, and custom Unity editor tooling in C#.",
-        image: "/img/projects/paleo.png"
-      },
-      {
-        name: "Developer @ Icedrop Games",
-        extra: "(2020 – Now)",
-        url: "https://icedropgames.com/#/games",
-        description: "Two-person indie studio I run with a friend; shipped LOK Digital, Constellations, and Ultrapool. <br>Responsible for gameplay, shaders, and VFX in Unity and Godot.",
-        image: "/img/projects/icedrop.png",
-        icon: "/img/other/icedrop.png"
-      },
-      {
-        name: "Teaching Assistant @ UdS Graphics Lab",
-        extra: "(2024 – 2025)",
-        url: "https://graphics.cg.uni-saarland.de/",
-        description: "Designed assignments and contributed to a custom C++ rendering framework for the Computer Graphics course. <br>Topics covered: rasterization, ray tracing, physically-based shading, GPU pipeline."
-      }
-    ];
+const jobs = [
+  { years: "2026–", title: "Unity Developer", at: "Forklift Interactive", url: "https://store.steampowered.com/app/3783980/Above_Colonies_of_the_Mist/" },
+  { years: "2025–26", title: "Godot Developer", at: "Unannounced 3D action-adventure (NDA)" },
+  { years: "2020–", title: "Co-founder, developer", at: "Icedrop Games", url: "https://icedropgames.com/#/games" },
+  { years: "2024–25", title: "Teaching Assistant", at: "Saarland University Graphics Lab", url: "https://graphics.cg.uni-saarland.de/" },
+  { years: "2022–24", title: "Gameplay Programmer", at: "Italic Pig", url: "https://store.steampowered.com/app/1202200/Paleo_Pines/" },
+];
 
-    const education = [
-      {
-        institution: "Saarland University",
-        degree: "Bachelor in Computer Science",
-        period: "2023 – 2026"
-      },
-      {
-        institution: "Futuregames Sweden",
-        degree: "Vocational Education in Game Development",
-        period: "2022 – 2023"
-      }
-    ];
+const education = [
+  { years: "2023–26", title: "BSc Computer Science", at: "Saarland University" },
+  { years: "2022–23", title: "Game Programming", at: "Futuregames, Sweden" },
+];
 
-    const projects = [
-      {
-        name: "Game Jam Portfolio",
-        url: "https://freezedice.itch.io/",
-        description: "15+ games made over 8 years of game jams.",
-        video: "/img/projects/reel_all.mp4",
-        icon: "/img/other/itch.svg"
-      },
-      {
-        name: "Zeus Renderer",
-        url: "https://github.com/RainCatalyst/ZeusRenderer",
-        description: "C++ path-tracing engine with volumetric rendering, PBR materials, and SDF fractals.",
-        image: "/img/projects/zeus.png",
-        icon: "/img/other/github.svg"
-      },
-      {
-        name: "Arduino Raytracer",
-        url: "https://github.com/RainCatalyst/ArduinoRaytracer",
-        description: "Raytracer in C running on Arduino hardware with fixed-point integer math.",
-        image: "/img/projects/arduino.png",
-        icon: "/img/other/github.svg"
-      },
-      {
-        name: "Ankidot",
-        url: "https://github.com/RainCatalyst/Ankidot",
-        description: "Godot & Anki integration for interactive language learning.",
-        video: "/img/projects/ankidot.mp4",
-        icon: "/img/other/github.svg"
-      },
-      {
-        name: "VFX Portfolio",
-        url: "https://www.artstation.com/raincatalyst",
-        description: "Real-time and rendered VFX in Houdini, Blender, and Unity.",
-        video: "/img/projects/vfx.mp4",
-        icon: "/img/other/artstation.svg"
-      },
-      {
-        name: "UmaMusume Optimizer",
-        url: "https://github.com/RainCatalyst/UmaOptimizer",
-        description: "Python tool using a genetic algorithm to find optimal card combinations.",
-        icon: "/img/other/github.svg"
-      },
-      {
-        name: "NLP Reminder Bot",
-        url: "https://github.com/RainCatalyst/ReminderBot",
-        description: "Telegram bot that parses human-readable dates for reminders.",
-        icon: "/img/other/github.svg"
-      },
-      {
-        name: "Language Exercise Bot",
-        url: "https://github.com/RainCatalyst/LanguageExerciseBot",
-        description: "Telegram bot for language practice with LLM integration.",
-        icon: "/img/other/github.svg"
-      },
-      {
-        name: "Unreal Infinite Runner",
-        url: "https://github.com/RainCatalyst/InfiniteRunner",
-        description: "Unreal Engine C++ game with custom game mode, player components, and spawner systems.",
-        icon: "/img/other/github.svg"
-      }
-    ];
+function media(item) {
+  if (item.video) return `<video src="${item.video}" muted loop playsinline preload="metadata"></video>`;
+  return `<img src="${item.image}" alt="${item.name}" loading="lazy">`;
+}
 
-    // ── Helpers ───────────────────────────────────────────────────────────────
+function title(item) {
+  return `<b><a href="${item.url}">${item.name}</a></b>${item.year ? `, ${item.year}` : ""}`;
+}
 
-    function esc(s) {
-      return String(s)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-    }
+function game(g) {
+  return `<figure>${media(g)}<figcaption>${title(g)}. ${g.note}<br>${g.role}<br>${g.platforms}</figcaption></figure>`;
+}
 
-    function hasMedia(item) {
-      return !!(item.video || item.image);
-    }
+function small(p) {
+  return `<figure>${media(p)}<figcaption>${title(p)}<br>${p.note}</figcaption></figure>`;
+}
 
-    function renderMedia(item) {
-      if (item.video) {
-        return `<video class="media-el" autoplay muted loop playsinline>
-          <source src="${esc(item.video)}" type="video/mp4">
-        </video>`;
-      }
-      return `<img src="${esc(item.image)}" alt="${esc(item.name)}" class="media-el">`;
-    }
+function rows(list) {
+  return `<table>${list.map(r => `<tr><td>${r.years}</td><td>${r.title}, ${r.url ? `<a href="${r.url}">${r.at}</a>` : r.at}</td></tr>`).join("")}</table>`;
+}
 
-    function renderIcons(item) {
-      const list = item.icons || (item.icon ? [item.icon] : []);
-      return list
-        .map(src => {
-          const u = `url('${esc(src)}')`;
-          return `<span class="title-icon" style="-webkit-mask-image:${u};mask-image:${u}"></span>`;
-        })
-        .join('');
-    }
+document.getElementById("app").innerHTML = `
+  <h1>Arseny Dremin</h1>
+  <div class="links">${links.map(l => `<a href="${l.url}">${l.label}</a>`).join("")}</div>
+  <p>Game developer with 5 years of professional experience shipping on PC, console and mobile.<br>
+  I have a strong technical background in realtime systems and computer graphics, and I'm looking to apply that beyond games as well.</p>
+  <h2>Shipped games</h2>${games.map(game).join("")}
+  <h2>Work</h2>${rows(jobs)}
+  <h2>Other work</h2><div class="small">${other.map(small).join("")}</div>
+  <h2>Education</h2>${rows(education)}
+  <footer>${email}</footer>`;
 
-
-    function renderDesc(s) {
-      const parts = [];
-      let last = 0;
-      const re = /(<br\s*\/?>)|\[([^\]]+)\]\(([^)]+)\)/g;
-      let m;
-      while ((m = re.exec(s)) !== null) {
-        if (m.index > last) parts.push(esc(s.slice(last, m.index)));
-        if (m[1]) parts.push('<br>');
-        else parts.push(`<a href="${esc(m[3])}" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">${esc(m[2])}</a>`);
-        last = re.lastIndex;
-      }
-      if (last < s.length) parts.push(esc(s.slice(last)));
-      return parts.join('');
-    }
-
-    function renderLink(url, text, cls) {
-      if (url) {
-        return `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer" class="${cls}">${esc(text)}</a>`;
-      }
-      return `<span class="font-medium text-gray-900">${esc(text)}</span>`;
-    }
-
-    function renderFeatured() {
-      return featured.map(p => {
-        const m = hasMedia(p);
-        return `
-          <div class="list-text${m ? '' : ' full'}">
-            <div class="title-with-icon mb-1">
-              <a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer"
-                 class="text-blue-600 hover:underline font-medium">${esc(p.name)}</a>
-              ${renderIcons(p)}
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed">${renderDesc(p.description)}</p>
-          </div>
-          ${m ? `<div>${renderMedia(p)}</div>` : ''}
-        `;
-      }).join('');
-    }
-
-    function renderJobs() {
-      return jobs.map(j => {
-        const m = hasMedia(j);
-        return `
-          <div class="list-text${m ? '' : ' full'}">
-            <div class="title-with-icon mb-1">
-              ${renderLink(j.url, j.name, 'text-blue-600 hover:underline font-medium')}
-              <i class="text-gray-500 text-sm">${esc(j.extra)}</i>
-              ${renderIcons(j)}
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed">${renderDesc(j.description)}</p>
-          </div>
-          ${m ? `<div>${renderMedia(j)}</div>` : ''}
-        `;
-      }).join('');
-    }
-
-    function renderEducation() {
-      return education.map(e => `
-        <div class="list-text full">
-          <strong class="text-gray-900">${esc(e.institution)}</strong>
-          <span class="text-gray-600"> — ${esc(e.degree)}</span>
-          <span class="text-gray-500 text-sm ml-1">(${esc(e.period)})</span>
-        </div>
-      `).join('');
-    }
-
-    function renderProjects() {
-      return projects.map(p => {
-        const m = hasMedia(p);
-        return `
-          <div class="list-text${m ? '' : ' full'}">
-            <div class="title-with-icon mb-1">
-              <a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer"
-                 class="text-blue-600 hover:underline font-medium">${esc(p.name)}</a>
-              ${renderIcons(p)}
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed">${renderDesc(p.description)}</p>
-          </div>
-          ${m ? `<div>${renderMedia(p)}</div>` : ''}
-        `;
-      }).join('');
-    }
-
-    document.getElementById('app').innerHTML = `
-      <header class="mb-5 flex items-center gap-3">
-        <img src="${profile.logo}" alt="" class="w-8 h-8 object-contain" />
-        <h1 class="text-3xl font-bold text-gray-900">${esc(profile.name)}</h1>
-      </header>
-
-      <div class="text-sm text-gray-500 mb-4 flex flex-wrap gap-x-3 gap-y-1 items-center">
-        <a href="mailto:arseny.dremin@proton.me" class="text-blue-600 hover:underline">Contact</a>
-        <span>·</span>
-        <a href="https://github.com/RainCatalyst" target="_blank" rel="noopener noreferrer"
-           class="text-blue-600 hover:underline">GitHub</a>
-        <span>·</span>
-        <a href="${esc(profile.cvLink)}" download="ArsenyDremin_CV.pdf" target="_blank" rel="noopener noreferrer"
-           class="text-blue-600 hover:underline">Download CV</a>
-      </div>
-
-      <p class="mb-4 text-gray-800 leading-relaxed">
-        Game developer with 5 years of professional experience shipping on PC, console and mobile.<br>
-        I have a strong technical background in realtime systems and computer graphics, and I'm looking to apply that beyond games as well.
-      </p>
-
-      <hr class="border-gray-200 my-6" />
-
-      <section class="my-8">
-        <h2 class="text-xl font-bold text-gray-900 mb-4">Games I've shipped</h2>
-        <div class="section-list">${renderFeatured()}</div>
-      </section>
-
-      <section class="my-8">
-        <h2 class="text-xl font-bold text-gray-900 mb-4">Work Experience</h2>
-        <div class="section-list">${renderJobs()}</div>
-      </section>
-
-      <section class="my-8">
-        <h2 class="text-xl font-bold text-gray-900 mb-4">Education</h2>
-        <div class="section-list">${renderEducation()}</div>
-      </section>
-
-      <section class="my-8">
-        <h2 class="text-xl font-bold text-gray-900 mb-4">Other Projects</h2>
-        <div class="section-list">${renderProjects()}</div>
-      </section>
-
-      <footer class="mt-12 pt-6 border-t border-gray-100 text-xs text-gray-400 text-center">
-        arseny.dremin@proton.me
-      </footer>
-    `;
-
-    document.querySelectorAll('.title-icon').forEach(el => {
-      const m = /url\(["']?(.*?)["']?\)/.exec(el.style.maskImage || el.style.webkitMaskImage);
-      if (!m) return;
-      const probe = new Image();
-      probe.onerror = () => el.remove();
-      probe.src = m[1];
-    });
-  </script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => e.isIntersecting ? e.target.play().catch(() => {}) : e.target.pause());
+}, { threshold: 0.25 });
+document.querySelectorAll("video").forEach(v => observer.observe(v));
+</script>
 </body>
 </html>
