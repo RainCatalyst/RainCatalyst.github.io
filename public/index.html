@@ -26,6 +26,8 @@
   figure video, figure img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #000; }
   figcaption { font-size: 14px; color: var(--mute); margin-top: 10px; }
   figcaption b { color: var(--ink); }
+  .game figcaption { font-size: 16px; }
+  .label { color: var(--ink); font-weight: 700; }
   .small { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 20px; }
   .small figure { margin: 0; }
   table { width: 100%; border-collapse: collapse; font-size: 15px; }
@@ -44,7 +46,7 @@
 const email = "arseny.dremin@proton.me";
 
 const links = [
-  { label: "CV", url: "/files/CV.pdf" },
+  { label: "CV", url: "/files/CV_ArsenyDremin.pdf" },
   { label: "GitHub", url: "https://github.com/RainCatalyst" },
   { label: "itch.io", url: "https://freezedice.itch.io/" },
   { label: "ArtStation", url: "https://www.artstation.com/raincatalyst" },
@@ -53,7 +55,7 @@ const links = [
 
 const games = [
   {
-    name: "Ultrapool", year: "2025", url: "https://store.steampowered.com/app/4195110/Ultrapool/",
+    name: "Ultrapool", year: "2026", url: "https://store.steampowered.com/app/4195110/Ultrapool/",
     note: "Pool-inspired roguelike deckbuilder. 100k+ copies sold.",
     role: "Programming, design, tech art · Godot",
     platforms: "Steam · iOS · Android",
@@ -61,8 +63,8 @@ const games = [
   },
   {
     name: "Paleo Pines", year: "2023", url: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
-    note: "Cozy dinosaur ranch sim. Gameplay systems, automation, editor tooling.",
-    role: "Gameplay programming · Unity",
+    note: "Cozy dinosaur farming sim.",
+    role: "Gameplay programming and quests · Unity",
     platforms: "Steam · Switch · PlayStation · Xbox",
     video: "/img/projects/paleo_new.mp4",
   },
@@ -85,10 +87,10 @@ const games = [
 const other = [
   { name: "Game jams", year: "2018–", note: "15+ jam games over 8 years.", url: "https://freezedice.itch.io/", video: "/img/projects/reel_all.mp4" },
   { name: "VFX", note: "Real-time and rendered VFX in Houdini, Blender, Unity.", url: "https://www.artstation.com/raincatalyst", video: "/img/projects/vfx.mp4" },
-  { name: "Zeus Renderer", year: "2025", note: "C++ path tracer: volumetrics, PBR, SDF fractals.", url: "https://github.com/RainCatalyst/ZeusRenderer", image: "/img/projects/zeus.png" },
+  { name: "Zeus Renderer", year: "2025", note: "C++ path tracer with volumetrics, PBR, SDF support", url: "https://github.com/RainCatalyst/ZeusRenderer", image: "/img/projects/zeus.png" },
   { name: "Shader toys", note: "Small Godot shader experiments.", url: "https://github.com/RainCatalyst", video: "/img/shaders/blackhole.mp4" },
-  { name: "Arduino Raytracer", year: "2024", note: "Fixed-point raytracer on a microcontroller.", url: "https://github.com/RainCatalyst/ArduinoRaytracer", image: "/img/projects/arduino.png" },
-  { name: "Ankidot", year: "2024", note: "Godot × Anki for language learning.", url: "https://github.com/RainCatalyst/Ankidot", video: "/img/projects/ankidot.mp4" },
+  { name: "Arduino Raytracer", year: "2024", note: "Fixed point raytracer on an Arduino board.", url: "https://github.com/RainCatalyst/ArduinoRaytracer", image: "/img/projects/arduino.png" },
+  { name: "Ankidot", year: "2024", note: "Godot Anki integration for language learning.", url: "https://github.com/RainCatalyst/Ankidot", video: "/img/projects/ankidot.mp4" },
 ];
 
 const jobs = [
@@ -114,7 +116,7 @@ function title(item) {
 }
 
 function game(g) {
-  return `<figure>${media(g)}<figcaption>${title(g)}. ${g.note}<br>${g.role}<br>${g.platforms}</figcaption></figure>`;
+  return `<figure class="game">${media(g)}<figcaption>${title(g)}. ${g.note}<br><span class="label">Role:</span> ${g.role}<br>${g.platforms}</figcaption></figure>`;
 }
 
 function small(p) {
@@ -129,7 +131,7 @@ document.getElementById("app").innerHTML = `
   <h1>Arseny Dremin</h1>
   <div class="links">${links.map(l => `<a href="${l.url}">${l.label}</a>`).join("")}</div>
   <p>Game developer with 5 years of professional experience shipping on PC, console and mobile.<br>
-  I have a strong technical background in realtime systems and computer graphics, and I'm looking to apply that beyond games as well.</p>
+  I have a strong technical background in realtime systems, computer graphics and tooling, and I'm looking to apply that beyond games as well.</p>
   <h2>Shipped games</h2>${games.map(game).join("")}
   <h2>Work</h2>${rows(jobs)}
   <h2>Other work</h2><div class="small">${other.map(small).join("")}</div>
